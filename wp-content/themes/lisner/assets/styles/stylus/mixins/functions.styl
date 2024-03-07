@@ -1,0 +1,146 @@
+transition($transition = transition-time) {
+    -webkit-transition: ease $transition
+    -moz-transition: ease $transition
+    -ms-transition: ease $transition
+    -o-transition: ease $transition
+    transition: ease $transition
+}
+
+// Calculate rem font size
+font-size($fontValue = $base-font-size, $baseFontValue = $base-font-size) {
+    font-size $fontValue px
+    // font-size ($fontValue / $baseFontValue) rem
+}
+
+rem(value) { /* separate mixin, so it can be used elsewhere */
+    u = unit(value);
+    if (u is 'px') {
+        return unit(value / 16, 'rem');
+    } else {
+        return unit(value, u);
+    }
+}
+
+@-webkit-keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+@keyframes showNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes trep {
+    from {
+        transform: scale3d(1, 1, 1);
+        opacity .1
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+        opacity .4
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity .1
+    }
+}
+
+@keyframes trep {
+    from {
+        transform: scale3d(1, 1, 1);
+        opacity .1
+    }
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+        opacity .4
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity .1
+    }
+}

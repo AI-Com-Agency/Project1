@@ -1,0 +1,75 @@
+/*
+ |--------------------------------------------------------------------------
+ | 31. Listing / Widgets
+ |--------------------------------------------------------------------------
+ */
+
+.lisner-listing-item-promo,
+.listing-widget {
+    .widget-promo {
+        &-wrapper {
+            position relative
+            display block
+            height 266px
+            background-color $theme_color
+            overflow hidden
+        }
+        &-image {
+            position relative
+            height 100%
+            margin-bottom 0
+            opacity .8
+            img {
+                position absolute
+                top 0
+                left 0
+                height 100%
+                width 100%
+                object-fit cover
+            }
+        }
+        &-content {
+            position absolute
+            top 0
+            left 0
+            display flex
+            flex-direction column
+            justify-content flex-end
+            padding rem(20px) rem(30px)
+            width 100%
+            height 100%
+            z-index 2
+        }
+        &-title {
+            font-size 28px
+            font-weight 700
+            color $white
+            .lisner-listing-claimed {
+                top rem(-15px)
+            }
+        }
+        &-address {
+            display flex
+            margin-bottom rem(7px)
+            align-items center
+            font-size 14px
+            color $white
+            i {
+                margin-right rem(5px)
+                font-size 18px
+            }
+        }
+        &-ad {
+            position absolute
+            top rem(30px)
+            padding rem(2px) rem(5px)
+            border 2px solid
+            border-color $white
+            border-radius $border-radius
+            font-size 14px
+            text-transform uppercase
+            line-height 1
+            color $white
+        }
+    }
+}

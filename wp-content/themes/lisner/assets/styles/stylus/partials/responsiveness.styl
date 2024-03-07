@@ -1,0 +1,2646 @@
+/*
+ |--------------------------------------------------------------------------
+ | 38. Responsive Styles
+ |--------------------------------------------------------------------------
+ */
+
+.mobile-search-call {
+  display none
+  justify-content center
+  align-items center
+  background-color transparent
+  border 0
+  color $white
+  cursor pointer
+
+  i {
+    font-size 28px
+    color $white
+  }
+}
+
+.menu-search-inner {
+  position fixed
+  top -100%
+  left 0
+  padding rem(30px)
+  width 100%
+  background-color $theme_color
+  z-index 9
+
+  &.active {
+    top 65px
+  }
+}
+
+.logged-in-admin {
+  .menu-search-inner.active {
+    top 97px
+  }
+}
+
+@media (max-width: 1680px) and (min-width: 1240px) {
+  .lisner-listing-meta-category .category-name {
+    display none
+  }
+}
+
+@media ( max-width 1600px ) {
+  .search-template-2:not(.container-search-full) div[class^=col-] {
+    flex 0 0 55%
+    max-width 55%
+  }
+
+  .search-template-2:not(.container-search-full) div[class*=col-cst-padding] .map-wrapper {
+    flex 0 0 45%
+    max-width 45%
+  }
+
+  .logged-in {
+    .header {
+      .pbs-navbar.navbar {
+        .navbar-collapse {
+          li.menu-item-auth {
+            min-width: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    .pbs-navbar.navbar {
+      .navbar-collapse {
+        li.menu-item-auth {
+          min-width: 106px;
+        }
+      }
+    }
+  }
+}
+
+@media ( max-width 1460px ) and (min-width 768px ) {
+  .listing-single-coupon {
+    padding 35px 20px
+
+    .coupon-countdown,
+    .coupon-button {
+      margin-right 0
+      margin-left 0
+    }
+  }
+
+  .working-time-open + .working-time-open + .working-time-hours {
+    margin-left 0
+    margin-top 10px
+  }
+
+  .working-hours-call {
+    margin-top 10px
+  }
+
+  .working-time-all-wrapper {
+    padding-left 0
+  }
+}
+
+@media ( max-width: 1400px) {
+  .container-search-full.search-template-1 {
+    &.listing-box-style-list .listing-load-item:nth-child(n+3) {
+      margin-top 15px
+    }
+
+    &.listing-box-style-list .listing-load-item,
+    .lisner_listings .listing-el.col-custom.listing-el-list {
+      flex 0 0 50%
+      max-width 50%
+    }
+  }
+
+  .container-search-full.search-template-1 {
+    .map-active {
+      .lisner_listings .listing-el.col-custom.listing-el-list {
+        flex 0 0 100%
+        max-width 100%
+      }
+
+    }
+  }
+
+  .single-listing-header-style-2 {
+    height 300px
+
+    .slick-arrow {
+      z-index 9
+
+      &.slick-prev {
+        display none
+        visibility hidden
+      }
+    }
+  }
+
+  .main-single-listing.single-listing-style-2 {
+    .single-listing-head {
+      margin-bottom 30px
+      width 85%
+    }
+    top -170px
+  }
+
+  .single-listing-style-2 .single-listing-head .col-sm-3 {
+    flex 0 0 100%
+    max-width 100%
+    margin-left 0
+
+    .single-listing-meta-actions {
+      justify-content flex-start
+      margin-top 10px
+    }
+  }
+
+}
+
+@media (max-width: 1400px) and (min-width: 1024px) {
+  .address-map {
+    max-width 145px
+  }
+
+  .listing-widget-price-range .lisner-listing-price-range {
+    display none
+  }
+
+  .listing-widget-contact-listing form .form-group textarea.form-control,
+  .listing-widget-contact-listing form .form-group .form-control {
+    margin-top 5px
+    margin-left 0
+  }
+
+  .listing-widget-contact-listing form .form-group label {
+    max-width 0
+    font-size 0
+  }
+
+  .listing-widget-contact-listing form .form-group label i {
+    padding-right 0
+  }
+
+  .single-listing-main-meta-action {
+    margin-bottom 0
+  }
+}
+
+@media (max-width: 1220px) {
+  .prev-next-post.prev {
+    right 109%
+  }
+
+  .comment-respond .input-group label {
+    flex 0 0 17%
+    max-width 17%
+  }
+
+  .search-template-2:not(.container-search-full) div[class^=col-] {
+    flex 0 0 60%
+    max-width 60%
+  }
+
+  .search-template-2:not(.container-search-full) div[class*=col-cst-padding] .map-wrapper {
+    flex 0 0 40%
+    max-width 40%
+  }
+}
+
+@media (max-width: 1190px) {
+  .prev-next-post.prev {
+    right 111%
+  }
+}
+
+@media (max-width: 1180px) {
+  .woocommerce-account {
+    .lisner-profile-header {
+      top 66px
+    }
+
+    .lisner-profile-nav {
+      top 133px
+    }
+
+    .lisner-profile-content {
+      margin-top 68px
+    }
+
+    &.logged-in-admin {
+      .lisner-profile-header {
+        top 98px
+      }
+
+      .lisner-profile-nav {
+        top 165px
+      }
+
+      .lisner-profile-content {
+        margin-top 90px
+      }
+    }
+  }
+
+  .hero-search-template-3.w-100 .col-9 {
+    flex 0 0 100%
+    max-width 100%
+
+    .hero-category-heading h1, .hero-category-heading h6, .hero-title h1, .hero-title h6 {
+      text-align center
+    }
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li.woocommerce-cart a {
+    margin-left 0
+  }
+
+  .menu-search-inner {
+    border-top: 1px solid #4f2752;
+  }
+
+  .page-unit {
+    &.home {
+      .header-top {
+        top 0
+      }
+    }
+
+    &.home.logged-in-admin {
+      .header-top {
+        top 32px
+      }
+    }
+  }
+
+  .page-template-page-search .container-form {
+    top 54px
+  }
+
+  .page-template-page-search.logged-in-admin .container-form {
+    top 94px
+  }
+
+  .map-wrapper {
+    top 175px
+  }
+
+  .container-search {
+    padding-top 180px
+  }
+
+  .header,
+  .home .header {
+    padding rem(10px) rem(20px)
+  }
+
+  .hero-category-heading h1, .hero-title h1 {
+    font-size 38px
+  }
+
+  .hero-search-template-2 .hero-featured-taxonomies {
+    a {
+      &:nth-child(n+4) {
+        display none
+      }
+    }
+  }
+
+  .lisner-listing-item {
+    &:nth-child(n+2) {
+      margin-top rem(20px)
+    }
+  }
+
+  .lisner-clients .lisner-clients-item {
+    text-align center
+  }
+
+  .lisner-clients .col-sm-4:nth-child(n+4) .lisner-clients-item {
+    margin-top rem(40px)
+  }
+
+  /* search */
+  .lisner_listings-load .listing-load-item,
+  .container-search-full .lisner_listings .listing-el.col-custom {
+    flex 1 1 33.33333%
+    max-width 33.33333%
+  }
+
+  .lisner_listings-load.map-active .listing-load-item {
+    flex 0 0 50%
+    max-width 50%
+  }
+
+  .listing-load-item:nth-child(n+4) {
+    margin-top rem(15px)
+  }
+
+  .lisner_listings-load.map-active .listing-load-item:nth-child(n+3) {
+    margin-top rem(15px)
+  }
+
+  .more-filters.active {
+    width 100%
+  }
+
+  .single-listing-header .slick-dots {
+    display none
+  }
+
+  .single-listing-meta {
+    .justify-content-between {
+      align-items center
+    }
+  }
+
+  .reviews-meta .single-listing-main-meta-action {
+    margin-bottom 0
+    margin-left auto
+  }
+
+  .comment-meta {
+    .media {
+      flex-wrap wrap
+
+      &-info {
+        flex 0 0 100%
+        max-width 100%
+      }
+
+      &-body {
+        margin-top 20px
+      }
+    }
+  }
+
+  .single-listing-main-title {
+    margin-bottom 15px
+  }
+
+  .single-listing-main-meta {
+    flex-wrap wrap
+  }
+
+  .single-listing-main-meta-action {
+    margin-bottom 20px
+  }
+
+  .comment-respond .input-group {
+    max-width 100%
+  }
+
+  .lisner-packages {
+    padding 0 20px
+  }
+
+  .single-post .single-listing-main-meta-action {
+    margin-bottom 0
+  }
+
+  .comment-respond .input-group label {
+    flex 0 0 17%
+    max-width 17%
+  }
+
+  /* shop */
+  .woocommerce-page-lisner .container .col-sm-9-cst, .woocommerce-single-lisner .container .col-sm-9-cst {
+    margin-bottom rem(30px)
+    padding-right rem(15px)
+    max-width 100%
+  }
+
+  .lisner-shop .woocommerce-results-meta .woocommerce-ordering select {
+    display block
+  }
+
+  .lisner-taxonomy-template-5 .lisner-taxonomy-item,
+  .lisner-taxonomy-slick .lisner-taxonomy-item {
+    height 300px
+  }
+
+  .lisner-taxonomy-template-3 .lisner-taxonomy-item {
+    height 190px
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item {
+    height 176px
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item {
+    a span {
+      font-size 24px
+    }
+  }
+
+  .lisner-taxonomy-template-7 .col-lg-9 .col-lg-5 .col-6, .lisner-taxonomy-template-7 .col-lg-9 .col-lg-6 .col-6 {
+    padding 0 15px
+  }
+
+  .lisner-taxonomy-template-8 .lisner-taxonomy-text .lisner-taxonomy-item a,
+  .lisner-taxonomy-template-7 .lisner-taxonomy-text .lisner-taxonomy-item a {
+    font-size 18px
+  }
+
+  .how-it-works-template-2 {
+    .justify-content-center .row {
+      align-items center
+    }
+  }
+
+  .col-lg-9-cst-wrapper {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  body.logged-in-admin {
+    .search-template-2.container-search {
+      padding-top 66px
+
+      .map-wrapper.map-active {
+        top 95px
+      }
+    }
+  }
+
+  .search-template-2.container-search {
+    padding-top 34px
+
+    .map-wrapper.map-active {
+      top 73px
+    }
+  }
+}
+
+.mobile .lisner-shop .woocommerce-results-meta .woocommerce-ordering select {
+  display block
+}
+
+@media (min-width: 1030px) {
+  .sidebar-col {
+    padding-left 9px
+  }
+}
+
+@media (max-width: 1030px) {
+  .container-search.search-template-2 {
+  }
+
+  .search-template-2:not(.container-search-full) div[class^=col-] {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .search-template-2:not(.container-search-full) div[class*=col-cst-padding] .map-wrapper {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .container-search-full.search-template-1 {
+    &.listing-box-style-list .listing-load-item:not(:first-child) {
+      margin-top 15px
+    }
+
+    &.listing-box-style-list .listing-load-item {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .container-search-full.search-template-1 .lisner_listings .listing-el.col-custom.listing-el-list {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .blog-posts-row {
+    margin-right rem(-7px)
+    margin-left rem(-7px)
+  }
+
+  .sidebar-col {
+    padding-left 0
+  }
+
+  .main-single-listing.single-listing-style-2 {
+    top -210px
+  }
+
+  .single-listing-header-style-2 {
+    height 250px
+  }
+
+  .main-blog {
+    padding-top rem(132px)
+  }
+
+  .lisner-taxonomy-field .job-manager-category-dropdown {
+    display block
+    padding 0 10px
+    background-color transparent
+    border 0
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse li.menu-item-object-pebas_mega_menu {
+    position relative
+    z-index 999
+  }
+
+  body.logged-in-admin .header .pbs-navbar.navbar .navbar-collapse li.menu-item-object-pebas_mega_menu .mega-menu-container {
+    top 103px
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse li.menu-item-object-pebas_mega_menu .mega-menu-container {
+    position fixed
+    top 71px
+    padding 0 20px
+    z-index 9
+    width 100%
+
+    .container {
+      padding 0
+      max-width none
+
+      .row {
+        margin 0
+        width 100%
+      }
+    }
+
+    .nav.nav-pills {
+      padding-top 0
+      padding-bottom 0
+      padding-left 0
+      background-color transparent
+      border none
+
+      li {
+        margin-bottom 3px
+      }
+    }
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse .mega-menu-container .mega-menu-nav {
+    margin 0 -20px
+    border-radius 0
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse .mega-menu-container .mega-menu-item {
+    max-width 100%
+  }
+
+  .theme-spacing {
+    .container .row:not(.lisner-taxonomy-wrapper) > div[class^=col-lg-3] {
+      margin-bottom 40px
+    }
+  }
+
+  .hero-template-style-1 {
+    .hero-search {
+      width 55%
+    }
+  }
+
+  .hero-search.hero-search-template-10,
+  .hero-search.hero-search-template-9,
+  .hero-search.hero-search-template-8,
+  .hero-search.hero-search-template-7,
+  .hero-search.hero-search-template-6 {
+    width 100%
+
+    .col-lg-6,
+    .col-8,
+    .col-9,
+    .col-lg-10 {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .hero-search-template-9 {
+    left 0
+  }
+
+  .hero-category-style-5 {
+    margin-left 0
+    flex 0 0 58%
+    max-width 58%
+  }
+
+  .hero-category-style-5 .hero-featured-taxonomies .hero-featured-taxonomy:first-child {
+    white-space nowrap
+  }
+
+  .mobile-search-call {
+    display flex
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li > .menu-label {
+    display none
+  }
+
+  .page-header-form .hero-search-field:not(.hero-search-field-button):nth-child(2) .form-group .input-group-wrapper, .search-page-form .hero-search-field:not(.hero-search-field-button):nth-child(2) .form-group .input-group-wrapper,
+  .page-header-form .hero-search-field:not(.hero-search-field-button), .search-page-form .hero-search-field:not(.hero-search-field-button) {
+    position relative
+  }
+
+  .page-header-form, .search-page-form {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .home {
+    .header-top {
+      position fixed
+      top 0
+      left 0
+      align-items flex-start
+      width 100%
+      max-height 100%
+      z-index 999
+    }
+  }
+
+  .home.logged-in-admin {
+    .header-top {
+      top 32px
+    }
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse {
+    max-height 300px
+    overflow-y auto
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li.menu-item-add-listing {
+    margin-left 0
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li .dropdown-menu {
+    padding 0
+    background-color transparent
+    border none
+
+    ul {
+      margin-top 0
+    }
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse {
+    margin 0 -20px
+    padding 0 15px
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse ul {
+    margin-top 15px
+    padding rem(15px)
+    background-color $theme_color
+    border-top 1px solid #4f2752
+
+    li {
+      flex-wrap wrap
+      margin-bottom rem(10px)
+      padding 0
+
+      &:not(.menu-item-auth):not(.menu-item-add-listing) {
+        a:not(.cart-contents) {
+          width 100%
+
+          & + i {
+            position absolute
+            top 8px
+            pointer-events none
+            z-index 9
+          }
+        }
+      }
+
+      .menu-item-add-listing {
+        margin 0
+      }
+
+      > .sub-menu {
+        padding rem(10px) 0
+        flex 0 0 100%
+        max-width 100%
+        position relative
+        top auto
+        left auto
+        width 100%
+
+        ul {
+          padding 0
+
+          li {
+            > .sub-menu {
+              right auto
+              top auto
+              padding 0
+              padding-left 20px
+
+              .sub-menu-wrapper {
+                margin-top rem(-2px)
+                padding 0
+                background-color transparent
+                border-top 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li > .sub-menu .sub-menu-wrapper {
+    padding rem(5px) rem(10px)
+    background-color #2b012f
+    box-shadow none
+
+    li {
+      margin-bottom 0
+      padding 0
+      color $white
+
+      a {
+        padding-left rem(10px)
+        width auto
+        font-weight 600
+        color $white
+      }
+
+    }
+  }
+
+  .header .pbs-navbar.navbar .navbar-collapse li .menu-item-warning {
+    background-color transparentify($primary, $primary, .4)
+    border none
+    border-radius $border-radius
+  }
+
+}
+
+@media (max-width: 1180px) {
+  .main-single-listing.single-listing-style-2 {
+    top -205px
+  }
+
+  .single-listing-style-2 {
+    .lisner-listing-meta:last-child {
+      margin-top 10px
+    }
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 768px) {
+
+  .main-blog {
+    .container {
+      .col-lg-9 {
+        flex 0 0 65%
+        max-width 65%
+
+        .blog-masonry {
+          .col-sm-6 {
+            flex 0 0 50%
+            max-width 50%
+          }
+        }
+      }
+
+      .col-lg-3 {
+        flex 0 0 35%
+        max-width 35%
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .hero-category-heading h1, .hero-title h1 {
+    font-size 42px
+  }
+
+  #submit-job-form {
+    max-width 100%
+  }
+
+  .navbar-toggler {
+    i {
+      font-size 32px
+      color $white
+    }
+  }
+
+  .lisner-listing-likes {
+    top rem(15px)
+    right rem(15px)
+  }
+}
+
+@media (max-width: 1000px) {
+  .woocommerce-account,
+  .woocommerce-account.logged-in-admin {
+    .lisner-profile-header {
+      top auto
+    }
+
+    .lisner-profile-content {
+      margin-top 40px
+    }
+
+    .footer-copyrights {
+      margin 30px 0 50px
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 770px) {
+  .container-search-full .row > .listing-wrapper.map-active {
+    flex 1 1 68%
+    max-width 68%
+  }
+
+  .map-wrapper {
+    flex 1 1 33%
+    max-width 33%
+  }
+
+  .single-listing-taxonomies .single-listing-taxonomy i {
+    margin-right 5px
+  }
+
+  .single-listing-sidebar-template-1 section[class*=listing-widget-] {
+    padding 10px
+  }
+
+  .working-time-open + .working-time-open + .working-time-hours {
+    display none
+  }
+
+  .listing-widget-contact-listing form .form-group label {
+    padding 10px 3px
+    font-size 14px
+
+    i {
+      padding-right 4px
+    }
+  }
+
+  .lisner-listing-slider .lisner-listing-item {
+    width 30vw
+  }
+
+  .lisner-listing-slider .offset-1 {
+    margin-left 1%
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .listing-single-coupons {
+    margin -10px
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .lisner-listing-meta-rating {
+    margin-right 10px
+  }
+
+  .lisner-listing-meta-category a, .lisner-listing-meta-open a {
+    max-width 17px
+  }
+
+  .lisner-listing.theme-spacing.lisner-listing-template-9 {
+    .col-lg-9 {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .listing-single-coupon {
+    padding 35px 140px
+  }
+}
+
+@media (max-width: 1000px) {
+  body .prev-next {
+    display none
+  }
+
+  .single-listing-header .slick-arrow.slick-prev {
+    left 60px
+  }
+
+  .woocommerce-account {
+    main.main-profile {
+      padding-top 0
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body.logged-in-admin .search-template-2.container-search {
+    padding-top 53px
+  }
+
+  body .search-template-2.container-search {
+    padding-top 31px
+  }
+
+  body.logged-in-admin .search-template-2.container-search .map-wrapper.map-active {
+    top 118px
+  }
+
+  body .search-template-2.container-search .map-wrapper.map-active {
+    top 86px
+  }
+}
+
+@media (max-width: 768px) {
+  .lisner-bookings-payouts {
+    flex-wrap wrap
+    justify-content space-between
+
+    .lisner-bookings-payout-information {
+      flex 0 0 100%
+      max-width 100%
+    }
+
+    .lisner-bookings-payout-listing {
+      display flex
+      align-items center
+      flex 0 0 100%
+      max-width 100%
+      margin-top 10px
+
+      h6 {
+        margin-right 10px
+        margin-bottom 0
+      }
+
+      span {
+        font-size 24px
+      }
+    }
+  }
+
+  .single-listing-style-2 {
+    .single-listing-main-meta-action {
+      margin-right 0
+      margin-bottom 5px
+    }
+  }
+
+  .page-unit {
+    &.home.logged-in-admin {
+      .header-top {
+        top 46px
+      }
+    }
+  }
+
+  .header {
+    .pbs-navbar.navbar .navbar-brand {
+      margin 0
+    }
+
+    .navbar-toggler {
+      display flex
+      padding 0
+    }
+  }
+
+  .hero-search-template-6 .hero-search-field-button {
+    width 100%
+  }
+
+  .hero-category-style-5 {
+    margin-top 20px
+    flex 0 0 100%
+    max-width 100%
+    width 100%
+  }
+
+  .header-sticky {
+    position fixed
+    z-index 99999
+    width 100%
+  }
+
+  .logged-in.logged-in-admin {
+    .header-top {
+      top 46px
+    }
+  }
+
+  .logged-in-admin {
+    .menu-search-inner.active {
+      top 100px
+    }
+  }
+
+  .menu-search-inner.active {
+    top 54px
+  }
+
+  .hero-template-style-4 .hero-search .col-cst-padding.col-sm-4, .hero-template-style-5 .hero-search .col-cst-padding.col-sm-4 {
+    flex 0 0 40%
+    max-width 40%
+  }
+
+  .hero-template-style-4,
+  .hero-template-style-5 {
+    .hero-featured-taxonomies {
+      justify-content center
+    }
+  }
+
+  .hero-category-style-4 .hero-featured-taxonomy {
+    flex 0 0 15%
+    max-width 15%
+  }
+
+  .page-template-page-search.logged-in-admin .container-form {
+    top 100px
+  }
+
+  .hero-search {
+    width 65%
+  }
+
+  .hero-template-style-1 {
+    .hero-category-heading a, .hero-category-heading li, .hero-category-heading p, .hero-title a, .hero-title li, .hero-title p {
+      text-align left
+    }
+  }
+
+  .hero-featured-taxonomies {
+    flex-wrap wrap
+    justify-content flex-start
+  }
+
+  .hero-search-template-2 {
+    margin-top rem(60px)
+
+    .offset-lg-1 {
+      margin-top rem(40px)
+    }
+
+    .hero-category-heading {
+      p {
+        margin-bottom 0
+      }
+    }
+  }
+
+  .lisner-taxonomy-template-6 {
+    .lisner-taxonomy-wrapper {
+      margin-top 0
+    }
+
+    .col-lg-4 {
+      .lisner-taxonomy-item {
+        height 330px
+      }
+    }
+  }
+
+  .lisner-listing {
+    .col-lg-9 {
+      margin-top rem(60px)
+    }
+  }
+
+  .wpb_wrapper {
+    h2 {
+      font-size 28px
+    }
+  }
+
+  .lisner-post-meta {
+    margin-bottom 5px
+  }
+
+  .lisner-post-title {
+    line-height 1
+
+    a {
+      font-size 18px
+    }
+  }
+
+  .lisner-post-description {
+    font-size 14px
+  }
+
+  .lisner-listing-preview-wrapper {
+    width 100%
+
+    .map-preview {
+      width 50%
+    }
+
+    .lisner-listing-item:nth-child(n+2) {
+      margin-top 0
+    }
+  }
+
+  .single-listing-header .slick-dots {
+    bottom 35px
+  }
+
+  .listing-widget-contact-listing form .form-group .col-sm-10 {
+    .form-control {
+      margin-left 0
+    }
+  }
+
+  .listing-widget-contact-listing form .form-group label {
+    padding-right 0
+  }
+
+  .single .col-crp {
+    padding-right rem(15px)
+  }
+
+  .single .col-clp {
+    margin-top 20px
+    padding-left rem(15px)
+  }
+
+  .listing-packages {
+    justify-content flex-start
+
+    .col-sm-4 {
+      flex 0 0 48%
+      max-width 48%
+    }
+  }
+
+  .error404-content-form {
+    max-width 85%
+  }
+
+  /* shop */
+  .lisner-shop .product a h2 {
+    font-size 22px
+  }
+
+  .error404 .main-content .contact-info, .page-template-tpl-contact .main-content .contact-info {
+    padding-right 0
+    padding-left 0
+  }
+
+  .hero-category-heading h6, .hero-title h6,
+  .hero-category-heading h1, .hero-title h1 {
+    text-align left
+  }
+
+  .form-group-search-call {
+    display block
+  }
+
+  .search-filters-call {
+    button {
+      display flex
+      justify-content center
+      align-items center
+    }
+
+    &.active {
+      background-color $theme_light
+    }
+  }
+
+  .logged-in-admin {
+    .form-wrapper-inner {
+      &.active {
+        top 81px
+      }
+    }
+  }
+
+  .form-wrapper-inner {
+    display none
+
+    &.active {
+      display flex
+      position absolute
+      top 35px
+      left -15px
+      padding rem(10px) rem(30px)
+      width calc(100% + 30px)
+      background-color $white
+    }
+  }
+
+  .lisner_listings-load .listing-load-item,
+  .container-search-full .lisner_listings .listing-el.col-custom {
+    flex 0 0 50%
+    max-width 50%
+  }
+
+  .lisner_listings-load.map-active .listing-load-item,
+  .container-search-full .map-active .lisner_listings .listing-el.col-custom {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .main-profile .woocommerce {
+    .col-lg-8 {
+      padding-left rem(15px)
+    }
+
+    .col-lg-4 {
+      padding-right rem(15px)
+    }
+  }
+
+  .how-it-works-template-4 .tab-full, .how-it-works-template-4 .tab-part {
+    height 220px
+  }
+
+  .lisner-listing-slider .col-lg-11 {
+    flex 0 0 97%
+    max-width 97%
+    margin-left 0
+  }
+
+  .lisner-listing-slider .lisner-listing-item {
+    width 45vw
+  }
+
+  .lisner-taxonomy-slick .slick-track {
+    margin 0
+  }
+
+  .lisner-taxonomy-slick .slick-track .slick-slide {
+    opacity 1
+  }
+
+  .lisner-taxonomy-template-3 .col-lg-4.col-md-6,
+  .lisner-taxonomy-template-5 .col-lg-3.col-md-6 {
+    padding 0 7px
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item {
+    height 200px
+  }
+
+  .lisner-taxonomy-template-7 .lisner-terms-full .lisner-taxonomy-item {
+    height 265px
+  }
+
+  .how-it-works-template-1 {
+    min-height 330px
+  }
+}
+
+@media (max-width: 670px) {
+  .single-listing-meta > .row .col-sm-6:last-child {
+    flex 0 0 100%
+    max-width 100%
+    margin-left auto
+
+    .single-listing-meta-actions {
+      margin-top 10px
+      justify-content flex-start
+    }
+  }
+
+  .main-single-listing.single-listing-style-2 .single-listing-head {
+    padding 0
+  }
+
+  .lisner-listing-meta address {
+    max-width 100px
+  }
+
+  body.logged-in-admin .header .pbs-navbar.navbar .navbar-collapse li.menu-item-object-pebas_mega_menu .mega-menu-container {
+    top 103px
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse li.menu-item-object-pebas_mega_menu .mega-menu-container {
+    .col-3,
+    .col-9 {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse .mega-menu-container .mega-menu-item-figure {
+    border-radius $border-radius
+
+    img {
+      max-width 100%
+    }
+  }
+
+  body .header .pbs-navbar.navbar .navbar-collapse .mega-menu-container .nav-pills {
+    max-height 165px
+  }
+
+  .hero {
+    height 700px
+  }
+
+  .hero-template-style-1 {
+    .hero-search {
+      width 90%
+    }
+  }
+
+  .hero-search-template-9 {
+    bottom 50%
+    transform translateY(50%)
+  }
+
+  .hero-search-template-big .search-form-wrapper {
+    flex-wrap wrap
+
+    .search-form-field {
+      flex 0 0 100%
+      max-width 100%
+      margin-left 0
+      margin-bottom 2px
+    }
+  }
+
+  .hero-search-template-big .search-form-field-button button,
+  .hero-search-template-big .search-form-field:first-child .input-group-wrapper {
+    border-radius $border-radius
+  }
+
+  .hero-template-style-4 .hero-search .col-cst-padding.col-sm-4, .hero-template-style-5 .hero-search .col-cst-padding.col-sm-4 {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .hero-category-style-3 .hero-featured-taxonomy {
+    flex 0 0 15%
+    max-width 15%
+  }
+
+  .page-header-form, .search-page-form {
+    flex 0 0 100%
+    flex-wrap wrap
+  }
+
+  .page-header-form .hero-search-field:not(.hero-search-field-button):nth-child(2), .search-page-form .hero-search-field:not(.hero-search-field-button):nth-child(2) {
+    margin-top 9px
+    left auto
+
+    &::before {
+      display none
+    }
+  }
+
+  .page-header-form .hero-search-field-button {
+    margin-top 10px
+    width 100%
+
+    button.btn-small {
+      width 100%
+    }
+  }
+
+  .woocommerce-single-lisner .lisner-shop .lisner-product-entry-wrapper {
+    flex-direction column-reverse
+  }
+
+  .woocommerce-single-lisner .lisner-shop .lisner-product-entry-wrapper .images,
+  .woocommerce-single-lisner .lisner-shop .lisner-product-entry-wrapper .summary {
+    width 100%
+  }
+
+  .woocommerce-single-lisner .lisner-shop .woocommerce-tabs {
+    .col-4,
+    .col-8 {
+      flex 0 0 100%
+      width 100%
+      max-width 100%
+    }
+
+    .col-4 {
+      margin-bottom rem(15px)
+    }
+  }
+
+  .woocommerce-single-lisner .lisner-shop #review_form_wrapper form .comment-form-comment label {
+    width 50%
+  }
+
+  .woocommerce-single-lisner .lisner-shop .related.products {
+    margin-top 0
+  }
+
+  .woocommerce form.checkout #customer_details div[class*=col-] {
+    flex 0 0 100%
+    max-width 100%
+    margin-bottom rem(20px)
+  }
+
+  .page-default .main-content {
+    padding rem(25px)
+    overflow hidden
+  }
+
+  .woocommerce form .form-row label {
+    font-size 15px
+    line-height 1.3
+  }
+
+  .page-default .main-content-page-default p {
+    font-size 16px
+  }
+
+  .woocommerce ul.order_details li {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .hero-search {
+    width 90%
+  }
+
+  .hero-featured-taxonomy {
+    margin-bottom rem(10px)
+  }
+
+  .form-ajax.explore .form-wrapper {
+    padding-top rem(10px)
+    padding-bottom rem(10px)
+  }
+
+  .map-active {
+    &.map-wrapper {
+      top 115px
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .logged-in-admin {
+    .map-active {
+      &.map-wrapper {
+        top 160px
+      }
+    }
+  }
+
+  .lisner_listings-load .listing-load-item:not(:first-child) {
+    margin-top rem(15px)
+  }
+
+  .container-search {
+    padding-top 150px
+  }
+
+  .form-wrapper-inner.active {
+    top 60px
+    flex-wrap wrap
+    border-top 1px solid
+    border-color $border-color
+
+    .form-group:nth-child(n+4) {
+      margin-top rem(5px)
+    }
+  }
+
+  .order-filters-call {
+    margin-top rem(5px)
+    margin-right 3px
+  }
+
+  .logged-in-admin .form-wrapper-inner.active {
+    top 60px
+  }
+
+  .more-filters.active {
+    position fixed
+    top 66px
+    max-height 80vh
+    overflow-y auto
+    z-index 9
+  }
+
+  .logged-in-admin {
+    .more-filters.active {
+      top 112px
+    }
+  }
+
+  .more-filters-close {
+    display block
+  }
+
+  .lisner-profile-header__user-info {
+    display none
+  }
+
+  .lisner-listing-table-header {
+    flex-direction column
+  }
+
+  .lisner-profile-content .addresses {
+    flex-direction column
+  }
+
+  .lisner-profile-content .addresses div[class*=col-] {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .lisner-profile-content .woocommerce-address-fields__field-wrapper p {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .lisner-profile-content .woocommerce-address-fields__field-wrapper p#billing_address_2_field, .lisner-profile-content .woocommerce-address-fields__field-wrapper p#shipping_address_2_field {
+    margin-top rem(7px)
+  }
+
+  .how-it-works-template-4 h1.tab-alt-title {
+    font-size 32px
+  }
+
+  .lisner-listing-title-block {
+    margin-bottom 0
+  }
+
+  .page-header-form .hero-search-field-button .btn-small,
+  .page-header-form .hero-search-field:not(.hero-search-field-button):nth-child(2), .search-page-form .hero-search-field:not(.hero-search-field-button):nth-child(2) {
+    margin-left 0
+  }
+
+  .single-listing-taxonomies .single-listing-taxonomy {
+    flex 0 0 33%
+    max-width 33%
+  }
+
+  .lisner-listing-item.listing-style-list {
+    flex-wrap wrap
+  }
+
+  .container-search-full {
+    &.search-template-1 {
+      .map-active {
+        .listing-el.col-custom.listing-el-list .lisner-listing-figure {
+          flex 0 0 100%
+          max-width 100%
+          min-height 222px
+        }
+
+        &.listing-box-style-list .listing-load-item-content {
+          flex 0 0 100%
+          max-width 100%
+        }
+      }
+    }
+  }
+
+  .container-search-full.listing-box-style-list .row > .map-wrapper.map-active {
+    flex 0 0 100%
+    max-width 100%
+    width 100%
+  }
+
+  .listing-packages {
+    justify-content flex-start
+
+    .col-sm-4 {
+      flex 0 0 100%
+      max-width 100%
+
+      .listing-package-wrapper-distinctive {
+        top 0
+        margin 0
+        margin-bottom rem(30px)
+      }
+    }
+  }
+
+  .listing-user-packages {
+    width 80%
+  }
+
+  .lisner-coupon-form {
+    margin-top 0
+
+    .input-group {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .lisner-coupons .lisner-coupon {
+    .lisner-coupon-title,
+    .lisner-coupon-type {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .lisner-coupons .lisner-coupon .lisner-coupon-actions {
+    align-self flex-end
+    margin-left auto
+  }
+
+  .lisner-coupons .lisner-coupon-icon {
+    position absolute
+    right 25px
+    font-size 50px
+  }
+
+}
+
+@media (max-width 560px) {
+  .reviews-meta {
+    flex-wrap wrap
+
+    .single-listing-main-meta-action {
+      margin-top 10px
+      margin-left 0
+    }
+  }
+
+  .single-listing-meta-action.report-listing .dropdown-menu {
+    margin-right 60px
+    min-width 130px
+  }
+}
+
+@media (max-width 480px) and (min-width 430px) {
+  .single-listing-taxonomies .single-listing-taxonomy {
+    flex 0 0 50%
+    max-width 50%
+  }
+
+  .lisner-listing-meta-category a {
+    max-width 18px
+  }
+}
+
+@media (max-width 480px) {
+  .search-template-2 .filters,
+  .search-template-2:not(.container-search-full) div[class^=col-] .lisner_listings {
+    padding 0 20px
+  }
+
+  .woocommerce-account .lisner-profile-content, .woocommerce-account.logged-in-admin .lisner-profile-content {
+    padding 25px 20px
+  }
+
+  .lisner-bookings-payouts .lisner-bookings-payout-listing {
+    padding 6px 25px
+
+    h6 {
+      font-size 14px
+    }
+
+    span {
+      font-size 16px
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .page-default .container-packages .main-content {
+    padding 30px 0
+  }
+
+  .lisner-packages {
+    padding 0
+  }
+
+  .lisner-listing-item.listing-style-list {
+    flex-wrap wrap
+  }
+
+  .container-search-full.search-template-1 .lisner_listings .listing-el.col-custom.listing-el-list .lisner-listing-figure {
+    flex 0 0 100%
+    max-width 100%
+    min-height 222px
+  }
+
+  .search-template-1.listing-box-style-list .listing-load-item-content {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .search-template-1.listing-box-style-list .listing-load-item {
+    flex-wrap wrap
+  }
+
+  .search-template-1.listing-box-style-list .listing-load-item__figure {
+    flex 0 0 100%
+    max-width 100%
+    min-height 222px
+  }
+
+  .container-search-full.search-template-1 .lisner_listings .listing-el.col-custom.listing-el-list .lisner-listing-content {
+    flex 0 0 100%
+    max-width 100%
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-template-style-4 .hero-featured-taxonomies {
+    a {
+      margin 0 8px
+    }
+  }
+
+  .hero-category-style-4 {
+    top 0
+
+    .hero-featured-taxonomies {
+      justify-content flex-start
+    }
+  }
+
+  .hero-category-style-4 .hero-featured-taxonomy {
+    margin-top 5px
+    flex 1 1 20%
+    max-width 25%
+  }
+
+  .lisner-taxonomy-item {
+    height 220px
+  }
+
+  .lisner-taxonomy-item-2, .lisner-taxonomy-item-3, .lisner-taxonomy-item-5, .lisner-taxonomy-item-6, .lisner-taxonomy-item-8, .lisner-taxonomy-item-9 {
+    width 100%;
+    height 220px
+  }
+
+  .wpb_column {
+    .btn-primary {
+      margin-bottom rem(20px)
+    }
+  }
+
+  .lisner-clients {
+    padding rem(40px) 0
+  }
+
+  .lisner-listing-preview-modal {
+    .lisner-listing-preview-wrapper {
+      flex-wrap wrap
+
+      .lisner-listing-title-block,
+      .lisner-listing-meta {
+        margin-bottom rem(7px)
+      }
+
+      .lisner-listing-description {
+        margin-bottom rem(15px)
+      }
+
+      .lisner-listing-content {
+        padding rem(20px)
+      }
+
+      .lisner-listing-title {
+        h4,
+        a {
+          font-size 20px
+          line-height 1
+        }
+      }
+
+      .lisner-listing-item {
+        flex 0 0 100%
+        width 100%
+      }
+
+      .lisner-listing-figure {
+        height 200px
+        border-radius $border-radius $border-radius 0 0
+        overflow hidden
+      }
+
+      .map-preview {
+        height 200px
+        flex 0 0 100%
+        width 100%
+        border-radius 0 0 $border-radius $border-radius
+      }
+    }
+  }
+
+  .lisner-post-title a {
+    font-size 22px
+  }
+
+  .footer {
+    .col-xl-3:not(:first-child) {
+      aside {
+        margin-top rem(40px)
+      }
+    }
+  }
+
+  .lisner-listing-meta {
+    &:last-child {
+      flex-wrap wrap
+    }
+
+    address {
+      margin-top 15px
+    }
+  }
+
+  .single-listing-meta-actions {
+    justify-content flex-start
+    margin-top 15px
+  }
+
+  .single-listing-header .slick-arrow.slick-next {
+    top 42%
+    right 53px
+  }
+
+  .single-listing-header .slick-arrow::before {
+    font-size 25px
+  }
+
+  .single-listing-header .slick-arrow.slick-prev {
+    top 42%
+    left 20px
+  }
+
+  .single-listing-header .slick-dots {
+    bottom 55px
+  }
+
+  .single-listing section {
+    padding 40px
+  }
+
+  .single-listing-video .video-preview-loaded,
+  .single-listing-video-wrapper {
+    min-height 0
+  }
+
+  .single-listing-taxonomies:not(.taxonomy-listing_tag) .single-listing-taxonomy {
+    flex 0 0 50%
+    max-width 50%
+
+    &:nth-child(n+2) {
+      margin-top 15px
+    }
+  }
+
+  .reviews-meta {
+    flex-wrap wrap
+  }
+
+  .reviews-meta .single-listing-main-meta-action {
+    margin-top 15px
+    margin-left 0
+  }
+
+  .comment-respond .input-group label {
+    display none
+  }
+
+  .listing-widget-contact-listing form .form-group {
+    flex-wrap nowrap
+
+    .col-sm-10 {
+      flex 0 0 80%
+      max-width 80%
+    }
+  }
+
+  .listing-widget .widget-promo-image {
+    position relative
+    min-height 205px
+
+    img {
+      position absolute
+      top 0
+      left 0
+      height 100%
+      object-fit cover
+    }
+  }
+
+  .listing-submit-group .form-group-wrapper.d-flex.justify-content-between.align-content-center {
+    flex-wrap wrap
+  }
+
+  .job-manager-form fieldset.fieldset-listing_pricing_currency, .job-manager-form fieldset.fieldset-listing_pricing_from, .job-manager-form fieldset.fieldset-listing_pricing_to {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .working-hours-days-wrapper {
+    flex-wrap wrap
+    border none
+
+    .working-hours-day {
+      flex 0 0 33.3333%
+      max-width 33.3333%
+      border 1px solid
+      border-color $border-color
+
+      a {
+        border 0
+      }
+
+      &:nth-child(7),
+      &:nth-child(6),
+      &:nth-child(5),
+      &:nth-child(4) {
+        border-top 0
+      }
+
+      &:nth-child(1),
+      &:nth-child(5),
+      &:nth-child(4),
+      &:nth-child(2) {
+        border-right 0
+      }
+    }
+  }
+
+  .working-hours-day-options {
+    flex-wrap wrap
+    margin-top 15px
+  }
+
+  .working-hours-day-options .custom-control:not(:first-child) {
+    margin-left 7px
+  }
+
+  .working-hours-day-options .custom-control:nth-child(4) {
+    margin-left 0
+  }
+
+  .file-upload-wrapper {
+    font-size 16px
+    text-align center
+  }
+
+  .page-template-tpl-faq .card-header button {
+    font-size 14px
+  }
+
+  .page-template-tpl-faq .card-body {
+    font-size 13px
+  }
+
+  .page-template-tpl-faq .card-header {
+    flex-wrap wrap
+  }
+
+  .error404 .main-content {
+    padding 20px
+  }
+
+  .error404 .main-content .contact-info .info, .page-template-tpl-contact .main-content .contact-info .info {
+    margin-top 40px
+  }
+
+  .error404-content h2.error404-content-heading-title {
+    font-size 24px
+  }
+
+  .error404-content {
+    margin-top 40px
+  }
+
+  .error404-content h3 {
+    font-size 20px
+  }
+
+  .error404-content-form {
+    max-width 100%
+  }
+
+  .error404-content-form form .input-group-form label {
+    flex 0 0 40%
+    max-width 40%
+    font-size 14px
+  }
+
+  .error404-content-form form .input-group-form input {
+    font-size 14px
+  }
+
+  .error404 .main-content .contact-info .info, .page-template-tpl-contact .main-content .contact-info .info,
+  .error404 .main-content .contact-info, .page-template-tpl-contact .main-content .contact-info {
+    padding 0
+  }
+
+  .error404 .main-content .contact-info h4, .page-template-tpl-contact .main-content .contact-info h4 {
+    margin-bottom 15px
+  }
+
+  .page-template-tpl-contact .single-listing-main-meta-action {
+    margin 0
+  }
+
+  .main-single-listing.single-post section {
+    padding 30px
+
+    &:first-child {
+      margin 0
+    }
+  }
+
+  .single-listing-main-title h1 {
+    margin-bottom rem(10px)
+    font-size 32px
+  }
+
+  .main-single-listing.single-post section .single-listing-main-meta {
+    flex-direction column
+    align-items flex-start
+  }
+
+  .single-post .single-listing-main-meta-action {
+    margin-bottom rem(10px)
+  }
+
+  .single-listing-main-description p {
+    font-size 16px
+  }
+
+  .comment-respond .input-group .form-control:not(:disabled):not(.disabled) {
+    font-size 14px
+  }
+
+  .comment-respond .form-submit .submit {
+    margin-top 0
+    font-size 16px
+  }
+
+  .single-post .comments .single-listing-section-title {
+    margin-bottom rem(25px)
+  }
+
+  // shop
+  .post-type-archive-product .main-single-listing.single-post section:first-child {
+    padding rem(10px) 0 rem(20px)
+  }
+
+  .lisner-shop main {
+    padding rem(25px)
+  }
+
+  .lisner-shop .page-title {
+    margin-top rem(20px)
+  }
+
+  .woocommerce .row.row-cst-100 {
+    width auto
+  }
+
+  .woocommerce .main-single-listing.single-post section:first-child {
+    padding 0
+  }
+
+  .woocommerce-single-lisner .lisner-shop .site-main {
+    padding rem(20px)
+  }
+
+  .woocommerce-single-lisner .lisner-shop .single-listing-breadcrumbs {
+    padding-bottom rem(20px)
+  }
+
+  .form-ajax.explore .form-group {
+    margin-right rem(3px)
+  }
+
+  .more-filters-item-inner {
+    flex 0 0 33.33333%
+    max-width 33.33333%
+  }
+
+  .lisner_listings-load .listing-load-item,
+  .container-search-full .lisner_listings .listing-el.col-custom {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+    width 100%
+    float none
+  }
+
+  .how-it-works-template-4 .tab-wrapper {
+    flex-wrap wrap
+
+    > a {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+
+  .lisner-listing-slider .lisner-listing-item {
+    width 90vw
+  }
+
+  .lisner-listing .col-lg-9 {
+    margin-top 0
+  }
+
+  .lisner-listing-item.listing-style-list {
+    flex-direction column
+  }
+
+  .lisner-listing-item.listing-style-list .lisner-listing-figure {
+    height 222px
+  }
+
+  .lisner-listing-item.listing-style-list .lisner-listing-content,
+  .lisner-listing-item.listing-style-list .lisner-listing-figure {
+    flex 0 0 100%
+    max-width 100%
+  }
+
+  .lisner-listing-item.listing-style-small address {
+    margin-top 0
+    max-height: 17px;
+    max-width 95px
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow ellipsis
+  }
+
+  .lisner-listing-template-6 .lisner-listing-item.listing-style-small .lisner-listing-meta, .lisner-listing-template-7 .lisner-listing-item.listing-style-small .lisner-listing-meta {
+    align-items center
+  }
+
+  .lisner-listing-template-8 .list-col-6:not(:first-child) {
+    margin-top 20px
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item {
+    height 335px
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item a span, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item a span {
+    font-size 32px
+  }
+
+  .lisner-taxonomy-template-6 .col-lg-4 .lisner-taxonomy-item,
+  .lisner-taxonomy-template-6 .lisner-taxonomy-item {
+    height 235px
+  }
+
+  .how-it-works-tabs .nav {
+    margin-bottom 50px
+  }
+
+  .how-it-works-tabs .nav li {
+    flex 0 0 50%
+    max-width 50%
+
+    a {
+      padding-right 20px
+      padding-left 20px
+      font-size 16px
+      white-space nowrap
+    }
+  }
+
+  .how-it-works .lisner-video-ajax {
+    height 240px
+  }
+
+  .hero-category-heading h1, .hero-title h1 {
+    font-size 34px
+  }
+
+  .hero-category-style-2 {
+    flex-wrap wrap
+    justify-content flex-start
+    margin-top 20px
+    margin-bottom 0
+    margin-left 10px
+  }
+
+  .hero-featured-taxonomy-template-3 {
+    a {
+      margin-right 5px
+      margin-left 0
+    }
+  }
+
+  .hero-template-style-2 {
+    height 800px
+  }
+
+  .hero-search-template-2 {
+    margin-top 100px
+  }
+
+  .single-listing-main, .single-listing-style-2 {
+    .lisner-listing-meta-item:nth-child(4) {
+      margin-top 15px
+    }
+  }
+
+  .single-listing-main-meta {
+    margin-bottom 20px
+  }
+
+  .single-listing-header-style-2 {
+    height 440px
+  }
+
+  .single-listing-style-2 .single-listing-main-title h1 {
+    margin-bottom 0
+    font-size 28px
+  }
+
+  .main-single-listing.single-listing-style-2 {
+    top -405px
+    margin-bottom -305px
+
+    .single-listing-main-meta-action {
+      margin-right 0
+      margin-bottom 5px
+    }
+  }
+
+  .single-listing-header-style-3,
+  .single-listing-header-style-3 .single-header-gallery-item {
+    height 240px
+  }
+
+  .lisner-listing-title {
+    margin-bottom 10px
+  }
+
+  .title-block {
+    margin-bottom 0
+  }
+
+  .lisner-taxonomy-wrapper > .row {
+    width 100%
+  }
+
+  .hero-category-style-4 .hero-featured-taxonomies a:nth-child(5n) {
+    display none
+  }
+
+  .hero-category-heading h6, .hero-title h6 {
+    font-size 20px
+  }
+
+  .home.page .theme-spacing {
+    padding-top 5rem
+    padding-bottom 5rem
+  }
+
+  .how-it-works-template-4.how-it-works-template-4-style-2 a .tab-part {
+    padding 30px
+  }
+
+  .input-group-results ul li, .main-search-results ul li {
+    &.no-results {
+      display block
+    }
+  }
+
+  .input-group-results ul li {
+    span {
+      font-size 14px
+    }
+  }
+
+  .single-listing-header-style-3 + .single-listing-meta {
+    margin 0 25px
+  }
+
+  .single-listing-section-title {
+    line-height 1
+  }
+
+  .reviews {
+    .reviews-meta .lisner-listing-meta {
+      margin-left auto
+    }
+
+    .comment-images {
+      margin-top 15px
+    }
+
+    .comment-action {
+      margin-top 25px
+    }
+
+    .comment-action-like span {
+      font-size 12px
+    }
+
+    .comment-action-like a {
+      font-size 11px
+
+      > i {
+        font-size 19px
+      }
+    }
+  }
+
+  .review-form {
+    .comment-respond .form-submit {
+      margin-top 15px
+    }
+  }
+
+  .lisner-listing-meta address {
+    max-width 205px
+  }
+
+  .single-listing-taxonomies:not(.taxonomy-listing_tag) .single-listing-taxonomy:nth-child(n+2) {
+    margin-top 0
+  }
+
+  .single-listing-taxonomies:not(.taxonomy-listing_tag) .single-listing-taxonomy:nth-child(n+3) {
+    margin-top 10px
+  }
+
+  .address-map {
+    max-width 155px
+  }
+
+  .single-listing-meta-action.report-listing .dropdown-menu {
+    margin-right 20px
+    min-width 135px
+  }
+
+  .single-listing-main-meta .lisner-listing-meta-item .lisner-listing-price-range {
+    padding-left 0
+  }
+
+  .single-listing section {
+    padding 25px 25px 32px
+  }
+
+  .woocommerce .single-listing-breadcrumbs .breadcrumb ol.breadcrumb {
+    margin-bottom 10px
+    padding-bottom 10px
+  }
+
+  .single .lisner-shop .product {
+    padding 0
+  }
+
+  .sidebar-default, .single:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) {
+    padding-bottom 30px
+  }
+
+  .lisner-profile-content {
+    padding 25px
+  }
+
+  .error404 .main-content .map-preview, .page-template-tpl-contact .main-content .map-preview {
+    height 250px
+  }
+
+  .wpb_single_image .vc_single_image-wrapper {
+    margin 15px 0
+  }
+
+  .wpb_wrapper .wpb_wrapper h5 {
+    font-size 22px
+  }
+
+  .posts-category-filter .breadcrumb-item + .breadcrumb-item::before {
+    padding-right 2px
+  }
+
+  .posts-category-filter .breadcrumb-item a {
+    font-size 15px
+  }
+
+  .blog .blog-posts-row {
+    margin-bottom 30px
+  }
+
+  .blog-posts-row div[class^=col-xl-] {
+    padding 0 rem(15px)
+  }
+
+  .single-listing-meta-action span[class^=meta-bookmarks-text] {
+    display none
+  }
+
+  .single-listing-meta-action span.meta-bookmarks i {
+    right 0
+  }
+
+}
+
+@media (max-width: 380px) {
+  .header-hero-inner h1 {
+    font-size 38px
+  }
+
+  .header-hero-inner p {
+    font-size 20px
+  }
+
+  .page-default .main-content {
+    padding 30px
+  }
+
+  .hero-search-template-2 .hero-featured-taxonomies {
+    a {
+      &:nth-child(n+3) {
+        display none
+      }
+    }
+  }
+
+  .single-listing section:first-child {
+    margin-right 25px
+    margin-left 25px
+  }
+
+  .single-listing-main-title h1 {
+    font-size 30px
+  }
+
+  .working-time-open + .working-time-open + .working-time-hours {
+    display none
+  }
+
+  .listing-widget-contact-listing form .form-group .col-sm-10 {
+    flex 0 0 74%
+    max-width 74%
+  }
+
+  .listing-widget .widget-promo-title {
+    font-size 22px
+  }
+
+  .listing-widget .widget-promo-address {
+    align-items flex-start
+    line-height 1.3
+
+    i {
+      position relative
+      top 1px
+    }
+  }
+
+  .working-hours-day-options .custom-control:nth-child(n+3) {
+    margin-top 10px
+  }
+
+  .working-hours-day-options .custom-control:nth-child(n+2) {
+    margin-left 15px
+  }
+
+  .working-hours-day-options .custom-control:nth-child(3) {
+    margin-left 0
+  }
+
+  // shop
+  .woocommerce #respond input#submit, .woocommerce a.added_to_cart, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-size 13px
+  }
+
+  .btn-group-toggle .btn-explore, .btn-group-toggle .btn-explore-parent {
+  }
+
+  .explore {
+    .btn-group-toggle .btn i {
+    }
+
+    .select-wrapper-orderby,
+    .select-wrapper-price {
+      &::before {
+        display none
+      }
+
+      #orderby,
+      #price-range {
+        padding 0 10px
+      }
+    }
+
+    .form-wrapper-inner.active .form-group:nth-child(n+4) {
+      margin-top rem(3px)
+    }
+  }
+
+  .page-template-default .lisner-taxonomy-template-4 .lisner-taxonomy-item, .page-template-tpl-page-alternate .lisner-taxonomy-template-4 .lisner-taxonomy-item {
+    height 285px
+  }
+
+  .hero-category-style-5 .hero-featured-taxonomies .hero-featured-taxonomy {
+    flex 0 0 45%
+    max-width 45%
+  }
+
+  .hero-search-template-3.w-100 .col-9 .hero-category-heading, .hero-search-template-3.w-100 .col-9 .hero-category-heading, .hero-search-template-3.w-100 .col-9 .hero-title, .hero-search-template-3.w-100 .col-9 .hero-title {
+    h1, h6, p {
+      text-align left
+    }
+  }
+
+  .form-wrapper-inner {
+    .form-group {
+      flex 0 0 32%
+      max-width 32%
+    }
+  }
+
+  .explore .select2-container--default .select2-selection__rendered {
+    padding-left 15px
+  }
+
+  .btn-group-toggle .btn i {
+    margin-right 4px
+  }
+
+  .explore .form-wrapper-inner.active .form-group:nth-child(5n) {
+    flex 0 0 40%
+    max-width 40%
+    margin-top 5px
+  }
+
+  .explore .form-wrapper-inner.active .form-group:nth-child(7n) {
+    flex 0 0 14%
+    max-width 14%
+    margin-top 5px
+  }
+
+  .single-listing-header-style-2 {
+    height 430px
+  }
+
+  .single-listing-main-meta .lisner-listing-meta-item:nth-child(5) {
+
+  }
+
+  .single-listing-style-2 .single-listing-head {
+    padding 0
+  }
+
+  .single-listing-style-2 .lisner-listing-meta-item:nth-child(4) {
+    margin-top 0
+  }
+
+  .single-listing-style-2 .single-listing-main-meta .lisner-listing-meta-item:nth-child(5) {
+    width 100px
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+
+    address {
+      margin-top 0
+    }
+  }
+
+  .single-listing-style-2 .lisner-listing-meta-category.has-review, .lisner-listing-meta-open.has-review {
+    width 40px
+  }
+
+  .single-listing-style-2 .lisner-listing-meta:last-child {
+    flex-wrap nowrap
+  }
+
+  .lisner-listing-meta-rating {
+    margin-right 7px
+  }
+
+  .lisner-listing-preview-modal .lisner-listing-meta-category, .lisner-listing-preview-modal .lisner-listing-meta-open {
+    margin-right 0
+    padding 0 6px
+  }
+
+  .report-listing {
+    position absolute
+    top -35px
+    right 3px
+  }
+
+  .single-listing-meta-action.report-listing .dropdown-menu {
+    margin-right 80px
+  }
+}
+
+.hidden-on-mobile {
+  @media (max-width: 1030px) {
+    display none
+  }
+  @media (min-width: 1030px) {
+    .page-header-form, .search-page-form {
+      flex 0 0 100%
+      max-width 100%
+    }
+  }
+}

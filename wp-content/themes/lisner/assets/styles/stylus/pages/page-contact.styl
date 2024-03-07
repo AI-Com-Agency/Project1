@@ -1,0 +1,161 @@
+/*
+ |--------------------------------------------------------------------------
+ | 18. Pages / Contact Page Styles
+ |--------------------------------------------------------------------------
+ */
+
+.error404,
+.page-template-tpl-contact {
+    background-color $theme_light
+    .header-hero {
+        height 444px
+    }
+    .container-wrapped {
+        @media (min-width: 1024px) {
+            max-width 950px
+        }
+    }
+    .main-content {
+        position relative
+        top rem(-295px)
+        margin-bottom rem(-145px)
+        padding rem(40px)
+        background-color $white
+        border-radius $border-radius
+        box-shadow $box-shadow-listing
+        .contact-heading {
+            &-title {
+                h1 {
+                    margin 0
+                    font-weight 700
+                }
+            }
+        }
+        .map-preview {
+            margin rem(40px) rem(-40px)
+            height 400px
+        }
+        .contact-info {
+            padding rem(20px) rem(35px)
+            h4 {
+                margin-bottom rem(60px)
+                font-weight 700
+            }
+            .info {
+                padding-left rem(40px)
+                p {
+                    margin-bottom rem(10px)
+                    font-size 16px
+                    a {
+                        &:hover {
+                            color $primary
+                        }
+                        &[href*=tel] {
+                            color $tertiary
+                            &:hover {
+                                color $tertiary
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact-info-social {
+            display flex
+            flex-wrap wrap
+            margin-top rem(20px)
+            p {
+                flex 0 0 100%
+                max-width 100%
+            }
+            a {
+                margin-right rem(15px)
+                i {
+                    display flex
+                    justify-content center
+                    align-items center
+                    width 38px
+                    height 38px
+                    border 2px solid
+                    border-radius 50%
+                    font-size 24px
+                }
+                &:hover {
+                    text-decoration none
+                }
+                i[class*=facebook] {
+                    color $facebook
+                    border-color $facebook
+                }
+                i[class*=twitter] {
+                    color $twitter
+                    border-color $twitter
+                }
+                i[class*=google] {
+                    color $google
+                    border-color $google
+                }
+                i[class*=linkedin] {
+                    color $linkedin
+                    border-color $linkedin
+                }
+            }
+        }
+    }
+}
+
+.wpcf7 {
+    p {
+        label {
+            position relative
+            display flex
+            padding rem(10px) rem(20px)
+            background-color $theme_input_color
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            span:first-child {
+                flex 0 0 20%
+                max-width 20%
+                font-size 16px
+                font-weight 600
+                color $font_header_color
+                z-index 1
+                &::after {
+                    cotent ':'
+                }
+            }
+            span.wpcf7-form-control-wrap {
+                input,
+                textarea {
+                    position relative
+                    top -3px
+                    width 100%
+                    max-height 145px
+                    background-color transparent
+                    border none
+                    font-size 16px
+                    color $font_color
+                    &:focus {
+                        outline 0
+                        box-shadow none
+                    }
+                }
+            }
+        }
+    }
+    input[type=submit] {
+        margin-top rem(20px)
+        padding rem(8px) rem(32px)
+        background-color $primary
+        border none
+        border-radius $border-radius
+        font-weight 600
+        color $white
+        cursor pointer
+        &:hover {
+            background-color $primary
+            box-shadow $box-shadow
+        }
+    }
+}

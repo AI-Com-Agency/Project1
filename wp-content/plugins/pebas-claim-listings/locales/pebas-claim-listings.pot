@@ -1,0 +1,600 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: pebas® Claim Listings\n"
+"POT-Creation-Date: 2018-10-26 19:06+0200\n"
+"PO-Revision-Date: 2018-09-29 16:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: pebas-claim-listings.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/claim-submit/pebas_claim_submit_form.php:84
+msgid "Login / Register"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:88
+msgid "Register Account &rarr;"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:91
+#: includes/settings/pebas_claim_listings_settings.php:73
+msgid "Claim Listing"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:95
+msgid "Submit Claim &rarr;"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:98
+msgid "Claim Detail"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:187
+msgid "Security nonce not valid."
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:193
+msgid "Email field is required."
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:211
+#, php-format
+msgid "Invalid Password: %s"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:217
+msgid "Passwords must match."
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:237
+msgid "You must be logged in to claim a listing"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:252
+#: templates/claim-view.php:24
+msgid "Claim Information"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:271
+msgid "Cancel"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:356
+#: templates/claim-view.php:26
+msgid "Listing to claim"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:400
+msgid "Additional Information"
+msgstr ""
+
+#: includes/claim-submit/pebas_claim_submit_form.php:425
+msgid "Please explain in detail, so we can verify your claim."
+msgstr ""
+
+#: includes/claim/pebas_claim.php:41
+msgid "Approved"
+msgstr ""
+
+#: includes/claim/pebas_claim.php:42
+msgid "Pending"
+msgstr ""
+
+#: includes/claim/pebas_claim.php:43
+msgid "Declined"
+msgstr ""
+
+#: includes/claim/pebas_claim.php:101 includes/claim/pebas_claim_admin.php:132
+msgid "Unknown"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:108
+msgid "Status"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:109
+msgid "Claimed Listing"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:110
+msgid "Claimer"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:160
+msgid "All claim statuses"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:206
+#: includes/claim/pebas_claim_admin.php:209
+msgid "Claim updated."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:207
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:208
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:210
+#, php-format
+msgid "Claim restored to revision from %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:211
+msgid "Claim published."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:212
+msgid "Claim saved."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:213
+msgid "Claim submitted."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:215
+#, php-format
+msgid "Claim scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:216
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:218
+msgid "Claim draft updated."
+msgstr ""
+
+#: includes/claim/pebas_claim_admin.php:221
+msgid "Return to claims"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:53
+msgid "Listing Claim"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:54
+#: includes/listing/pebas_listing_meta.php:63
+msgid "Listing Claims"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:69
+#: includes/claim/pebas_claim_install.php:70
+#: includes/claim/pebas_claim_install.php:71
+#: includes/claim/pebas_claim_install.php:72
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:73
+msgid "Add New"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:74
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:75
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:76
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:77
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:78
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:79
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:80
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:81
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: includes/claim/pebas_claim_install.php:82
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:55
+#: includes/claim/pebas_claim_meta.php:64
+#: includes/claim/pebas_claim_meta.php:75
+#: includes/listing/pebas_listing_meta.php:49
+msgid "Listing Claim Status"
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:57
+msgid "Choose listing template that will be used for listing single page."
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:78
+msgid "Choose claimed listing from the list of available ones"
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:82
+msgid "Listing Claimed By"
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:84
+msgid "Choose which user has claimed the listing"
+msgstr ""
+
+#: includes/claim/pebas_claim_meta.php:89
+msgid "Listing Claim Information"
+msgstr ""
+
+#: includes/listing/pebas_listing_admin.php:49
+msgid "Claimed?"
+msgstr ""
+
+#: includes/listing/pebas_listing_admin.php:66
+msgid "Verified listing"
+msgstr ""
+
+#: includes/listing/pebas_listing_claim.php:70
+msgid "Claim this listing"
+msgstr ""
+
+#: includes/listing/pebas_listing_claim.php:173
+#, php-format
+msgid "View %s Claim"
+msgstr ""
+
+#: includes/listing/pebas_listing_claim.php:193
+msgid "Verified Listing"
+msgstr ""
+
+#: includes/listing/pebas_listing_meta.php:51
+msgid "Choose whether the listing has been claimed by its owner"
+msgstr ""
+
+#: includes/listing/pebas_listing_meta.php:56
+msgid "Listing Claim History"
+msgstr ""
+
+#: includes/listing/pebas_listing_meta.php:93
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: includes/listing/pebas_listing_meta.php:95
+msgid "by Guest"
+msgstr ""
+
+#: includes/listing/pebas_listing_meta.php:101
+msgid "No Claims Found"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:73
+msgid "Your Claim Information"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:113
+msgid "[WP Job Man] New Claim Submitted"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:161
+msgid "Your Claim For \"%listing_title%\" is %claim_status%"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:217
+msgid "[WP Job Man] Claim for %listing_title% is updated to %claim_status%"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:324
+msgid ""
+"Hi %claimer_name%,\n"
+"On %claim_date% you submitted a claim for a listing. Here's the details.\n"
+"\n"
+"Listing URL: %listing_url%\n"
+"Claimed by: %claimer_name%\n"
+"Claim Status: %claim_status%\n"
+"\n"
+"You can also view your claim online: %claim_url%\n"
+"\n"
+"Thank you.\n"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:338
+msgid ""
+"Hi Admin,\n"
+"New claim submitted, here's the details.\n"
+"\n"
+"Listing URL: %listing_url%\n"
+"Claimed by: %claimer_name%\n"
+"Claim Status: %claim_status%\n"
+"\n"
+"Edit Claim: %claim_edit_url%\n"
+"\n"
+"Thank you.\n"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:352
+msgid ""
+"Hi %claimer_name%,\n"
+"On %claim_date% you submitted a claim for a listing. Your claim status is "
+"updated. Here's the details.\n"
+"\n"
+"Listing URL: %listing_url%\n"
+"Claimed by: %claimer_name%\n"
+"\n"
+"Previous Claim Status: %claim_status_old%\n"
+"New Claim Status: %claim_status%\n"
+"\n"
+"Thank you.\n"
+msgstr ""
+
+#: includes/notification/pebas_claim_notification.php:370
+msgid ""
+"Hi Admin,\n"
+"Claim status for listing %listing_title% is updated, here's the details.\n"
+"\n"
+"Listing URL: %listing_url%\n"
+"Claimed by: %claimer_name%\n"
+"\n"
+"Previous Claim Status: %claim_status_old%\n"
+"New Claim Status: %claim_status%\n"
+"\n"
+"You can edit this claim: %claim_edit_url%\n"
+"\n"
+"Thank you.\n"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:75
+msgid "Pending Purchase"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:76
+msgid "Pending Order"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:77
+msgid "Order Completed"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:149
+msgid "Use for Claiming a Listing"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:150
+msgid ""
+"Allow this package to be a option for claiming a listing. These packages "
+"will not appear on the standard listing submission form."
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:176
+msgid "Claimed Listing?"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:177
+msgid ""
+"Automatically be mark listing as claimed/verified if user completed the "
+"purchase."
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:213
+msgid "Order"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim.php:245
+#: includes/pebas-paid-listings/pebas_pl_meta.php:93
+msgid "Cannot retrieve order."
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_checkout.php:54
+#: includes/pebas-paid-listings/pebas_pl_claim_checkout.php:72
+msgid "Claim By"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_checkout.php:73
+msgid "Guest"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:72
+msgid "Choose a package"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:76
+msgid "Checkout &rarr;"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:177
+msgid "Order ID"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:192
+msgid "Package"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:206
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:223
+msgid "Invalid Package"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_form.php:214
+msgid "No package available to purchase."
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_claim_order.php:172
+#: includes/pebas-paid-listings/pebas_pl_claim_order.php:206
+msgid "Automatically verified with initial purchase."
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_meta.php:55
+msgid "Listing Paid Claim Information"
+msgstr ""
+
+#: includes/pebas-paid-listings/pebas_pl_meta.php:72
+msgid "No Order Found"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:66
+msgid "Claim Listing Page"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:67
+msgid ""
+"Select the page where you have placed the [claim_listing] shortcode "
+"(required)."
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:81
+msgid "Claim Own Listing"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:82
+msgid "Allow non-claimed listings to be claimed by the same owner."
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:83
+msgid "If enabled user can claim their own listing."
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:92
+msgid "Paid Claims"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:93
+msgid "Require a purchase"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:94
+msgid "A listing is claimed by purchasing a listing package."
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:103
+msgid "New Claim Email Content For Claimer"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:104
+msgid ""
+"Available tag: <br/> %claimer_name%, %claim_date%, %listing_url%, "
+"%claim_status%, %claim_url%"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:112
+msgid "New Claim Email Content For Admin"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:113
+msgid ""
+"Available tag: <br/> %claimer_name%, %claim_date%, %listing_url%, "
+"%claim_status%, %claim_url%, %claim_edit_url%"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:121
+msgid "Status Update Email Content For Claimer"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:122
+msgid ""
+"Available tag: <br/> %claimer_name%, %claim_date%, %listing_url%, "
+"%claim_status%, %claim_status_old%, %claim_url%"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:130
+msgid "Status Update Email Content For Admin"
+msgstr ""
+
+#: includes/settings/pebas_claim_listings_settings.php:131
+msgid ""
+"Available tag: <br/> %claimer_name%, %claim_date%, %listing_url%, "
+"%claim_status%, %claim_status_old%, %claim_url%, %claim_edit_url%"
+msgstr ""
+
+#: pebas-claim-listings.php:54
+msgid ""
+"<strong>pebas® claim listings</strong> requires <strong>Lisner Core & "
+"WooCommerce</strong> plugins to be installed in order to be used."
+msgstr ""
+
+#: pebas-claim-listings.php:96
+msgid "This plugin requires WP Job Manager installed."
+msgstr ""
+
+#: templates/claim-view.php:18
+#, php-format
+msgid "Listing has already been claimed. Status is %s."
+msgstr ""
+
+#: templates/claim-view.php:37
+msgid "Claimed by"
+msgstr ""
+
+#: templates/claim-view.php:44
+msgid "Submitted on"
+msgstr ""
+
+#: templates/claim-view.php:52
+msgid "Claim data"
+msgstr ""
+
+#: templates/package-element.php:19
+msgid "Free"
+msgstr ""
+
+#: templates/package-element.php:28
+msgid "unlimited"
+msgstr ""
+
+#: templates/package-element.php:53
+msgid "Claim now"
+msgstr ""
+
+#: templates/package-selection.php:53
+msgid "No packages found"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "pebas® Claim Listings"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/pebas-claim-listings"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "pebas® Claim Listings plugin used for pebas® listing themes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""

@@ -1,0 +1,45 @@
+{
+  "name": "Lisner",
+  "version": "1.0.0",
+  "description": "Lisner - Directory Listing WordPress theme dependencies loader",
+  "main": "/assets/scripts/theme.js",
+  "respository": "https://bane_powerthemes@bitbucket.org/bane_powerthemes/lisner.git",
+  "private": true,
+  "scripts": {
+    "start": "webpack"
+  },
+  "keywords": [
+    "lisner",
+    "directory-listing",
+    "directory"
+  ],
+  "author": "pebas",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "babel": "^6.23.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-install": "^1.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.2.0",
+    "postcss-preset-env": "^5.3.0",
+    "rucksack-css": "^1.0.2",
+    "tiny-lr": "^1.1.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-style-extract": "^1.0.2",
+    "npm": "^6.5.0",
+    "update": "^0.7.4"
+  }
+}

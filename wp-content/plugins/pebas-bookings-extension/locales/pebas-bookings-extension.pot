@@ -1,0 +1,1252 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: pebas® Booking Extension\n"
+"POT-Creation-Date: 2018-10-26 19:05+0200\n"
+"PO-Revision-Date: 2018-10-18 15:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: pebas-bookings-extension.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/pebas_booking.php:222 templates/booking-orders-past.php:27
+msgid "Upcoming Bookings"
+msgstr ""
+
+#: includes/pebas_booking.php:235 includes/pebas_booking.php:238
+#: templates/booking-orders.php:28
+msgid "Past Bookings"
+msgstr ""
+
+#: includes/pebas_booking.php:262
+msgid "Listing product already exists"
+msgstr ""
+
+#: includes/pebas_booking.php:271
+#, php-format
+msgid "%s - Booking Product"
+msgstr ""
+
+#: includes/pebas_booking.php:276
+msgid "Product created"
+msgstr ""
+
+#: includes/pebas_booking.php:279 includes/pebas_booking.php:379
+#: includes/pebas_booking.php:478 includes/pebas_booking.php:482
+msgid ""
+"Something has not being set up properly. Please contact site administrator."
+msgstr ""
+
+#: includes/pebas_booking.php:376
+msgid "Product Updated"
+msgstr ""
+
+#: includes/pebas_booking.php:475
+msgid "Booking appointment has been confirmed!"
+msgstr ""
+
+#: payouts/class-paypal.php:27
+msgid ""
+"API username, API password, APi signature and Cancel URL can not be blank."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:68
+#, php-format
+msgid "Payout for: %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:148
+msgid "Booking Order"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:149
+msgid "Booking ID"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:150
+msgid "Order"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:151
+msgid "Customer PayPal"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:152 templates/booking-orders.php:44
+msgid "Amount Due"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:153 templates/booking-orders.php:45
+msgid "Actions"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:186
+msgid ""
+"User does not have PayPal email address set, click on below email to send "
+"them a message about it."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:196
+#, php-format
+msgid "Booking: #%s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:204
+#, php-format
+msgid "Order: #%s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:211
+#, php-format
+msgid "<strong>Base: </strong> %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:213
+#, php-format
+msgid "<strong>Site Tax: </strong> %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:215
+#, php-format
+msgid "<strong>Total Due: </strong> %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:224
+msgid ""
+"Are you sure you wish to send the payment to this user? This action is "
+"irreversible."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:225
+msgid "Send Payment"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:228
+msgid "Payment sent"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:276
+msgid "Payment Sent"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:318
+#, php-format
+msgid "Payment to user %s has been sent."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:320
+#, php-format
+msgid "User %s has not set their paypal email address."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:334
+msgid "Payments Sent"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:353
+msgid ""
+"Are you sure you wish to proceed with mass payment? This action is "
+"irreversible."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:353
+msgid "Send Payment To All"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:397
+#: payouts/class-pebas-payouts-admin.php:400
+msgid "Booking Payout updated."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:398
+msgid "Custom field updated."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:399
+msgid "Custom field deleted."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:401
+#, php-format
+msgid "Booking Payout restored to revision from %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:402
+msgid "Booking Payout published."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:403
+msgid "Booking Payout saved."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:404
+msgid "Booking Payout submitted."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:406
+#, php-format
+msgid "Booking Payout scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:407
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:409
+msgid "Booking Payout draft updated."
+msgstr ""
+
+#: payouts/class-pebas-payouts-admin.php:412
+msgid "Return to payments"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:50
+msgid "PayPal Payouts"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:52
+msgid "PayPal Email Address"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:83
+msgid "Send Payout"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:84
+msgid "Send Payouts"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:99
+#: payouts/class-pebas-payouts-install.php:100
+#: payouts/class-pebas-payouts-install.php:101
+#: payouts/class-pebas-payouts-install.php:102
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:103
+msgid "Add New Payout"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:104
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:105
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:106
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:107
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:108
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:109
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:110
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:111
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: payouts/class-pebas-payouts-install.php:112
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:52
+msgid "Booking"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:56
+msgid "Booking for which payment is due."
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:60
+msgid "Customer PayPal Address"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:63
+msgid "Choose which user has reported the listing"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:67
+msgid "Amount Due to Pay"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:70
+msgid "Payment amount that needs to be sent"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:75
+msgid "Booking Payout Information"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:85
+msgid "Payout Status"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:87
+msgid "Choose listing report status"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:89
+msgid "Unpaid"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:90
+msgid "Paid"
+msgstr ""
+
+#: payouts/class-pebas-payouts-meta.php:97
+msgid "Booking Payout Status"
+msgstr ""
+
+#: pebas-bookings-extension.php:53
+msgid ""
+"<strong>pebas® bookings extension</strong> requires <strong>Lisner Core, "
+"WooCommerce & WooCommerce Bookings</strong> plugins to be activated in order "
+"to work properly."
+msgstr ""
+
+#: pebas-bookings-extension.php:102
+msgid "This plugin requires WP Job Manager installed."
+msgstr ""
+
+#: pebas-bookings-extension.php:150
+msgid "Are you sure you want to remove this person type?"
+msgstr ""
+
+#: pebas-bookings-extension.php:153
+msgid "Are you sure you want to remove this resource?"
+msgstr ""
+
+#: pebas-bookings-extension.php:156
+msgid "minutes"
+msgstr ""
+
+#: pebas-bookings-extension.php:157
+msgid "hours"
+msgstr ""
+
+#: pebas-bookings-extension.php:158
+msgid "days"
+msgstr ""
+
+#: pebas-bookings-extension.php:159
+msgid "Enter a name for the new resource"
+msgstr ""
+
+#: pebas-bookings-extension.php:192
+msgid "Processing..."
+msgstr ""
+
+#: templates/booking-order.php:23
+#, php-format
+msgid "Booking #%d"
+msgstr ""
+
+#: templates/booking-order.php:27
+msgid "Booking Orders"
+msgstr ""
+
+#: templates/booking-order.php:33
+msgid "General Details"
+msgstr ""
+
+#: templates/booking-order.php:36
+msgid "Order ID:"
+msgstr ""
+
+#: templates/booking-order.php:40
+msgid "Booking status:"
+msgstr ""
+
+#: templates/booking-orders-past.php:35 templates/booking-orders.php:36
+msgid "Status"
+msgstr ""
+
+#: templates/booking-orders-past.php:35 templates/booking-orders.php:36
+msgid "<span class=\"status_head tips\" data-tip=\""
+msgstr ""
+
+#: templates/booking-orders-past.php:36 templates/booking-orders.php:37
+msgid "ID"
+msgstr ""
+
+#: templates/booking-orders-past.php:37 templates/booking-orders.php:38
+msgid "Booked"
+msgstr ""
+
+#: templates/booking-orders-past.php:38
+msgid "# of Persons"
+msgstr ""
+
+#: templates/booking-orders-past.php:39 templates/booking-orders.php:40
+msgid "Booked By"
+msgstr ""
+
+#: templates/booking-orders-past.php:40 templates/booking-orders.php:41
+msgid "Order Status"
+msgstr ""
+
+#: templates/booking-orders-past.php:41 templates/booking-orders.php:42
+msgid "Start Date"
+msgstr ""
+
+#: templates/booking-orders-past.php:42 templates/booking-orders.php:43
+msgid "End Date"
+msgstr ""
+
+#: templates/booking-orders-past.php:78 templates/booking-orders.php:81
+msgid "N/A"
+msgstr ""
+
+#: templates/booking-orders-past.php:109 templates/booking-orders-past.php:115
+#: templates/booking-orders.php:112 templates/booking-orders.php:118
+msgid "Date:"
+msgstr ""
+
+#: templates/booking-orders-past.php:110 templates/booking-orders-past.php:116
+#: templates/booking-orders.php:113 templates/booking-orders.php:119
+msgid "Time:"
+msgstr ""
+
+#: templates/booking-orders-past.php:130 templates/booking-orders.php:189
+msgid "Previous"
+msgstr ""
+
+#: templates/booking-orders-past.php:135 templates/booking-orders.php:194
+msgid "Next"
+msgstr ""
+
+#: templates/booking-orders-past.php:143 templates/booking-orders.php:202
+msgid "No bookings available yet."
+msgstr ""
+
+#: templates/booking-orders.php:39
+msgid "# Persons"
+msgstr ""
+
+#: templates/booking-orders.php:131
+#, php-format
+msgid "Base: %s"
+msgstr ""
+
+#: templates/booking-orders.php:133
+#, php-format
+msgid "Site Tax: %s"
+msgstr ""
+
+#: templates/booking-orders.php:136
+#, php-format
+msgid "Payment Received: <strong> %s </strong>"
+msgstr ""
+
+#: templates/booking-orders.php:138
+#, php-format
+msgid "Total Due: <strong> %s </strong>"
+msgstr ""
+
+#: templates/booking-orders.php:158
+msgid "Confirm Availability"
+msgstr ""
+
+#: templates/booking-product.php:39
+msgid "Bookable Product"
+msgstr ""
+
+#: templates/booking-product.php:42
+msgid "You can select:"
+msgstr ""
+
+#: templates/booking-product.php:44
+msgid "Virtual"
+msgstr ""
+
+#: templates/booking-product.php:50
+msgid "Has Persons"
+msgstr ""
+
+#: templates/booking-product.php:56
+msgid "Has Resources"
+msgstr ""
+
+#: templates/booking-product.php:62
+msgid "Disabled"
+msgstr ""
+
+#: templates/booking-product.php:80
+msgid "General"
+msgstr ""
+
+#: templates/booking-product.php:84
+msgid "Shipping"
+msgstr ""
+
+#: templates/booking-product.php:89
+#: templates/tabs/html-booking-product-resources.php:47
+msgid "Resources"
+msgstr ""
+
+#: templates/booking-product.php:93
+msgid "Availability"
+msgstr ""
+
+#: templates/booking-product.php:97
+msgid "Costs"
+msgstr ""
+
+#: templates/booking-product.php:101
+msgid "Persons"
+msgstr ""
+
+#: templates/booking-product.php:138 templates/booking-product.php:141
+msgid "Update Booking Product"
+msgstr ""
+
+#: templates/booking-product.php:154
+msgid "The listing product is not existant"
+msgstr ""
+
+#: templates/payout-information.php:42
+msgid "Payments Received:"
+msgstr ""
+
+#: templates/payout-information.php:48
+msgid "Payments Due:"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:5
+#: templates/tabs/html-booking-pricing-fields.php:9
+msgid "January"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:6
+#: templates/tabs/html-booking-pricing-fields.php:10
+msgid "February"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:7
+#: templates/tabs/html-booking-pricing-fields.php:11
+msgid "March"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:8
+#: templates/tabs/html-booking-pricing-fields.php:12
+msgid "April"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:9
+#: templates/tabs/html-booking-pricing-fields.php:13
+msgid "May"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:10
+#: templates/tabs/html-booking-pricing-fields.php:14
+msgid "June"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:11
+#: templates/tabs/html-booking-pricing-fields.php:15
+msgid "July"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:12
+#: templates/tabs/html-booking-pricing-fields.php:16
+msgid "August"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:13
+#: templates/tabs/html-booking-pricing-fields.php:17
+msgid "September"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:14
+#: templates/tabs/html-booking-pricing-fields.php:18
+msgid "October"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:15
+#: templates/tabs/html-booking-pricing-fields.php:19
+msgid "November"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:16
+#: templates/tabs/html-booking-pricing-fields.php:20
+msgid "December"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:20
+#: templates/tabs/html-booking-pricing-fields.php:24
+#: templates/tabs/html-booking-product-availability.php:131
+msgid "Monday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:21
+#: templates/tabs/html-booking-pricing-fields.php:25
+#: templates/tabs/html-booking-product-availability.php:132
+msgid "Tuesday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:22
+#: templates/tabs/html-booking-pricing-fields.php:26
+#: templates/tabs/html-booking-product-availability.php:133
+msgid "Wednesday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:23
+#: templates/tabs/html-booking-pricing-fields.php:27
+#: templates/tabs/html-booking-product-availability.php:134
+msgid "Thursday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:24
+#: templates/tabs/html-booking-pricing-fields.php:28
+#: templates/tabs/html-booking-product-availability.php:135
+msgid "Friday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:25
+#: templates/tabs/html-booking-pricing-fields.php:29
+#: templates/tabs/html-booking-product-availability.php:136
+msgid "Saturday"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:26
+#: templates/tabs/html-booking-pricing-fields.php:30
+#: templates/tabs/html-booking-product-availability.php:130
+msgid "Sunday"
+msgstr ""
+
+#. translators: 1: week number
+#: templates/tabs/html-booking-availability-fields.php:31
+#: templates/tabs/html-booking-pricing-fields.php:35
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:47
+#: templates/tabs/html-booking-pricing-fields.php:60
+msgid "Date range"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:48
+#: templates/tabs/html-booking-pricing-fields.php:61
+msgid "Range of months"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:49
+#: templates/tabs/html-booking-pricing-fields.php:62
+msgid "Range of weeks"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:50
+#: templates/tabs/html-booking-pricing-fields.php:63
+msgid "Range of days"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:51
+#: templates/tabs/html-booking-pricing-fields.php:67
+msgid "Time Ranges"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:52
+#: templates/tabs/html-booking-pricing-fields.php:68
+msgid "Time Range (all week)"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:53
+#: templates/tabs/html-booking-pricing-fields.php:69
+msgid "Date Range with time"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:105
+#: templates/tabs/html-booking-availability-fields.php:106
+#: templates/tabs/html-booking-pricing-fields.php:130
+#: templates/tabs/html-booking-pricing-fields.php:131
+msgid "to"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:155
+msgid "No"
+msgstr ""
+
+#: templates/tabs/html-booking-availability-fields.php:156
+msgid "Yes"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:8
+msgid "Unlink"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:9
+#: templates/tabs/html-booking-resource.php:12
+msgid "Click to toggle"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:20
+msgid "Person Type Name"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:21
+msgid "Name"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:24
+#: templates/tabs/html-booking-resource.php:24
+msgid "Base Cost"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:30
+#: templates/tabs/html-booking-resource.php:33
+msgid "Block Cost"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:40
+msgid "Description"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:44
+msgid "Min"
+msgstr ""
+
+#: templates/tabs/html-booking-person.php:48
+msgid "Max"
+msgstr ""
+
+#: templates/tabs/html-booking-pricing-fields.php:64
+msgid "Time Range"
+msgstr ""
+
+#: templates/tabs/html-booking-pricing-fields.php:65
+msgid "Person count"
+msgstr ""
+
+#: templates/tabs/html-booking-pricing-fields.php:66
+msgid "Block count"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:22
+msgid "Max bookings per block"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:23
+msgid ""
+"The maximum bookings allowed for each block. Can be overridden at resource "
+"level."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:35
+msgid "Minimum block bookable"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:40
+#: templates/tabs/html-booking-product-availability.php:52
+#: templates/tabs/html-booking-product-general.php:35
+#: templates/tabs/html-booking-product-general.php:120
+msgid "Month(s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:41
+#: templates/tabs/html-booking-product-availability.php:53
+msgid "Week(s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:42
+#: templates/tabs/html-booking-product-availability.php:54
+#: templates/tabs/html-booking-product-general.php:36
+#: templates/tabs/html-booking-product-general.php:121
+msgid "Day(s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:43
+#: templates/tabs/html-booking-product-availability.php:55
+#: templates/tabs/html-booking-product-general.php:37
+#: templates/tabs/html-booking-product-general.php:122
+msgid "Hour(s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:44
+#: templates/tabs/html-booking-product-availability.php:56
+msgid "into the future"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:47
+msgid "Maximum block bookable"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:59
+msgid "Require a buffer period of"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:64
+msgid "between bookings"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:72
+msgid "Adjacent Buffering?"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:73
+msgid ""
+"By default buffer period applies forward into the future of a booking. "
+"Enabling this option will apply adjacently (before and after Bookings)."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:80
+msgid "All dates are..."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:84
+msgid "available by default"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:85
+msgid "not-available by default"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:87
+msgid "This option affects how you use the rules below."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:94
+msgid "Check rules against..."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:98
+msgid "All blocks being booked"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:99
+msgid "The starting block only"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:101
+msgid "This option affects how bookings are checked for availability."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:106
+msgid "First block starts at..."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:116
+msgid "Restrict start and end days?"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:117
+msgid ""
+"Restrict bookings so that they can only start on certain days of the week. "
+"Does not affect availability."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:166
+#: templates/tabs/html-booking-product-pricing.php:72
+msgid "Range type"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:167
+#: templates/tabs/html-booking-product-pricing.php:73
+msgid "Range"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:170
+msgid "Bookable"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:171
+msgid ""
+"If not bookable, users won't be able to choose this block for their booking."
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:173
+msgid "Priority"
+msgstr ""
+
+#: templates/tabs/html-booking-product-availability.php:187
+#: templates/tabs/html-booking-product-pricing.php:89
+msgid "Add Range"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:20
+msgid "Booking Display Title"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:25
+msgid "Booking duration"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:28
+msgid "Fixed blocks of"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:29
+msgid "Customer defined blocks of"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:38
+#: templates/tabs/html-booking-product-general.php:123
+msgid "Minute(s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:47
+msgid "Minimum duration"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:48
+msgid "The minimum allowed duration the user can input."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:60
+msgid "Maximum duration"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:61
+msgid "The maximum allowed duration the user can input."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:76
+msgid "Enable Calendar Range Picker?"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:77
+msgid ""
+"Lets the user select a start and end date on the calendar - duration will be "
+"calculated automatically."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:87
+msgid "Calendar display mode"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:88
+msgid "Choose how the calendar is displayed on the booking form."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:90
+msgid "Display calendar on click"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:91
+msgid "Calendar always visible"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:100
+msgid "Requires confirmation?"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:101
+msgid ""
+"Check this box if the booking requires admin approval/confirmation. Payment "
+"will not be taken during checkout."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:107
+msgid "Can be cancelled?"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:108
+msgid ""
+"Check this box if the booking can be cancelled by the customer after it has "
+"been purchased. A refund will not be sent automatically."
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:115
+msgid "Booking can be cancelled until"
+msgstr ""
+
+#: templates/tabs/html-booking-product-general.php:125
+msgid "before the start date."
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:25
+msgid "Grouped products"
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:26
+#: templates/tabs/html-booking-product-linked-product.php:44
+#: templates/tabs/html-booking-product-linked-product.php:60
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:37
+msgid "This lets you choose which products are part of this group."
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:43
+msgid "Upsells"
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:55
+msgid ""
+"Upsells are products which you recommend instead of the currently viewed "
+"product, for example, products that are more profitable or better quality or "
+"more expensive."
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:59
+msgid "Cross-sells"
+msgstr ""
+
+#: templates/tabs/html-booking-product-linked-product.php:71
+msgid ""
+"Cross-sells are products which you promote in the cart, based on the current "
+"product."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:19
+msgid "Min persons"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:20
+msgid "The minimum number of persons per booking."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:34
+msgid "Max persons"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:35
+msgid "The maximum number of persons per booking."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:49
+msgid "Multiply all costs by person count"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:50
+msgid ""
+"Enable this to multiply the entire cost of the booking (block and base "
+"costs) by the person count."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:59
+msgid "Count persons as bookings"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:60
+msgid ""
+"Enable this to count each person as a booking until the max bookings per "
+"block (in availability) is reached."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:69
+msgid "Enable person types"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:70
+#: templates/tabs/html-booking-product-persons.php:93
+msgid ""
+"Person types allow you to offer different booking costs for different types "
+"of individuals, for example, adults and children."
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:81
+msgid "Person types"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:82
+#: templates/tabs/html-booking-product-resources.php:48
+msgid "Close all"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:82
+#: templates/tabs/html-booking-product-resources.php:48
+msgid "Expand all"
+msgstr ""
+
+#: templates/tabs/html-booking-product-persons.php:110
+msgid "Add Person Type"
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:18
+#: templates/tabs/html-booking-product-pricing.php:76
+msgid "Base cost"
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:19
+msgid "One-off cost for the booking as a whole."
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:35
+#: templates/tabs/html-booking-product-pricing.php:77
+msgid "Block cost"
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:36
+msgid ""
+"This is the cost per block booked. All other costs (for resources and "
+"persons) are added to this."
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:52
+msgid "Display cost"
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:53
+msgid ""
+"The cost is displayed to the user on the frontend. Leave blank to have it "
+"calculated for you. If a booking has varying costs, this will be prefixed "
+"with the word \"from:\"."
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:76
+msgid "Enter a cost for this rule. Applied to the booking as a whole."
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:77
+msgid "Enter a cost for this rule. Applied to each booking block."
+msgstr ""
+
+#: templates/tabs/html-booking-product-pricing.php:90
+msgid "All matching rules will be applied to the booking."
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:19
+msgid "Type"
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:20
+msgid "Label"
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:23
+msgid "The label shown on the frontend if the resource is customer defined."
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:30
+msgid "Resources are..."
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:35
+msgid "Customer selected"
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:36
+msgid "Automatically assigned"
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:38
+msgid ""
+"Customer selected resources allow customers to choose one from the booking "
+"form."
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:54
+msgid ""
+"Resources are used if you have multiple bookable items, e.g. room types, "
+"instructors or ticket types. Availability for resources is global across all "
+"bookable products."
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:80
+msgid "Add/link Resource"
+msgstr ""
+
+#: templates/tabs/html-booking-product-resources.php:82
+msgid "New resource"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:20
+msgid "Weight"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:23
+msgid "Weight in decimal form"
+msgstr ""
+
+#. translators: WooCommerce dimension unit
+#: templates/tabs/html-booking-product-shipping.php:34
+#, php-format
+msgid "Dimensions (%s)"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:36
+msgid "Length"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:37
+msgid "Width"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:38
+msgid "Height"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:40
+msgid "LxWxH in decimal form"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:54
+msgid "No shipping class"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:62
+msgid "Shipping class"
+msgstr ""
+
+#: templates/tabs/html-booking-product-shipping.php:64
+msgid ""
+"Shipping classes are used by certain shipping methods to group similar "
+"products."
+msgstr ""
+
+#: templates/tabs/html-booking-resource.php:8
+msgid "Remove"
+msgstr ""
+
+#: templates/tabs/html-booking-resource.php:10
+msgid "Edit resource"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "pebas® Bookings Extension"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/pebas-bookings-extension"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Pebas Bookings Listings extension plugin for WooCommerce Bookings that "
+"enables frontend administration used for hour listing themes ( Lisner, Ager )"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""

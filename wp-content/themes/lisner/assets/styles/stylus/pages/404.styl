@@ -1,0 +1,88 @@
+/*
+ |--------------------------------------------------------------------------
+ | 20. Pages / Error 404 Page Styles
+ |--------------------------------------------------------------------------
+ */
+
+.error404 {
+    &-breadcrumb {
+        margin-bottom rem(30px)
+        padding-bottom rem(30px)
+        border-bottom 1px solid
+        border-color $border-color
+    }
+    &-heading {
+        margin-bottom rem(20px)
+        h1 {
+            font-weight 700
+        }
+    }
+    &-content {
+        margin-top rem(95px)
+        h2.error404-content-heading-title {
+            margin-bottom 0
+            font-size 40px
+            font-weight 700
+        }
+        h3 {
+            font-size 26px
+            color $font_header_color
+        }
+        &-form {
+            max-width 60%
+            margin rem(40px) auto rem(80px)
+            form {
+                .input-group {
+                    flex-wrap wrap
+                    &-form {
+                        display flex
+                        align-items center
+                        width 100%
+                        margin-bottom rem(20px)
+                        background-color $theme_input_color
+                        border 1px solid
+                        border-color $border-color
+                        border-radius $border-radius
+                        label {
+                            display flex
+                            align-items center
+                            flex 0 0 30%
+                            max-width 30%
+                            margin-bottom 0
+                            padding 0 rem(10px)
+                            font-weight 600
+                            i {
+                                margin-right rem(10px)
+                                font-size 18px
+                                color $font_color_light
+                            }
+                        }
+                        input {
+                            margin 0
+                            padding 0
+                            width 95%
+                            background-color transparent
+                            border none
+                            &:focus {
+                                background-color transparent
+                            }
+                        }
+                    }
+                    .btn {
+                        flex 0 0 100%
+                        max-width 100%
+                        padding rem(12px)
+                        font-weight 600
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-unit {
+    &.error404 .main-content {
+        top -150px
+        margin-bottom 30px
+    }
+}

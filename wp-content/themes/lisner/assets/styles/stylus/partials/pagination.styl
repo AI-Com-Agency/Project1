@@ -1,0 +1,153 @@
+/*
+ |--------------------------------------------------------------------------
+ | 5. Partials / Pagination Styles
+ |--------------------------------------------------------------------------
+ */
+
+.listing-pagination,
+.post-pagination {
+  display inline-flex
+  margin-top rem(23px)
+}
+
+.pagination {
+  margin-bottom 0
+  padding 0 rem(15px)
+
+  .page {
+    &-link {
+      display flex
+      justify-content center
+      align-items center
+      padding 0
+      height rem(42px)
+      width rem(54px)
+      background-color transparent
+      border 1px solid
+      border-color $border-color
+      border-radius $border-radius
+      font-size 16px
+      font-weight bold
+      color $font_header_color
+
+      &:focus {
+        box-shadow 0 0 0 rem(1px) transparentify($secondary, $secondary, .25)
+      }
+
+      &-gap {
+        border none
+
+        &:not(:disabled):not(.disabled) {
+          cursor default
+        }
+      }
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right rem(10px)
+      }
+
+      &.active {
+        .page-link {
+          background-color $secondary
+          border-color $secondary
+          color $font_header_color
+        }
+      }
+    }
+  }
+}
+
+.page-unit .page-pagination .post-pagination {
+  display flex
+  align-items center
+  padding-left 0
+  line-height 1
+
+  .paginated-element {
+    display flex
+    justify-content center
+    align-items center
+    margin-left 3px
+    padding 6px 12px
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    font-weight 400
+    color $font_header_color
+  }
+
+  a {
+    padding 0
+    background-color transparent
+    line-height 1
+
+    span.paginated-element {
+      background-color transparent
+      color $font_header_color
+    }
+
+    &:hover {
+      text-decoration none
+    }
+  }
+}
+
+.page-unit.single-post {
+  .post-pagination {
+    padding 0
+    width 100%
+
+    ul {
+      display flex
+      position relative
+      top -8px
+      margin-bottom 0
+      padding 0 3px
+      width 100%
+
+      li {
+        line-height 1
+
+        a {
+          padding 6px 22px
+          background-color $primary
+          font-weight 600
+          color $white
+
+          &:hover {
+            text-decoration none
+          }
+        }
+
+        &.next {
+          margin-left auto
+
+          a {
+            border-radius $border-radius 0 $border-radius 0
+          }
+        }
+
+        &.prev {
+          margin-right auto
+          margin-left 1px
+
+          a {
+            border-radius 0 $border-radius 0 $border-radius
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .pagination {
+    flex-wrap wrap
+    li:nth-child(6n) {
+      margin-top 15px
+    }
+  }
+}

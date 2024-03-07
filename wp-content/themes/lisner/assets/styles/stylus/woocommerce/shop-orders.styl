@@ -1,0 +1,79 @@
+/*
+ |--------------------------------------------------------------------------
+ | 36. WooCommerce / Shop Orders
+ |--------------------------------------------------------------------------
+ */
+
+.woocommerce {
+    ul.order_details {
+        display flex
+        flex-wrap wrap
+        padding-left 0
+        li {
+            flex 0 0 33.33333%
+            max-width 33.33333%
+            margin-right 0
+            margin-bottom rem(10px)
+            padding 0 rem(10px)
+            strong {
+                color $font_header_color
+            }
+        }
+    }
+    ul.wc-item-meta {
+        padding-left 0
+        li {
+            display flex
+            align-items center
+            margin-top rem(3px)
+            margin-right 0
+            padding 0
+            strong {
+                color $font_header_color
+            }
+        }
+    }
+    &-order {
+        section {
+            h2 {
+                font-size 24px
+            }
+            &.woocommerce-customer-details {
+                address {
+                    padding rem(20px)
+                    border 1px solid
+                    background-color $theme_input_color
+                    border-color $border-color
+                    line-height 1.7
+                    p {
+                        display flex
+                        align-items center
+                        margin-top rem(10px)
+                    }
+                }
+            }
+            table.shop_table {
+                tfoot {
+                    tr {
+                        th {
+                            color $font_header_color
+                        }
+                        td {
+                            color $font_color_dark
+                            .amount {
+                                font-weight 600
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.submitted-listing-order-action {
+    a.button {
+        margin-top 0
+        margin-bottom rem(30px)
+    }
+}

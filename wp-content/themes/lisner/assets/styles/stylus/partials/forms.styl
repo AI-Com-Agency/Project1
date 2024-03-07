@@ -1,0 +1,563 @@
+/*
+ |--------------------------------------------------------------------------
+ | 4. Forms Styles
+ |--------------------------------------------------------------------------
+ */
+
+/* Add Listing Form / Working Hours */
+.working-hours {
+  &-days {
+    &-wrapper {
+      display flex
+      border-bottom 1px solid
+      border-color $border-color
+    }
+  }
+
+  &-day {
+    a {
+      display flex
+      padding rem(5px) rem(22px)
+      border 1px solid
+      border-right 0
+      border-bottom 0
+      border-color $border-color
+      border-radius $border-radius $border-radius 0 0
+      color $font_header_color
+
+      &.active {
+        background-color $theme_input_color
+      }
+
+      &:hover {
+        background-color $theme_input_color
+        text-decoration none
+      }
+    }
+
+    &:last-child {
+      a {
+        border-right 1px solid
+        border-color $border-color
+      }
+    }
+  }
+}
+
+.lisner-map {
+  &-instance {
+    border-radius $border-radius
+    height 290px
+  }
+
+  &-field {
+    margin-bottom rem(30px)
+
+    span {
+      i {
+        height rem(44px)
+        background-color $primary
+        border-color $border-color
+        font-size 24px
+        color $white
+        cursor pointer
+      }
+    }
+  }
+}
+
+.input-group {
+  &-append {
+    position relative
+    background-color $primary
+    border-radius 0 $border-radius $border-radius 0
+    z-index 4
+
+    i {
+      display flex
+      align-items center
+      padding 0 rem(14px)
+      height rem(44px)
+      background-color $primary
+      border-radius 0 $border-radius $border-radius 0
+      border-color $border-color
+      font-size 24px
+      color $white
+      cursor pointer
+    }
+  }
+
+  &-prepend {
+    position relative
+    background-color $primary
+    border-radius $border-radius 0 0 $border-radius
+    z-index 4
+
+    &.facebook {
+      background-color $facebook
+    }
+
+    &.instagram {
+      background-color $instagram
+    }
+
+    &.twitter {
+      background-color $twitter
+    }
+
+    &.google {
+      background-color $google
+    }
+
+    &.pinterest {
+      background-color $pinterest
+    }
+
+    &.youtube {
+      background-color $youtube
+    }
+
+    &.linkedin {
+      background-color $linkedin
+    }
+
+    i {
+      display flex
+      align-items center
+      justify-content center
+      padding 0 rem(14px)
+      height rem(44px)
+      width rem(55px)
+      background-color transparent
+      border-radius $border-radius 0 0 $border-radius
+      border-color $border-color
+      font-size 24px
+      color $white
+    }
+  }
+}
+
+// form inputs & labels
+fieldset,
+.form-group,
+.input-group {
+  margin-bottom rem(25px)
+
+  label {
+    font-size 16px
+    color $font_color_dark
+
+    .required {
+      margin-left rem(2px)
+      color $error
+    }
+  }
+
+  .input-text,
+  .timepicker[readonly]
+  .form-control {
+    padding 0 rem(20px)
+    height rem(44px)
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    box-shadow none
+    color $font_color
+
+    &:focus {
+      color $font_color
+      background-color $theme_input_color
+      border-color $border-color
+      box-shadow none
+      z-index auto
+    }
+
+    &::-webkit-input-placeholder {
+      color $font_color_light
+    }
+
+    &::-moz-placeholder {
+      color $font_color_light
+    }
+
+    &:-ms-input-placeholder {
+      color $font_color_light
+    }
+
+    &:-moz-placeholder {
+      color $font_color_light
+    }
+  }
+}
+
+.page-unit {
+  label {
+    font-weight 600
+    color $font_header_color
+  }
+
+  input {
+    padding 0 rem(20px)
+    height rem(44px)
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    box-shadow none
+    color $font_color
+
+    &:focus {
+      color $font_color
+      background-color $theme_input_color
+      border-color $border-color
+      box-shadow none
+      z-index auto
+    }
+
+    &::-webkit-input-placeholder {
+      color $font_color_light
+    }
+
+    &::-moz-placeholder {
+      color $font_color_light
+    }
+
+    &:-ms-input-placeholder {
+      color $font_color_light
+    }
+
+    &:-moz-placeholder {
+      color $font_color_light
+    }
+
+    &[type=submit] {
+      position relative
+      top -2px
+      padding 8px 32px
+      background-color $primary
+      border none
+      box-shadow $box-shadow
+      color $white
+      cursor pointer
+      transition()
+
+      &:hover {
+        box-shadow $box-shadow-hover
+        transition()
+      }
+    }
+  }
+
+  .single-listing-main-description p {
+    margin-bottom 1rem
+  }
+}
+
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child),
+.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child) {
+  padding 0 rem(20px)
+  height rem(44px)
+  background-color $theme_input_color
+  border 1px solid
+  border-color $border-color
+  border-radius $border-radius
+  box-shadow none
+  color $font_color
+
+  &:focus {
+    color $font_color
+    background-color $theme_input_color
+    border-color $border-color
+    box-shadow none
+    z-index auto
+  }
+}
+
+// form checkboxes
+.custom-checkbox {
+  padding-left 1.2rem
+
+  .custom-control-label,
+  &-label {
+    padding-top 4px
+    font-size 14px
+    line-height 1
+    color $font_color_light
+    cursor pointer
+
+    &::before {
+      left - 1.2rem
+      background-color transparent
+      border none
+      font-family 'Material Icons'
+      font-size 16px
+      content 'check_box_outline_blank'
+      color $theme_color
+      transform rotate(0.03deg)
+    }
+
+    &::after {
+      left -1.2rem
+    }
+  }
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before,
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color transparent
+  border none
+  box-shadow none
+  font-family 'Material Icons'
+  font-size 16px
+  content 'check_box_outline_blank'
+  outline 0
+  color $theme_color
+  transform rotate(0.03deg)
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color transparent
+  border none
+  font-family 'Material Icons'
+  font-size 16px
+  content 'check_box_outline'
+  color $theme_color
+  transform rotate(0.03deg)
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image none
+}
+
+// form radios
+.custom-radio {
+  padding-left 1.2rem
+
+  .custom-control-label,
+  &-label {
+    padding-top 4px
+    font-size 14px
+    line-height 1
+    color $font_color_light
+    cursor pointer
+
+    &::before {
+      left - 1.2rem
+      background-color transparent
+      border none
+      font-family 'Material Icons'
+      font-size 16px
+      content 'radio_button_unchecked'
+      color $primary
+      transform rotate(0.03deg)
+    }
+
+    &::after {
+      left -1.2rem
+    }
+  }
+}
+
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before,
+.custom-radio .custom-control-input:active ~ .custom-control-label::before {
+  background-color transparent
+  border none
+  box-shadow none
+  font-family 'Material Icons'
+  font-size 16px
+  content 'radio_button_unchecked'
+  outline 0
+  color $primary
+  transform rotate(0.03deg)
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color transparent
+  border none
+  font-family 'Material Icons'
+  font-size 16px
+  content 'radio_button_checked'
+  color $primary
+  transform rotate(0.03deg)
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image none
+}
+
+// form actions
+.form-actions {
+  display flex
+  justify-content space-between
+}
+
+.link {
+  font-size 14px
+  color $primary
+
+  &:hover {
+    color $primary
+    text-decoration underline
+  }
+}
+
+/* chosen single settings */
+.main-content {
+  select {
+    &#listing_pricing_range {
+      padding 0 rem(20px)
+      height rem(44px)
+      background-color $theme_input_color
+      border 1px solid
+      border-color $border-color
+      border-radius $border-radius
+      box-shadow none
+      color $font_color
+      -webkit-appearance none
+    }
+  }
+
+  .chosen-container {
+    width: 100% !important;
+
+    &-single {
+      &#listing_pricing_range_chosen {
+        .chosen-search {
+          display none
+        }
+      }
+
+      .chosen-single {
+        position relative
+        justify-content flex-start
+        padding 0 rem(20px)
+        height rem(44px)
+        background-color $theme_input_color
+
+        span {
+          font-size 16px
+        }
+
+        &::after {
+          content '\e313'
+          font-family 'Material Icons'
+          position absolute
+          top rem(13px)
+          right rem(20px)
+          font-size 18px
+          line-height 1
+        }
+      }
+    }
+
+    &.chosen-with-drop {
+      .chosen-drop {
+        top calc(100% - 1px)
+        width 100%
+        background-color $theme_input_color
+        border-radius 0 0 $border-radius $border-radius
+        box-shadow none
+
+        .highlighted {
+          background-color $white
+          border-radius $border-radius
+          box-shadow 0 0 2px 0 rgba(0, 0, 0, .05);
+        }
+      }
+    }
+  }
+}
+
+// listing social
+.job-manager-form fieldset[class^=fieldset-listing_social] {
+  margin-bottom 0
+
+  &:not(:first-child) {
+    margin-top rem(15px)
+  }
+}
+
+.job-manager-form fieldset label {
+  width auto
+}
+
+// submit listing
+.submit-listing {
+  margin-top rem(40px)
+}
+
+input[name=submit_job] {
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  width 100%
+  height rem(50px)
+  background-color $primary
+  border none
+  border-radius $border-radius
+  font-size 18px
+  font-weight 600
+  color $white
+}
+
+.form-group.error {
+  position relative
+
+  .form-control {
+    background-color $error-bg
+    border-color $error
+    font-weight 600
+    color $error-font
+  }
+
+  .error-desc {
+    position absolute
+    top 3px
+    right 0
+    font-size 13px
+    color $error
+  }
+}
+
+.job-manager-form fieldset.fieldset-label-icon input#create_account_email {
+  padding-left 130px
+}
+
+@media (max-width: 670px) {
+  body {
+    .select2-container--default .select2-selection--multiple {
+      background-color transparent
+      border none
+      line-height 1
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+      margin 2px
+      font-weight 400
+    }
+
+    .select2-container--default.select2-container--focus .select2-selection--multiple {
+      border none
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+      background-color $primary
+      border-color $primary
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+      color: $white
+    }
+  }
+  .ui-menu .ui-menu-item {
+    padding: 0
+  }
+  .ui-timepicker-standard .ui-menu-item a {
+    font-size 13px
+  }
+  .form-group .form-control, .form-group .input-text, .form-group .timepicker[readonly], .input-group .form-control, .input-group .input-text, .input-group .timepicker[readonly], fieldset .form-control, fieldset .input-text, fieldset .timepicker[readonly] {
+    font-size 14px
+  }
+}

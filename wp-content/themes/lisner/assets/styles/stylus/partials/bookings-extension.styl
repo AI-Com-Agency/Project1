@@ -1,0 +1,1099 @@
+/*
+ |--------------------------------------------------------------------------
+ | 8a. Bookings Extension Styles
+ |--------------------------------------------------------------------------
+ */
+.woocommerce {
+    .lisner-booking-products {
+        margin -40px
+    }
+    .booking-products {
+        display flex
+        // header
+        &-header {
+            display flex
+            align-items center
+            padding 15px 30px
+            border-bottom 1px solid
+            border-color $border-color
+            h6 {
+                margin-bottom 0
+                margin-right 60px
+                font-weight 700
+                line-height 1.2
+            }
+            p {
+                margin-bottom 0
+                font-size 14px
+                line-height 1
+            }
+        }
+        &-title {
+            flex 0 0 15%
+            max-width 15%
+        }
+        &-product-data {
+            display flex
+            justify-content space-between
+            align-items center
+            flex 0 0 85%
+            max-width 85%
+            span {
+                margin-right 20px
+                font-size 14px
+                color $font_header_color
+            }
+        }
+        // content
+        label {
+            display block
+        }
+        select {
+            display inline-block
+        }
+        &__tabs {
+            flex 0 0 15%
+            max-width 15%
+        }
+        &__tab {
+            display flex
+            align-items center
+            padding 10px 30px
+            border-right 1px solid
+            border-bottom 1px solid
+            border-color $border-color
+            cursor pointer
+            &.hidden {
+                display none
+            }
+            &.active {
+                background-color rgba(83, 152, 255, .1)
+            }
+            i {
+                margin-right 15px
+                font-size 16px
+                color #957b98
+            }
+            a {
+                color $font_header_color
+                &:hover {
+                    text-decoration none
+                }
+            }
+        }
+        &__content_wrapper {
+            flex 0 0 85%
+            max-width 85%
+        }
+        &__content {
+            padding 30px 40px
+            &:not(.active) {
+                display none
+            }
+            p.form-field {
+                display flex
+                align-items center
+                font-size 14px
+                color $font_color
+                label {
+                    flex 0 0 20%
+                    max-width 20%
+                    margin-bottom 0
+                    font-size 14px
+                    font-weight 400
+                }
+                select,
+                textarea,
+                input:not(.checkbox) {
+                    height 35px
+                    background-color #fafafa
+                    font-size 14px
+                    &:last-of-type {
+                        margin-right 10px
+                    }
+                }
+                input.checkbox {
+                    &:last-of-type {
+                        margin-right 10px
+                    }
+                }
+            }
+            .toolbar {
+                display flex
+                justify-content space-between
+                align-items center
+                &_links {
+                    a {
+                        font-size 14px
+                        &:hover {
+                            color $primary
+                        }
+                        &:first-child {
+                            margin-right 15px
+                        }
+                    }
+                }
+            }
+            p.toolbar {
+                display flex
+                flex-direction row-reverse
+                justify-content flex-end
+                .button {
+                    margin-top 0
+                    padding 6px 20px
+                    font-size 16px
+                }
+                select {
+                    margin-right 15px
+                    height 35px
+                    background-color #fafafa
+                    font-size 14 pxx
+                }
+            }
+            .woocommerce-message {
+                padding 15px 50px
+                &::before {
+                    top 16px
+                    font-size 14px
+                }
+                p,
+                h4 {
+                    margin-bottom 0
+                    font-size 14px
+                    color $font_color
+                }
+            }
+        }
+        // booking product footer
+        &-footer {
+            margin 40px
+            text-align right
+            button.btn {
+                padding 8px 20px
+                width 203px
+                height 40px
+            }
+        }
+    }
+}
+
+// booking product checkbox
+.lisner-profile-content .booking-checkbox {
+    padding 7px 15px
+    border 1px solid
+    border-radius $border-radius
+    border-color $border-color
+    &:not(:last-child) {
+        margin-right 20px
+    }
+    &:nth-child(5n) {
+        margin-left auto
+    }
+    &-visit-listing {
+        margin-left 0
+        padding 0
+        a {
+            display flex
+            justify-content center
+            align-items center
+            padding 4px 13px
+            background-color $theme_input_color
+            border 1px solid $border-color
+            border-radius $border-radius
+            line-height 1
+            color $quinary
+            &:hover {
+                text-decoration none
+                color $quinary
+            }
+        }
+    }
+}
+
+.lisner-profile-content .form-field,
+.lisner-profile-content .booking-products__content td,
+.lisner-profile-content .booking-checkbox {
+    label {
+        display flex
+        align-items center
+        margin-bottom 0
+        font-size 14px
+        font-weight 400
+        color $font_header_color
+        cursor pointer
+        input {
+            margin-left 30px
+            cursor pointer
+        }
+    }
+    input[type="checkbox"] {
+        position relative
+        display inline-block
+        width 30px
+        height 14px
+        border none
+        border-radius 8px
+        background #d8d8d8
+        vertical-align middle
+        appearance none
+        overflow: hidden;
+        transition()
+    }
+    input[type="checkbox"]:after {
+        content: '';
+        position absolute
+        top 2px
+        left 2px
+        width 10px
+        height 10px
+        background #6e6e6e
+        border none
+        border-radius 50%
+        transition()
+    }
+    input[type="checkbox"]:checked {
+        background $success
+        transition()
+    }
+    input[type="checkbox"]:checked:after {
+        left 18px
+        background-color $white
+        transition()
+    }
+
+    input[type="checkbox"]:disabled {
+        opacity .5
+    }
+}
+
+// booking tables
+.lisner-profile-content {
+    .lisner-booking-products {
+        table {
+            width 100%
+            tbody {
+                tr {
+                    border 1px solid
+                    border-color $border-color
+                    border-radius $border-radius
+                    td {
+                        padding 7px
+                        border-right 1px solid
+                        border-color $border-color
+                        text-align center
+                        label {
+                            display inline-block
+                        }
+                        input[type=checkbox] {
+                            cursor pointer
+                        }
+                    }
+                }
+            }
+        }
+        .options_group:not(:first-child) {
+            margin-top 20px
+            padding 20px
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            table {
+                thead {
+                    tr {
+                        th {
+                            font-weight 600
+                            color $font_header_color
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        border none
+                        td {
+                            border none
+                            text-align left
+                            vertical-align middle
+                            .select + input {
+                                margin-top 5px
+                            }
+                            p {
+                                margin-bottom 0
+                                text-align center
+                                font-size 16px
+                            }
+                            &.sort {
+                                &::after {
+                                    content 'menu'
+                                    font-family 'Material Icons'
+                                    font-size 18px
+                                    cursor all-scroll
+                                }
+                            }
+                            &.remove {
+                                &::after {
+                                    content 'delete'
+                                    font-family 'Material Icons'
+                                    font-size 19px
+                                    color $error
+                                    cursor pointer
+                                    transform rotate(0.03deg)
+                                }
+                            }
+                            input:not([type=checkbox]),
+                            select,
+                            textarea {
+                                width 100%
+                                height 35px
+                                background-color #fafafa
+                                font-size 14px
+                            }
+                            div[class^=bookings-datetime-select] {
+                                div {
+                                    position relative
+                                }
+                                img {
+                                    position absolute
+                                    top 10px
+                                    right 10px
+                                }
+                                .to_date + .to_time,
+                                .from_date + .from_time {
+                                    margin-top 5px
+                                }
+                            }
+                        }
+                    }
+                }
+                tfoot {
+                    a.button.add_row {
+                        padding 6px 20px
+                    }
+                    .description {
+                        display flex
+                        margin-top 10px
+                        font-size 14px
+                        font-weight 400
+                    }
+                }
+            }
+            // resources and persons
+            .woocommerce_booking_resource,
+            .woocommerce_booking_person,
+            #booking_persons {
+                margin-top 30px
+                margin-bottom 30px
+                padding 20px
+                border 1px solid
+                border-color $border-color
+                border-radius $border-radius
+                h3 {
+                    display flex
+                    flex-direction row-reverse
+                    justify-content flex-end
+                    margin-bottom 0
+                    strong {
+                        font-size 18px
+                        font-weight 700
+                    }
+                    button {
+                        margin-top 0
+                        margin-left auto
+                        padding 6px 20px
+                        font-size 16px
+                    }
+                    a {
+                        position relative
+                        top -4px
+                        margin-left 10px
+                        font-size 14px
+                        font-weight 400
+                        &:hover {
+                            color $primary
+                        }
+                    }
+                }
+                & + .wc-metabox {
+                    margin-top -20px
+                }
+            }
+        }
+    }
+    .listing-actions-content ul li a {
+        &.confirm_booking {
+            i {
+                color $success
+            }
+        }
+    }
+    td.booked-by,
+    td.booked-product {
+        font-size 14px
+        color $font_color
+        a {
+            font-size 14px
+            &:hover {
+                color $primary
+            }
+            & + a {
+                font-size 14px
+                color $font_color
+            }
+        }
+    }
+    table {
+        thead {
+            tr {
+                th {
+                    font-size 14px
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    font-size 14px
+                    vertical-align top
+                }
+            }
+        }
+    }
+    .booking-start-date,
+    .booking-end-date {
+        .date,
+        .time {
+            display block
+            font-size 14px
+            color $font_color
+            span {
+                margin-right 3px
+                font-weight 600
+                color $font_header_color
+            }
+        }
+    }
+    .booking-amount {
+        &--base,
+        &--plus,
+        &--percentage {
+            font-weight 600
+            span {
+                color $font_color
+                font-weight 400
+            }
+        }
+        &--percentage {
+            span {
+                color $error
+            }
+        }
+        &--total {
+            &.success {
+                strong {
+                    color $success
+                }
+            }
+            &.error {
+                strong {
+                    color $error
+                }
+            }
+        }
+    }
+}
+
+// booking orders table
+.booking-status {
+    span {
+        display: block;
+        text-indent: -9999px;
+        position: relative;
+        height: 1em;
+        width: 1em
+    }
+
+    span:before {
+        content "\e001"
+        position absolute
+        top 0
+        left 0
+        margin 0
+        width 100%
+        height 100%
+        font-family woocommerce
+        font-weight 400
+        line-height 1
+        text-indent 0
+        text-align center
+        font-size 18px
+        speak none
+    }
+
+    span.status_head:before {
+        top -4px
+        content: "\e011"
+    }
+
+    span.status-incart:before, span.status-unpaid:before {
+        content: "\e033"
+    }
+
+    span.status-pending-confirmation:before, span.status-pending:before {
+        content: "\e012";
+        color: #ffba00
+    }
+
+    span.status-confirmed:before {
+        content: "\e011";
+        color: #7ad03a
+    }
+
+    span.status-paid:before {
+        content: "\e015";
+        color: #2ea2cc
+    }
+
+    span.status-unpaid:before {
+        content: "\e033";
+        color: #2ea2cc
+    }
+
+    span.status-cancelled:before {
+        content: "\e013";
+        color: #a00
+    }
+
+    span.status-complete:before {
+        content: "\e015";
+        color: #999
+    }
+}
+
+// bookings frontend
+.listing-widget-bookings {
+    .woocommerce-message {
+        margin-bottom 15px
+        border 1px solid
+        border-color $border-color
+        border-top-color $success
+        box-shadow none
+        font-size 14px
+        color $font_color
+        a {
+            font-size 14px
+        }
+    }
+    .woocommerce-error,
+    .woocommerce-info {
+        margin-bottom 15px
+        border 1px solid
+        border-color $border-color
+        box-shadow none
+        li {
+            font-size 14px
+            color $font_color
+        }
+    }
+    .woocommerce-error {
+        border-top-color $error
+    }
+    .woocommerce-info {
+        border-top-color $info
+    }
+}
+
+.wc-bookings-booking-form {
+    display flex
+    flex-wrap wrap
+    margin 0
+    padding 25px
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    background-color $theme_input_color
+    .wc-bookings-booking-title {
+        width 100%
+    }
+    .form-field {
+        display flex
+        flex-direction column
+        flex 0 0 100%
+        max-width 100%
+        font-size 12px
+        line-height 1.2
+        color $font_color
+        &[class*=wc_bookings_field_persons] {
+            flex 0 0 32%
+            max-width 32%
+            margin-right 1%
+            input,
+            select,
+            textearea {
+                width 100%
+            }
+        }
+    }
+    // bookings calendar
+    $bookings_bg = #ff4278
+    $bookings_selectable = #f4d7d3
+    $bookings_selected = #cdd1fe
+    $bookings_btn = #0355a7
+    .wc-bookings-date-picker {
+        margin-top -10px
+        margin-bottom 10px
+        width 100%
+        legend {
+            margin-top -5px
+            font-size 18px
+            color $font_header_color
+        }
+        // datepicker
+        .ui-datepicker {
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            box-shadow none
+            font-family $font_prim
+            &-title {
+                font-size 20px
+                font-weight 300
+                text-transform none
+            }
+            &-header {
+                background-image none
+                background-color $bookings_bg
+                border none
+            }
+            &-prev {
+                left 0
+                &:hover {
+                    left 0
+                }
+            }
+            &-right {
+                right 0
+                &:hover {
+                    right 0
+                }
+            }
+            &-prev,
+            &-next {
+                top 1px
+                height 41px
+                width 40px
+                background-color transparent
+                border none
+                &:hover {
+                    background transparent
+                    border none
+                    width 40px
+                }
+                &.ui-state-disabled {
+                    display none
+                }
+                span {
+                    margin-top 0
+                }
+            }
+            // calendar
+            .ui-datepicker-calendar {
+                margin 3% 0 5% 5%
+                width 90%
+                thead {
+                    tr {
+                        th {
+                            border-top 0
+                            span {
+                                font-size 14px
+                                color $font_color
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            border none
+                            span {
+                                margin 3px 0
+                                padding 8px 0
+                                font-size 18px
+                                font-weight 600
+                                color $font_header_color
+                            }
+                            a {
+                                margin 3px 0
+                                padding 8px 0
+                                font-size 18px
+                                font-weight 600
+                            }
+                            &.bookable {
+                                a {
+                                    background-color $bookings_selectable !important // have to use !important to override wc bookings
+                                    color $font_header_color !important // have to use !important to override wc bookings
+                                    text-shadow none
+                                    &.ui-state-active {
+                                        background-color #dde0ff !important // have to use !important to override wc bookings
+                                    }
+                                }
+                            }
+                            &.bookable-range {
+                                a {
+                                    &.ui-state-default {
+                                        background-color #dde0ff !important // have to use !important to override wc bookings
+                                        font-weight 600
+                                        color $font_header_color !important
+                                    }
+                                }
+                            }
+                            &.partial_booked {
+                                a {
+                                    background-color $bookings_selectable !important // have to use !important to override wc bookings
+                                    color $font_header_color !important // have to use !important to override wc bookings
+                                    text-shadow none
+                                    &::before {
+                                        border-top-width 32px
+                                        border-right-width 32px
+                                        border-top-color $bookings_selected
+                                    }
+                                }
+                            }
+                            &.ui-datepicker-other-month {
+                                background transparent
+                            }
+                            &.fully_booked {
+                                opacity 1
+                                a,
+                                span {
+                                    opacity .5
+                                    background-color $bookings_selected !important
+                                    color $font_header_color !important
+                                    cursor default
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // timepicker
+    fieldset {
+        & + .form-field {
+            margin-top -10px
+            margin-left 2px
+        }
+    }
+    ul.block-picker {
+        li {
+            color $font_color_light
+            &.block {
+                a {
+                    color $font_header_color
+                    &:hover {
+                        background-color $bookings_bg
+                    }
+                    &.selected {
+                        background-color $bookings_bg !important
+                    }
+                }
+                &:nth-child(even) {
+                    a {
+                        background-color $bookings_selectable
+                        &:hover {
+                            background-color $bookings_bg
+                        }
+                    }
+                }
+            }
+        }
+    }
+    label {
+        margin-bottom 3px
+        font-size 14px
+        color $font_header_color
+        &[for=wc_bookings_field_start_date] {
+            font-size 18px
+        }
+    }
+    select,
+    textarea,
+    input:not(.checkbox) {
+        margin-bottom 10px
+        padding 0 12px
+        height 35px
+        background-color #fafafa
+        border 1px solid
+        border-color $border-color
+        border-radius $border-radius
+        font-size 14px
+        color $font_color
+        &:last-of-type {
+            margin-right 10px
+        }
+    }
+    // error notice
+    .wc-bookings-booking-cost {
+        margin 0
+        padding 8px 15px
+        width 100%
+        background-color $white
+        border none
+        border-left 3px solid
+        border-color $bookings_btn
+        border-radius $border-radius
+        font-size 16px
+        color $font_color
+        strong {
+            color $font_header_color
+        }
+        .booking-error {
+            position relative
+            left -3px
+            display block
+            margin -8px -15px
+            padding 8px 15px
+            border-left 3px solid
+            border-color $bookings_bg
+            border-radius $border-radius
+            font-size 14px
+        }
+    }
+    // booking add to cart
+    .wc-bookings-booking-form-button {
+        margin-top 20px
+        padding 8px 30px
+        background-color $bookings_btn
+        border none
+        border-radius $border-radius
+        font-size 18px
+        font-weight 400
+        text-transform capitalize
+        cursor pointer
+        color $white
+        transition()
+        &::after {
+            content '!'
+        }
+        &:hover {
+            box-shadow $box-shadow-hover
+            transition()
+        }
+    }
+}
+
+/* payouts information */
+.lisner-bookings-payouts {
+    display flex
+    margin-bottom 30px
+    border-radius $border-radius
+    .lisner-bookings-payout {
+        &-information,
+        &-listing {
+            padding 20px 25px
+            flex 0 0 49%
+            max-width 49%
+            margin 0 .5%
+            background-color $theme_input_color
+            border-radius $border-radius
+            p {
+                margin-bottom 0
+                font-size 14px
+            }
+        }
+        &-listing {
+            flex 0 0 24%
+            max-width 24%
+            background-color #edf4ff
+            span {
+                font-size 38px
+                font-weight 600
+            }
+            &.success {
+                background-color transparentify($success-bg, $success-bg, 30%)
+                span {
+                    color $success
+                }
+            }
+            &.error {
+                background-color transparentify($error-bg, $error-bg, 30%)
+                color $error
+            }
+        }
+    }
+}
+
+// responsive styles for bookings
+@media (max-width 1440px) {
+    .woocommerce .booking-products {
+        flex-wrap wrap
+        &__tabs {
+            display flex
+            flex 0 0 100%
+            max-width 100%
+            align-items center
+        }
+        &__tab {
+            flex 1
+            padding 10px 15px
+        }
+        &__content_wrapper {
+            flex 0 0 100%
+            max-width 100%
+        }
+    }
+}
+
+@media (max-width 960px) {
+    .woocommerce .booking-products {
+        &-header {
+            flex-wrap wrap
+        }
+        &-title {
+            flex 0 0 100%
+            max-width 100%
+        }
+        &-product-data {
+            flex-wrap wrap
+            flex 0 0 100%
+            max-width 100%
+            justify-content flex-start
+            span {
+                margin-top 10px
+                margin-bottom 5px
+                flex 0 0 100%
+                max-width 100%
+            }
+            .booking-checkbox {
+                margin-top 7px
+                margin-right 5px
+                &:last-child {
+                    margin-left 0
+                }
+            }
+        }
+        &__tabs {
+            flex-wrap wrap
+        }
+        &__tab {
+            flex 0 0 33.33333%
+            max-width 33.3333%
+        }
+        &__content {
+            p.form-field {
+                flex-wrap wrap
+                label,
+                input:not(.checkbox),
+                select,
+                textarea {
+                    margin-bottom 5px
+                    flex 0 0 100%
+                    max-width 100%
+                }
+            }
+        }
+    }
+}
+
+@media (max-width 768px) {
+    .woocommerce .booking-products {
+        .booking-day-restriction {
+            table.widefat {
+                tbody {
+                    tr {
+                        display flex
+                        flex-wrap wrap
+                        td {
+                            &:first-child,
+                            &:last-child {
+                                display none
+                            }
+                            flex 0 0 33.33333%
+                            max-width 33.33333%
+                            padding 7px 15px
+                            border-bottom 1px solid
+                            border-color $border-color
+                            .form-field {
+                                label {
+                                    min-width 85px
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width 660px) {
+    .woocommerce .booking-products {
+        .table_grid {
+            overflow hidden
+            overflow-x scroll
+            table.widefat {
+                width 800px
+            }
+        }
+        .booking-day-restriction {
+            table.widefat {
+                tbody {
+                    tr {
+                        td {
+                            flex 0 0 50%
+                            max-width 50%
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width 520px) {
+    .woocommerce .booking-products {
+        &__tab {
+            flex 0 0 50%
+            max-width 50%
+        }
+        &__content {
+            p.toolbar {
+                flex-wrap wrap
+                button {
+                    margin-bottom 5px
+                }
+            }
+            .woocommerce-message {
+                padding 10px 20px
+                &::before {
+                    display none
+                }
+            }
+        }
+    }
+
+    .lisner-profile-content .lisner-booking-products .options_group:not(:first-child) .woocommerce_booking_resource h3 {
+        flex-direction column
+    }
+}
+
+@media (max-width 480px) {
+    .woocommerce .lisner-booking-products {
+        margin -20px
+        .booking-day-restriction {
+            table.widefat {
+                tbody {
+                    tr {
+                        td {
+                            flex 0 0 100%
+                            max-width 100%
+                            label {
+                                width 150px
+                                text-align left
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+
+---Downloaded files---
+The import files for: Basic Demo Install were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/monsite
+Data file = C:\wamp64\www\Monsite/wp-content/themes/lisner/includes/demo/demo-files/small/content.xml
+Widget file = C:\wamp64\www\Monsite/wp-content/themes/lisner/includes/demo/demo-files/small/widgets.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+---Importing widgets---
+Shop Sidebar : 
+
+Panier - Cart - Widget already exists
+Filtrer les produits par prix - Filter by price - Widget already exists
+Filtrer les produits par attribut - Filter by - Widget already exists
+Catégories de produit - Product categories - Widget already exists
+
+Listing Single Sidebar : 
+
+Lisner Promo - No Title - Widget already exists
+
+Footer Sidebar / Column 1 : 
+
+Nuage d’étiquettes - Popular Tags - Widget already exists
+
+Footer Sidebar / Column 2 : 
+
+Lisner Listing Categories - Categories - Widget already exists
+
+Footer Sidebar / Column 3 : 
+
+Lisner Pages - Pages - Widget already exists
+
+Footer Sidebar / Column 4 : 
+
+Lisner Social - Share - Widget already exists
+
+
+
+---ocdi/after_import---
+

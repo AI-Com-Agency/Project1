@@ -1,0 +1,129 @@
+/*
+ |--------------------------------------------------------------------------
+ | 25. Listing / Listing claims styles
+ |--------------------------------------------------------------------------
+ */
+
+#pebas_claim_submit {
+    .form-title {
+        display none
+    }
+    fieldset {
+        margin-top rem(15px)
+        margin-bottom 0
+        &.login_required {
+            margin-top rem(-15px)
+        }
+    }
+    .submit-listing {
+        display flex
+        justify-content space-between
+        margin-top rem(20px)
+        .get-back {
+            margin-left auto
+            display flex
+            align-items center
+            padding rem(3px) rem(12px)
+            height rem(28px)
+            background-color $theme_input_color
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            font-size 14px
+            font-weight 600
+            line-height 1
+            color $font_header_color
+            &:hover {
+                text-decoration none
+            }
+            i {
+                margin-right rem(7px)
+                font-size 16px
+            }
+        }
+    }
+}
+
+.listing-claim {
+    padding 0 rem(25px)
+    &-header {
+    }
+    &-item {
+        display flex
+        padding rem(10px) rem(25px)
+        background-color $theme_input_color
+        border-radius $border-radius
+        &:not(:first-child) {
+            margin-top rem(1px)
+        }
+    }
+    &-label {
+        flex 0 0 25%
+        max-width 25%
+        border-right 1px solid
+        border-color $white
+        font-weight 600
+        color $font_header_color
+        &::after {
+            content ':'
+        }
+    }
+    &-content {
+        margin-left rem(30px)
+        color $font_header_color
+        a {
+            color $primary
+        }
+    }
+}
+
+.form-group .report-control {
+    padding rem(10px) rem(15px)
+    min-height 120px
+}
+
+.single-listing-meta-action {
+    &.report-listing {
+        padding 0
+        background-color transparent
+        border none
+        button {
+            position relative
+            top -10px
+            background-color transparent
+            border none
+            font-size 40px
+            line-height 1
+            letter-spacing -2px
+            color $font_color_light
+            cursor pointer
+            &::after {
+                display none
+            }
+        }
+        .dropdown-menu {
+            margin-bottom -15px
+            padding 10px 0
+            border 1px solid
+            border-color $border-color
+            box-shadow $box-shadow-listing
+            a {
+                display block
+                padding 5px 20px
+                width 100%
+                font-size 14px
+                &:hover {
+                    background-color #f3f3f3
+                    text-decoration none
+                    color $primary
+                }
+            }
+        }
+    }
+}
+
+.single-listing-style-2 {
+    .single-listing-meta-action.report-listing button {
+        color $white
+    }
+}

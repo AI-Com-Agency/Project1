@@ -1,0 +1,222 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TheBigMagazine Mega Menu\n"
+"POT-Creation-Date: 2018-05-18 11:30+0200\n"
+"PO-Revision-Date: 2018-05-18 11:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: thebigmagazine-mega-menu.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/meta-box-extension/meta-box-group/class-rwmb-group-field.php:303
+msgid "Entry {#}"
+msgstr ""
+
+#: includes/meta-box-extension/meta-box-group/class-rwmb-group-field.php:303
+msgid "Entry"
+msgstr ""
+
+#: includes/tbm_helper.php:92
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/tbm_meta.php:41
+msgid "Mega Menu Tab {#}"
+msgstr ""
+
+#: includes/tbm_meta.php:48
+msgid "Choose Mega Menu Type"
+msgstr ""
+
+#: includes/tbm_meta.php:53
+msgid "Categorized Post"
+msgstr ""
+
+#: includes/tbm_meta.php:54
+msgid "Custom Posts"
+msgstr ""
+
+#: includes/tbm_meta.php:56
+msgid "Please choose mega menu type."
+msgstr ""
+
+#: includes/tbm_meta.php:59
+msgid "Choose Post Format"
+msgstr ""
+
+#: includes/tbm_meta.php:64
+msgid "All Post Formats"
+msgstr ""
+
+#: includes/tbm_meta.php:65
+msgid "Video Post Formats"
+msgstr ""
+
+#: includes/tbm_meta.php:66
+msgid "Gallery Post Formats"
+msgstr ""
+
+#: includes/tbm_meta.php:68
+msgid "Please choose category from which posts would be displayed."
+msgstr ""
+
+#: includes/tbm_meta.php:72
+msgid "Choose Category"
+msgstr ""
+
+#: includes/tbm_meta.php:77 includes/tbm_meta.php:93
+msgid ""
+"Please choose category from which posts would be displayed. Leave empty if "
+"do not want to set category."
+msgstr ""
+
+#: includes/tbm_meta.php:81 includes/tbm_meta.php:98
+msgid "Set Title"
+msgstr ""
+
+#: includes/tbm_meta.php:84 includes/tbm_meta.php:101
+msgid "Please enter mega menu group title."
+msgstr ""
+
+#: includes/tbm_meta.php:89
+msgid "Choose Posts"
+msgstr ""
+
+#: includes/tbm_meta.php:109
+msgid "Mega Menu Settings"
+msgstr ""
+
+#: includes/tbm_post_type.php:39 includes/tbm_post_type.php:55
+msgid "Mega Menu"
+msgstr ""
+
+#: includes/tbm_post_type.php:40
+msgid "Mega Menus"
+msgstr ""
+
+#: includes/tbm_post_type.php:45
+msgctxt "Mega Menu permalink - resave permalinks after changing this"
+msgid "mega-menu"
+msgstr ""
+
+#: includes/tbm_post_type.php:56
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:57
+msgid "Add New"
+msgstr ""
+
+#: includes/tbm_post_type.php:58
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:59
+msgid "Edit"
+msgstr ""
+
+#: includes/tbm_post_type.php:60
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:61
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:62 includes/tbm_post_type.php:63
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:64
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:65
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: includes/tbm_post_type.php:66
+#, php-format
+msgid "No %s found in trash"
+msgstr ""
+
+#: includes/tbm_post_type.php:67
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: includes/tbm_post_type.php:68
+msgid "Background Image"
+msgstr ""
+
+#: includes/tbm_post_type.php:69
+msgid "Set Background image"
+msgstr ""
+
+#: includes/tbm_post_type.php:70
+msgid "Remove background image"
+msgstr ""
+
+#: includes/tbm_post_type.php:71
+msgid "Use as background image"
+msgstr ""
+
+#: includes/tbm_post_type.php:73
+#, php-format
+msgid "This is where you can create and manage %s."
+msgstr ""
+
+#: views/mega-menu-query.php:32
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: views/mega-menu.php:26
+#, php-format
+msgid "News %s"
+msgstr ""
+
+#: views/mega-menu.php:68 views/mega-menu.php:91
+msgid "News"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "TheBigMagazine Mega Menu"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/thebigmagazine"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "The big magazine mega menu plugin"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""

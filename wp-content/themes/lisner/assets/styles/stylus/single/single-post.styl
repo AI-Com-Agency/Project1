@@ -1,0 +1,223 @@
+/*
+ |--------------------------------------------------------------------------
+ | 2. Post / Single
+ |--------------------------------------------------------------------------
+ */
+
+.single-listing-header.no-image {
+    position relative
+    background-color #f7f7f7
+    background-image url('assets/images/bg_pattern.jpg')
+    box-shadow 0 0 3px 0 rgba(0, 0, 0, .1)
+    &::before {
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color transparentify($theme_color, $theme_color, .4)
+    }
+}
+
+.main-single-listing.single-post {
+    top rem(-295px)
+    margin-bottom rem(-295px)
+    @media (max-width: 1440px) {
+        top rem(-180px)
+        margin-bottom rem(-180px)
+    }
+    .lisner-listing-meta-category {
+        margin-right rem(5px)
+        padding-right 0
+        border-right none
+    }
+    section {
+        position relative
+        .single-listing {
+            &-main-title,
+            &-main-meta {
+                position relative
+                z-index 2
+            }
+        }
+        blockquote {
+            padding-left 15px
+            border-left 5px solid
+            border-color $theme_input_color
+        }
+    }
+}
+
+.single-post {
+    &-author {
+        font-size 14px
+        a {
+            margin-right rem(1px)
+            font-size 14px
+            color $font_color
+            &:hover {
+                color $primary
+                text-decoration none
+            }
+        }
+    }
+    &-content {
+        strong {
+            color $font_color_dark
+        }
+    }
+    .comments {
+        .single-listing-section-title {
+            margin-bottom rem(60px)
+        }
+        .comment {
+            list-style-type none
+            .children {
+                margin-top 30px
+                padding-top 30px
+                border-top 1px solid
+                border-color $border-color
+            }
+            &-body {
+                flex 0 0 75%
+                max-width 75%
+            }
+            &:last-child {
+                & + .children {
+                    margin-bottom 30px
+                    padding-bottom 30px
+                    border-bottom 1px solid
+                    border-color $border-color
+                }
+            }
+        }
+    }
+}
+
+.page-unit.single-post {
+    .prev-next-post {
+        display none
+    }
+    .prev-next-post a {
+        color $font_color_dark
+        h6 {
+            color $font_color_dark
+        }
+    }
+}
+
+.prev-next {
+    position absolute
+    display flex
+    align-items flex-end
+    width 91%
+    height 35px
+    z-index 1
+    @media (min-width: 1450px) {
+        height 150px
+    }
+    &-post {
+        position absolute
+        min-width 200px
+        @media (max-width: 1366px) {
+            min-width 160px
+        }
+        &.prev {
+            right 107%
+            text-align right
+            @media (min-width: 1400px) {
+                right 108%
+            }
+            @media (max-width: 1024px) {
+                right 110%
+            }
+            small {
+                span {
+                    margin-right rem(5px)
+                }
+            }
+        }
+        &.next {
+            left 107%
+            text-align left
+            @media (min-width: 1400px) {
+                left 108%
+            }
+            @media (max-width: 1024px) {
+                right 106%
+            }
+            small {
+                span {
+                    margin-left rem(5px)
+                }
+            }
+        }
+        a {
+            display block
+            opacity .6
+            color $white
+            h6 {
+                font-size 20px
+                font-weight 700
+                line-height 1.4
+                color $white
+                @media (max-width: 1366px) {
+                    font-size 16px
+                }
+            }
+            &:hover {
+                opacity 1
+                color $white
+                text-decoration none
+            }
+        }
+    }
+}
+
+/* Default WP posts */
+.single-post-content {
+    .gallery {
+        display flex
+        flex-wrap wrap
+        &-columns-1 {
+            .gallery-item {
+                flex 0 0 100%
+                max-width 100%
+            }
+        }
+        &-columns-2 {
+            .gallery-item {
+                flex 0 0 49%
+                max-widht 49%
+            }
+        }
+        &-columns-3 {
+            .gallery-item {
+                flex 0 0 32%
+                max-width 32%
+            }
+        }
+        &-columns-4 {
+            .gallery-item {
+                flex 0 0 24%
+                max-width 24%
+            }
+        }
+        &-columns-5 {
+            .gallery-item {
+                flex 0 0 19%
+                max-width 19%
+            }
+        }
+    }
+}
+
+.page-unit.single-post {
+    table {
+        width 100%
+    }
+    .comment-respond .form-submit .submit {
+        height auto
+    }
+}

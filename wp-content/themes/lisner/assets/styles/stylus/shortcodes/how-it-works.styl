@@ -1,0 +1,278 @@
+/*
+ |--------------------------------------------------------------------------
+ | 14. Shortcodes / How It Works Styles
+ |--------------------------------------------------------------------------
+ |
+ | Set of base theme styles
+ |
+ */
+.how-it-works {
+    margin 0 rem(-15px)
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    h2 {
+        font-size 34px
+    }
+    h3 {
+        font-size 30px
+    }
+    h4 {
+        font-size 26px
+    }
+    h5 {
+        font-size 22px
+    }
+    h6 {
+        font-size 18px
+    }
+    p {
+        margin-bottom 0
+    }
+    &-template-1 {
+        display flex
+        align-items center
+        min-height 530px
+        .col-sm-10 {
+            > .row {
+                align-items center
+            }
+        }
+    }
+    .lisner-video-ajax {
+        position relative
+        height 365px
+        border-radius 4px
+        overflow hidden
+        .loader {
+            position absolute
+        }
+        .hiw-video-overlay {
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            display flex
+            justify-content center
+            align-items center
+            cursor pointer
+            i {
+                font-size 70px
+                color $white
+            }
+        }
+        .video-preview-loaded {
+            margin-top 0
+            height auto
+        }
+    }
+    &-title {
+        h4 {
+            margin-top 10px
+            margin-bottom 15px
+            font-size 24px
+            font-weight 700
+            color #404040
+        }
+    }
+    &-text {
+        margin 0 auto
+        width 80%
+        h6 {
+            line-height 1.5
+            color #404040
+        }
+    }
+    &-tabs {
+        .nav {
+            display flex
+            justify-content center
+            margin-bottom 110px
+            border none
+            li {
+                border none
+                &:first-child {
+                    a {
+                        border-right none
+                    }
+                }
+                &:last-child {
+                    a {
+                        border-left none
+                    }
+                }
+                a {
+                    display flex
+                    justify-content center
+                    align-items center
+                    padding rem(13px) rem(44px)
+                    @media (min-width: 768px) {
+                        min-width 225px
+                    }
+                    border 1px solid
+                    background-color $theme_input_color
+                    border-color $theme_input_color
+                    border-radius $border-radius
+                    font-size 18px
+                    color $font_header_color
+                    &:hover {
+                        border-color $theme_input_color
+                    }
+                    &.active {
+                        background-color transparent
+                        border-color $border-color
+                    }
+                }
+            }
+        }
+        > .container-fluid {
+            .col-sm-12 {
+                padding 0
+            }
+            .nav {
+                border-bottom 1px solid
+                border-color $border-color
+                li {
+                    flex 0 0 50%
+                    max-width 50%
+                    &:first-child {
+                        a {
+                            border-right 1px solid
+                            border-color $border-color
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            border-left 1px solid
+                            border-color $border-color
+                        }
+                    }
+                    a {
+                        border 0
+                        border-radius 0
+                    }
+                }
+            }
+        }
+    }
+    // template 4
+    &-template-4 {
+        a {
+            position relative
+            z-index 2
+            &:hover {
+                text-decoration none
+                .tab-part,
+                .tab-full {
+                    &::before {
+                        opacity .2
+                        transition()
+                    }
+                }
+            }
+        }
+        .tab-wrapper {
+            position relative
+            display flex
+            justify-content space-between
+            align-items center
+            > a {
+                flex 0 0 50%
+                max-width 50%
+            }
+        }
+        .tab-part,
+        .tab-full {
+            position relative
+            display flex
+            flex-direction column
+            justify-content center
+            align-items center
+            height 360px
+            background-size cover
+            background-position center
+            background-repeat no-repeat
+            &::before {
+                content ''
+                position absolute
+                top 0
+                left 0
+                width 100%
+                height 100%
+                background-color #000
+                opacity .1
+                z-index 1
+                transition()
+            }
+        }
+        .tab-alt-title {
+            margin-bottom 0
+            color $white
+            z-index 3
+        }
+        .tab-alt-subtitle {
+            font-size 18px
+            color $white
+            z-index 3
+        }
+        &.how-it-works-template-4-style-2 {
+            .tab-divider {
+                bottom 22%
+                @media (max-width: 670px) {
+                    bottom auto
+                }
+            }
+            a {
+                .tab-part {
+                    padding 20px
+                    height 340px
+                    @media (min-width: 670px) {
+                        padding 80px
+                        height 500px
+                    }
+                    .tab-alt-title {
+                        margin-bottom 20px
+                    }
+                    .tab-alt-title,
+                    .tab-alt-subtitle {
+                        width 50%
+                        @media (max-width: 768px) {
+                            width 100%
+                        }
+                    }
+                }
+                &:first-of-type {
+                    .tab-part {
+                        justify-content flex-end
+                        align-items flex-end
+                        text-align right
+                    }
+                }
+                &:last-of-type {
+                    .tab-part {
+                        justify-content flex-end
+                        align-items flex-start
+                        margin-left -1px
+                        text-align left
+                    }
+                }
+            }
+        }
+    }
+    .tab-divider {
+        position absolute
+        left 50%
+        transform translateX(-50%)
+        display flex
+        justify-content center
+        align-items center
+        width 50px
+        height 50px
+        background-color $primary
+        border-radius 50%
+        box-shadow 0 0 0 4px rgba(255, 255, 255, .4)
+        color $white
+        z-index 10
+    }
+}

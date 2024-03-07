@@ -1,0 +1,693 @@
+/*
+ |--------------------------------------------------------------------------
+ | 23. Listing / Listing submit styles
+ |--------------------------------------------------------------------------
+ */
+
+.main-submit-listing {
+  padding-bottom rem(60px)
+}
+
+.job-manager-form {
+  .form-title {
+    margin-bottom rem(25px)
+    padding-bottom rem(20px)
+    border-bottom 1px solid
+    border-color $border-color
+    font-weight 600
+  }
+
+  .link-auth {
+    color $primary
+  }
+
+  fieldset {
+    margin-top rem(40px)
+    margin-bottom 0
+    padding-bottom 0
+    border none
+    line-height 1.6
+
+    &.fieldset-recaptcha {
+      margin-bottom 65px
+    }
+
+    .input-group {
+      margin-bottom 0
+
+      &.lisner-map-field {
+        margin-bottom rem(30px)
+      }
+    }
+
+    div.field {
+      position relative
+      width 100%
+      float none
+    }
+
+    &.fieldset {
+      &-logged_in {
+        margin-top rem(20px)
+      }
+
+      &-login_required {
+        border-bottom 0
+      }
+
+      &-label-icon {
+        margin-top rem(30px)
+        margin-bottom rem(60px)
+
+        i {
+          position absolute
+          top 15px
+          left 15px
+          font-size 18px
+          color $font_color_light
+          z-index 3
+        }
+
+        label {
+          position absolute
+          top 16px
+          left 45px
+          font-weight 600
+          line-height 1
+          z-index 3
+        }
+
+        input {
+          padding-left 100px
+        }
+      }
+
+      &-listing_pricing_from,
+      &-listing_pricing_to,
+      &-listing_pricing_currency {
+        flex 0 0 32%
+        max-width 32%
+      }
+    }
+  }
+
+  fieldset {
+    // wp-editor
+
+    .wp-editor-container {
+      border-color $border-color
+    }
+
+    div.mce-panel {
+      background-color $theme_input_color
+
+      iframe {
+        body {
+          background-color $theme_input_color
+        }
+      }
+    }
+  }
+}
+
+.listing-submit {
+  &-group {
+    margin-top rem(30px)
+
+    .field-information {
+      display flex
+
+      label {
+        margin-bottom rem(10px)
+        width auto
+        float none
+        font-size 18px
+        color $font_header_color
+      }
+
+      i {
+        margin-left rem(3px)
+        font-size 15px
+        color $font_color_light
+        cursor default
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom rem(25px)
+    padding-bottom rem(25px)
+    border-bottom 1px solid
+    border-color $border-color
+    font-size 24px
+    font-weight 700
+  }
+}
+
+// taxonomy field
+.lisner-taxonomy {
+  &-field {
+    position relative
+    display flex
+    padding rem(8px) rem(20px)
+    min-height rem(44px)
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+
+    span {
+      font-weight 700
+      color $font_header_color
+      cursor pointer
+    }
+
+    // disable default select box
+
+    .job-manager-category-dropdown {
+      display none
+    }
+
+    .chosen-container-single,
+    .chosen-container-multi {
+      .chosen-choices {
+        display flex
+        flex-wrap wrap
+        background none
+        border none
+        box-shadow none
+
+        .search-field {
+          input[type=text] {
+            color transparent
+          }
+        }
+
+        .search-choice {
+          display flex
+          justify-content center
+          align-items center
+          margin-left rem(7px)
+          padding 0 rem(10px)
+          height rem(25px)
+          background none
+          background-color $primary
+          border none
+          border-radius $border-radius
+          font-weight 400
+          color $white
+
+          span {
+            font-weight 400
+            color $white
+          }
+
+          a.search-choice-close {
+            position relative
+            top 0
+            right 0
+            margin-left rem(10px)
+            background none
+            text-decoration none
+            color $white
+
+            &::after {
+              content '\e15d'
+              font-family 'Material Icons'
+              font-size 14px
+              transform rotate(0.03deg)
+            }
+
+            &:hover {
+              color $white
+            }
+          }
+        }
+      }
+
+      &.chosen-with-drop {
+        .chosen-drop {
+          top calc(100% + 9px)
+          width 100%
+          background-color $theme_input_color
+          border-radius 0 0 $border-radius $border-radius
+          box-shadow none
+
+          .highlighted {
+            background-color $white
+            border-radius $border-radius
+            box-shadow 0 0 2px 0 rgba(0, 0, 0, .05);
+          }
+        }
+      }
+    }
+  }
+
+  &-icon {
+    position absolute
+    top rem(13px)
+    right rem(20px)
+    font-size 18px
+  }
+}
+
+/* working days radio buttons */
+.working {
+  &-hours {
+    &-day {
+      &-options {
+        display flex
+        margin rem(30px) 0
+
+        .custom-control {
+          white-space nowrap
+          cursor pointer
+
+          &:not(:first-child) {
+            margin-left rem(20px)
+          }
+        }
+      }
+
+      &-time {
+        .working-hours-add {
+          display flex
+          color $primary
+
+          i {
+            margin-right rem(3px)
+          }
+
+          &:hover {
+            text-decoration none
+          }
+        }
+
+        .working-hours-remove {
+          color $quaternary
+        }
+      }
+    }
+
+    &-fields {
+      display flex
+      align-items center
+      margin-bottom rem(10px)
+
+      .input-group {
+        flex 0 0 30%
+        max-width 30%
+        margin-right rem(10px)
+      }
+
+      input {
+        cursor pointer
+
+        &:focus {
+          box-shadow none
+        }
+      }
+    }
+
+    &-labels {
+      display flex
+    }
+
+    &-label {
+      flex 0 0 31.5%
+      max-width 31.5%
+      margin-bottom: .625rem;
+      width: auto;
+      float: none;
+      font-size: 18px;
+      color: #3d0941;
+    }
+  }
+}
+
+.working-hours-form-wrapper {
+  .custom-radio {
+    .custom-control-label {
+      font-size 16px
+      color $font_header_color
+    }
+  }
+}
+
+/* timepicker */
+.ui-timepicker {
+  &-standard {
+    width 100%
+    background-color $theme_input_color
+    border none
+    border-radius 0 0 $border-radius $border-radius
+    box-shadow none
+
+    .ui-menu-item {
+      a {
+        padding rem(3px)
+        border 0
+        font-size 15px
+        color $font_color
+
+        &.ui-state-hover {
+          border 0
+          border-radius $border-radius
+          background-color $white
+          color $font_color
+        }
+      }
+    }
+  }
+}
+
+/* file upload */
+.file-upload-wrapper {
+  display flex
+  justify-content center
+  align-items center
+  height rem(222px)
+  background-color $theme_input_color
+  border 5px dashed
+  border-color darken($theme_input_color, 10%)
+  border-radius $border-radius
+  font-size 18px
+  font-weight 700
+  color #9c8e9d
+  cursor pointer
+}
+
+// input file uploads
+.logged-in.page-lisner-add-listing {
+  input[type=file] {
+    position relative
+    z-index 2
+
+    &#listing_logo,
+    &#listing_cover,
+    &#listing_gallery {
+      position absolute
+      height rem(222px)
+      opacity 0
+      cursor pointer
+    }
+
+    &#listing_logo,
+    &#listing_cover {
+      height rem(185px)
+      z-index 3
+    }
+  }
+}
+
+&#listing_files {
+  position absolute
+  opacity 0
+  min-height 55px
+  z-index 9
+}
+
+input {
+  &#listing_logo,
+  &#listing_gallery,
+  &#listing_cover {
+    opacity 0
+  }
+}
+
+.file-upload {
+  &-container {
+    position relative
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    cursor pointer
+  }
+
+  &-info {
+    position absolute
+    top rem(8px)
+    left rem(20px)
+    width 93%
+    cursor pointer
+
+    i {
+      width rem(20px)
+      color $font_color_light
+    }
+  }
+
+  &-label {
+    font-weight 700
+    color $font_header_color
+  }
+
+  &-files {
+    margin-left rem(10px)
+  }
+}
+
+.logged-in {
+  .file-upload-container {
+    opacity 0
+  }
+}
+
+.job-manager-uploaded {
+  &-files {
+    position relative
+    display flex
+    flex-wrap wrap
+    align-items center
+    margin-top rem(20px)
+  }
+
+  &-file {
+    position relative
+    flex 0 0 12%
+    max-width 12%
+    height rem(70px)
+    margin-bottom rem(15px)
+    background-size cover
+    background-repeat no-repeat
+    background-position center
+    border-radius $border-radius
+    overflow hidden
+
+    &:not(:first-child):not(:nth-child(8n)) {
+      margin-left rem(15px)
+    }
+
+    .job-manager-remove-uploaded-file {
+      position absolute
+      right rem(5px)
+      bottom rem(5px)
+      padding 0
+      color $white
+      line-height 1
+
+      i {
+        font-size 18px
+      }
+    }
+
+    &-preview {
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      background-color $black
+      border-radius $border-radius
+    }
+  }
+}
+
+/* single uploaded file */
+.file-upload-wrapper-single {
+  + .job-manager-uploaded-files {
+    position absolute
+    top rem(-8px)
+    left 0
+    width 100%
+    height 100%
+    z-index 1
+
+    &.full {
+      z-index 3
+    }
+
+    .job-manager-uploaded-file {
+      flex-basis 100%
+      max-width 100%
+      height 223px
+    }
+  }
+}
+
+.job-manager-form fieldset .job-manager-uploaded-files .job-manager-uploaded-file .job-manager-uploaded-file-preview a {
+  position absolute
+  right rem(5px)
+  bottom rem(5px)
+  padding 0
+  color $white
+  line-height 1
+
+  i {
+    font-size 18px
+  }
+}
+
+//single
+.job-manager-form fieldset .file-upload-wrapper-single + .job-manager-uploaded-files .job-manager-uploaded-file .job-manager-uploaded-file-preview a {
+  right rem(10px)
+  bottom rem(10px)
+
+  i {
+    font-size 28px
+  }
+}
+
+.job-manager-form fieldset .job-manager-uploaded-files .job-manager-uploaded-file .job-manager-uploaded-file-preview img {
+  position absolute
+  width 100%
+  height 100%
+  object-fit cover
+  border-radius $border-radius
+  overflow hidden
+
+  &:hover {
+    opacity .8
+  }
+}
+
+.job-manager-form fieldset .file-upload-wrapper:not(.file-upload-wrapper-single) + .job-manager-uploaded-files + small.description {
+  margin-top 0
+}
+
+progress {
+  margin-bottom rem(15px)
+  height rem(4px)
+  max-width 12%
+
+  &:not(:first-child):not(:nth-child(8n)) {
+    margin-left rem(15px)
+  }
+}
+
+.file-upload-wrapper-single + .job-manager-uploaded-files progress {
+  position absolute
+  bottom rem(13px)
+  left 50%
+  max-width 100%
+  transform translateX(-50%)
+}
+
+// listing social form
+.listing-submit-group .field-label {
+  font-size 18px
+  color $font_header_color
+
+  i {
+    margin-left rem(1px)
+    vertical-align top
+    font-size 15px
+    color $font_color_light
+    cursor default
+  }
+}
+
+/* alerts */
+.alert {
+  margin-bottom rem(20px)
+}
+
+.job-manager-error.job-manager-error,
+.job-manager-message {
+  position fixed
+  top rem(180px)
+  right rem(40px)
+  padding .75rem 1.25rem !important
+  background-color $error-bg
+  border 1px solid
+  border-color darken($error-bg, 5%)
+  border-radius $border-radius
+  box-shadow none
+  color $error-font
+  z-index 999
+  cursor pointer
+
+  &::before {
+    display none
+    content ''
+  }
+}
+
+.job-manager-message {
+  position relative
+  top 0
+  right 0
+  margin-bottom 15px
+  cursor default
+}
+
+// additional files
+.job-manager-form fieldset.fieldset-listing_files {
+  margin-bottom 80px
+
+  .job-manager-uploaded-files {
+    display flex
+    margin-top 0
+    overflow visible
+
+    .job-manager-uploaded-file {
+      position relative
+      margin-bottom 40px
+      background-color transparent
+      overflow visible
+
+      &:hover {
+        background-color darken($theme_input_color, 20%)
+
+        i {
+          color $white
+        }
+      }
+    }
+
+    .job-manager-uploaded-file-name {
+      display flex
+      justify-content center
+      align-items center
+      height 100%
+
+      i:not(.material-icons) {
+        font-style normal
+
+        &::after {
+          position relative
+          top 10px
+          font-family 'Material Icons'
+          content 'insert_drive_file'
+          font-size 51px
+          color $primary
+        }
+      }
+
+      code {
+        position absolute
+        top calc(100% + 5px)
+        font-size 10px
+        line-height 1.3
+        text-align center
+        color $font_header_color
+      }
+    }
+  }
+}
+
+.comment-respond .input-group label[for=listing_files] {
+  flex 0 0 12%
+  max-width 12%
+}

@@ -1,0 +1,491 @@
+/*
+ |--------------------------------------------------------------------------
+ | 28. Listing / Single Reviews & Comments
+ |--------------------------------------------------------------------------
+ */
+.reviews {
+    .comments-box {
+        padding-left 0
+    }
+    &-meta {
+        display flex
+        align-items center
+        margin-bottom rem(40px)
+        .single-listing-section-title {
+            margin-bottom 0
+        }
+        .lisner-listing-meta {
+            margin-bottom 0
+            margin-left rem(15px)
+            &-rating {
+                margin-right 0
+            }
+        }
+        .single-listing-main-meta-action {
+            margin-left rem(15px)
+        }
+        .reviews {
+            &-rating {
+                display flex
+                align-items center
+                &-stars {
+                    display flex
+                    margin 0 rem(7px)
+                    i {
+                        margin-right rem(-2px)
+                        font-size 18px
+                        color $stars
+                    }
+                }
+                &-count {
+                    font-size 14px
+                }
+            }
+        }
+    }
+}
+
+/* comment */
+.comment {
+    &:not(:last-child) {
+        margin-bottom rem(40px)
+        padding-bottom rem(40px)
+        border-bottom 1px solid
+        border-color $border-color
+    }
+    .media {
+        position relative
+        &-pingback {
+            flex-wrap wrap
+        }
+        .comment-meta-reply {
+            position absolute
+            top -3px
+            right 0
+            a {
+                display flex
+                align-items center
+                font-size 14px
+                &:hover {
+                    color $primary
+                    text-decoration none
+                }
+                i {
+                    margin-left 3px
+                    font-size 16px
+                }
+            }
+            & + .media-info + .comment-body {
+                margin-top 15px
+                p {
+                    font-size 16px
+                }
+            }
+        }
+        /* author */
+        &-info {
+            display flex
+            flex 0 0 23.5%
+            max-width 23.5%
+            &-pingback {
+                flex 0 0 100%
+                max-width 100%
+            }
+        }
+        &-author {
+            display flex
+            flex-direction column
+            margin-left rem(15px)
+            padding-right rem(7px)
+            .author {
+                font-weight 700
+                line-height 1.2
+                color $font_header_color
+            }
+            .time {
+                font-size 14px
+            }
+            .reviews-rating {
+                &-stars {
+                    position relative
+                    display flex
+                    left -2px
+                    i {
+                        margin-right rem(-2px)
+                        font-size 18px
+                        color $stars
+                    }
+                }
+            }
+        }
+        /* body */
+        &-body {
+            width 100%
+            p {
+                line-height 1.75
+            }
+        }
+    }
+    /* comment gallery images */
+    &-images {
+        display flex
+        flex-wrap wrap
+        margin-top rem(30px)
+        a {
+            flex 0 0 32%
+            max-width 32%
+            background-color $theme_color
+            border-radius 16px
+            overflow hidden
+            &:not(:first-child):not(:nth-child(4n)) {
+                margin-left rem(5px)
+            }
+            &:nth-child(n+4) {
+                margin-top rem(5px)
+            }
+            img {
+                opacity .8
+            }
+        }
+    }
+    /* comment likes */
+    &-action {
+        display flex
+        margin-top rem(40px)
+        &-like {
+            display flex
+            align-items center
+            a {
+                &:active {
+                    background-color transparentify($success, $success .25)
+                }
+                &:focus {
+                    box-shadow none
+                }
+            }
+            &.dislike {
+                margin-left rem(15px)
+                a {
+                    border-color $error
+                    color $error
+                    &:active {
+                        background-color transparentify($error, $error .25)
+                    }
+                }
+                i {
+                    color $error
+                }
+            }
+            i {
+                color $success
+            }
+            a {
+                display flex
+                align-items center
+                padding rem(6px) rem(14px)
+                border 1px solid
+                border-color $success-bg
+                border-radius $border-radius
+                box-shadow none
+                font-size 12px
+                font-weight 600
+                text-transform uppercase
+                color $success
+                > i {
+                    margin-right rem(10px)
+                }
+            }
+            span {
+                margin-left rem(10px)
+                font-size 14px
+                color $disabled
+            }
+        }
+    }
+}
+
+/* comment form */
+.comment-respond {
+    form {
+        display flex
+        flex-direction column
+    }
+    .review-ratings {
+        order 1
+    }
+    .form-submit {
+        order 6
+    }
+    .input-group {
+        &:nth-of-type(2) {
+            order 4
+        }
+        &:nth-of-type(3) {
+            order 5
+        }
+        &:nth-of-type(4) {
+            order 3
+        }
+        &:nth-of-type(5) {
+            order 2
+        }
+    }
+    .comment-reply-title {
+        display none
+    }
+    .logged-in-as {
+        a {
+            color $font_header_color
+            &:last-child {
+                color $error
+            }
+        }
+    }
+    .review-ratings {
+        .comment-review {
+            display flex
+            align-items center
+            margin-bottom 0
+            width 100%
+            line-height 1
+        }
+    }
+    .input-group {
+        display flex
+        align-items center
+        padding rem(11px) rem(20px)
+        max-width 70%
+        background-color $theme_input_color
+        border 1px solid
+        border-color $border-color
+        border-radius $border-radius
+        &-textarea {
+            align-items flex-start
+            max-width 100%
+            > i {
+                position relative
+                top 4px
+            }
+        }
+        &-alt {
+            background-color transparent
+            .form-control:not(:disabled):not(.disabled) {
+                background-color transparent
+                border none
+            }
+            .description {
+                position absolute
+                bottom -25px
+                font-size 14px
+                color $font_color_light
+            }
+        }
+        .form-control:not(:disabled):not(.disabled) {
+            padding-left 0
+            height auto
+            background-color transparent
+            border none
+        }
+        label {
+            flex 0 0 13%
+            max-width 13%
+            margin-right rem(10px)
+            margin-bottom 0
+            font-weight 600
+            &[for=review_gallery] {
+                flex 0 0 28%
+                max-width 28%
+            }
+            &:after {
+                content ':'
+            }
+            span {
+                display none
+            }
+        }
+        i {
+            margin-right rem(10px)
+            font-size 18px
+            color $font_color_light
+        }
+        .bottom-ratings {
+            display flex
+            margin-right rem(10px)
+            i {
+                position relative
+                margin-right 0
+                font-size 24px
+                color $stars
+                cursor pointer
+            }
+            &-count {
+                margin-left auto
+                span {
+                    margin 0 rem(5px)
+                }
+            }
+        }
+        // images
+        input[type=file] {
+            position absolute
+            opacity 0
+        }
+        .file-upload-label {
+            margin 0
+            padding rem(2px) rem(20px)
+            background-color $theme_input_color
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            font-size 14px
+            font-weight 400
+            color $font_color_dark
+            cursor pointer
+        }
+    }
+    // submit
+    .form-submit {
+        .submit {
+            margin-top rem(20px)
+            padding rem(10px) rem(44px)
+            background-color $primary
+            border 0
+            border-radius $border-radius
+            font-size 20px
+            font-weight 600
+            color $white
+            cursor pointer
+            &:hover {
+                box-shadow $box-shadow
+            }
+        }
+    }
+}
+
+/*review pagination*/
+.comment-pagination {
+    display flex
+    margin-top 0
+    ul {
+        margin-bottom 0
+        li {
+            a,
+            span {
+                display flex
+                justify-content center
+                align-items center
+                width 24px
+                height 28px
+                border 1px solid
+                border-color $border-color
+                border-radius $border-radius
+                color $font_header_color
+                &:hover {
+                    background-color $primary
+                    border-color $primary
+                    text-decoration none
+                    color $white
+                }
+            }
+            &.prev,
+            &.next {
+                a {
+                    padding 2px 12px
+                    width auto
+                }
+            }
+            &.active {
+                span {
+                    background-color $primary
+                    border-color $primary
+                    color $white
+                }
+            }
+        }
+    }
+}
+
+.page-unit.page {
+    .comment {
+        .media-info {
+            flex-wrap wrap
+            justify-content center
+            margin-right 15px
+            a {
+                margin-bottom 10px
+            }
+        }
+        .media-author {
+            text-align center
+        }
+    }
+    .single-listing-comments-form {
+        margin-top 40px
+    }
+    .comment-respond .input-group label {
+        flex 0 0 20%
+        max-width 20%
+    }
+    .comment-respond .form-submit .submit {
+        height auto
+    }
+}
+
+body.single-post .comments .single-listing-section-title {
+    margin-bottom 20px
+}
+
+a.pingback-link {
+    color $font_color
+    &:hover {
+        color $primary
+    }
+}
+
+@media (max-width 1460px) {
+    .comment .media-info {
+        flex 0 0 30%
+        max-width 30%
+    }
+
+    .comment-respond .input-group label {
+        flex 0 0 20%
+        max-width 20%
+    }
+
+    body.page:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget #wp-calendar tbody td, body .single-job_listing:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget #wp-calendar tbody td, body .widget #wp-calendar tbody td {
+        padding 4px
+        font-size 14px
+        a {
+            font-size 14px
+        }
+    }
+}
+
+.comment-respond {
+    .wp-social-login-widget {
+        display none //todo find a solution for social login widget in the comments
+    }
+}
+
+body:not(.logged-in) {
+    .comment-respond {
+        .review-ratings {
+            order 1
+        }
+        .form-submit {
+            order 6
+        }
+        .input-group {
+            &:nth-of-type(2) {
+                order 4
+            }
+            &:nth-of-type(3) {
+                order 5
+            }
+            &:nth-of-type(4) {
+                order 2
+            }
+        }
+    }
+}
