@@ -1,0 +1,936 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Lisner\n"
+"POT-Creation-Date: 2018-10-11 09:11+0200\n"
+"PO-Revision-Date: 2018-09-29 16:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:61
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:66
+msgid "Sorry but page does not exists!"
+msgstr ""
+
+#: 404.php:67
+msgid "Try searching something else:"
+msgstr ""
+
+#: comments.php:21
+msgid "Comments"
+msgstr ""
+
+#: comments.php:53 comments.php:77 views/posts/single/single-meta.php:17
+msgid "Leave Comment"
+msgstr ""
+
+#: comments.php:63
+msgid "Email"
+msgstr ""
+
+#: comments.php:66
+msgid "Your email address"
+msgstr ""
+
+#: comments.php:70
+msgid "Name"
+msgstr ""
+
+#: comments.php:73
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:78
+msgid "or cancel reply"
+msgstr ""
+
+#: comments.php:81
+msgid "Comment"
+msgstr ""
+
+#: comments.php:84
+msgid "Please type your comment."
+msgstr ""
+
+#: comments.php:92
+msgid "Your comment has been sent"
+msgstr ""
+
+#: comments.php:94
+msgid "Your comment has been sent and is awaiting moderation"
+msgstr ""
+
+#: comments.php:97
+msgid "You missed one or more required fields"
+msgstr ""
+
+#: includes/admin/pages/pbs_welcome.php:13
+msgid "The Big Magazine"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:336
+#: includes/pbs_theme_functions.php:244 includes/pbs_theme_functions.php:245
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:337
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/class-tgm-plugin-activation.php:341
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:342
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:344
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:346
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:350
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:352
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: includes/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:355
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:356
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:357
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:358
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:359
+#: includes/class-tgm-plugin-activation.php:885
+#: includes/class-tgm-plugin-activation.php:2552
+#: includes/class-tgm-plugin-activation.php:3586
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:360
+#: includes/class-tgm-plugin-activation.php:3164
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:361
+#: includes/class-tgm-plugin-activation.php:2953
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:363
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:365
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: includes/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:368
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:369
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:370
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:585
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:585
+msgid "Update Required"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:698
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:993
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:993
+#: includes/class-tgm-plugin-activation.php:999
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:999
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:1176
+#: includes/class-tgm-plugin-activation.php:2950
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: includes/class-tgm-plugin-activation.php:2024
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2314
+msgid "Required"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2317
+msgid "Recommended"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2334
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2337
+msgid "External Source"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2340
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2358
+msgid "Not Installed"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2362
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2364
+msgid "Active"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2370
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2373
+msgid "Requires Update"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2376
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: includes/class-tgm-plugin-activation.php:2384
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2428
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2432
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2436
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: includes/class-tgm-plugin-activation.php:2440
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-tgm-plugin-activation.php:2512
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2519
+msgid "Installed version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2523
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2532
+msgid "Available version:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2552
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2566
+msgid "Plugin"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2567
+msgid "Source"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2568
+msgid "Type"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2572
+msgid "Version"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2573
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2623
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2628
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/class-tgm-plugin-activation.php:2634
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2695
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2727
+msgid "Install"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2733
+msgid "Update"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2736
+msgid "Activate"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2767
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2769
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2810
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2812
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2910
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:2936
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3163
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3506
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3511
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3517
+#: includes/class-tgm-plugin-activation.php:3525
+msgid "Show Details"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3517
+#: includes/class-tgm-plugin-activation.php:3525
+msgid "Hide Details"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3518
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3523
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: includes/class-tgm-plugin-activation.php:3525
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/class-tgm-plugin-activation.php:3526
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/class-tgm-plugin-activation.php:3528
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/demo/pbs_demo.php:55
+msgid ""
+"This is complete demo import and after it is done your site will look 100% "
+"like the demo. If you are getting error 500 issue you need to increase "
+"`max_execution_time` on your server or try with small import "
+msgstr ""
+
+#: includes/demo/pbs_demo.php:64
+msgid ""
+"This is small import that will get you started with most basic things "
+"already set up."
+msgstr ""
+
+#: includes/pbs_functions.php:145
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/pbs_functions.php:151
+msgid "Sidebar that appears on blog listing page"
+msgstr ""
+
+#: includes/pbs_functions.php:154
+msgid "Footer Sidebar / Column 1"
+msgstr ""
+
+#: includes/pbs_functions.php:160
+msgid "Sidebar that appears in footer in first column"
+msgstr ""
+
+#: includes/pbs_functions.php:163
+msgid "Footer Sidebar / Column 2"
+msgstr ""
+
+#: includes/pbs_functions.php:169
+msgid "Sidebar that appears in footer in second column"
+msgstr ""
+
+#: includes/pbs_functions.php:172
+msgid "Footer Sidebar / Column 3"
+msgstr ""
+
+#: includes/pbs_functions.php:178
+msgid "Sidebar that appears in footer third column"
+msgstr ""
+
+#: includes/pbs_functions.php:181
+msgid "Footer Sidebar / Column 4"
+msgstr ""
+
+#: includes/pbs_functions.php:187
+msgid "Sidebar that appears in footer fourth column"
+msgstr ""
+
+#: includes/pbs_functions.php:192
+msgid "Top Menu"
+msgstr ""
+
+#: includes/pbs_post_functions.php:81
+msgid "All"
+msgstr ""
+
+#: includes/pbs_post_functions.php:109
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/pbs_post_functions.php:234
+msgid "Load More"
+msgstr ""
+
+#: includes/pbs_post_functions.php:316
+msgid "Reply"
+msgstr ""
+
+#: includes/pbs_post_functions.php:327
+msgid "Pingback"
+msgstr ""
+
+#: includes/pbs_post_functions.php:338 views/posts/single/single-meta.php:39
+msgid " ago"
+msgstr ""
+
+#: includes/pbs_post_functions.php:354
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/pbs_theme_functions.php:64
+msgid "Lisner Core"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:74
+msgid "Meta Box"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:84
+msgid "WpBakery Page Builder"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:94
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:104
+msgid "WP Job Manager"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:114
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:124
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:134
+msgid "Envato Market"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:144
+msgid "pebas® Paid Listings"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:154
+msgid "pebas® Claim Listings"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:164
+msgid "pebas® Report Listings"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:174
+msgid "pebas® Review Listings"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:184
+msgid "pebas® Bookmark Listings"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:194
+msgid "pebas® Mega Menu"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:204 includes/pbs_theme_functions.php:214
+msgid "WP User Avatars"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:336
+msgid "Next page"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:337
+msgid "Previous page"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:437
+msgid "Prev"
+msgstr ""
+
+#: includes/pbs_theme_functions.php:438 views/posts/media/loop-gallery.php:31
+#: views/posts/media/loop-image.php:30
+msgid "Next"
+msgstr ""
+
+#: index.php:85
+#, php-format
+msgid "It looks like no posts were found for: %s, please try something else."
+msgstr ""
+
+#: searchform.php:21 searchform.php:40
+msgid "Type Keyword:"
+msgstr ""
+
+#: searchform.php:22 searchform.php:41
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:25
+msgctxt "placeholder"
+msgid "(food, barber, bakery, hotel...)"
+msgstr ""
+
+#: searchform.php:28 searchform.php:47
+msgid "Search"
+msgstr ""
+
+#: searchform.php:30 searchform.php:49
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:44
+msgctxt "placeholder"
+msgid "Type keyword..."
+msgstr ""
+
+#: single.php:77
+msgid "Tags"
+msgstr ""
+
+#: templates/tpl-coming-soon.php:62
+msgid "Would you like to stay involved?"
+msgstr ""
+
+#: templates/tpl-coming-soon.php:67
+msgid "Email:"
+msgstr ""
+
+#: templates/tpl-coming-soon.php:70
+msgid "Your valid email address"
+msgstr ""
+
+#: templates/tpl-contact.php:50 templates/tpl-contact.php:71
+msgid "Send Message"
+msgstr ""
+
+#: templates/tpl-contact.php:79
+msgid "Address & Info"
+msgstr ""
+
+#: templates/tpl-contact.php:105
+msgid "Or follow us:"
+msgstr ""
+
+#: templates/tpl-faq.php:101
+msgid "Still have a question?"
+msgstr ""
+
+#: templates/tpl-faq.php:103
+msgid "Contact Us"
+msgstr ""
+
+#: views/header/header-0.php:22
+msgid "Toggle Search"
+msgstr ""
+
+#: views/header/header-0.php:45 views/header/header-0.php:48
+msgid "Logo"
+msgstr ""
+
+#: views/header/header-0.php:66
+msgid "Toggle Navigation"
+msgstr ""
+
+#: views/partials/breadcrumb.php:17
+#: views/posts/single/single-breadcrumbs.php:18
+msgid "Home"
+msgstr ""
+
+#: views/partials/breadcrumb.php:20
+msgid "Error 404"
+msgstr ""
+
+#: views/posts/media/loop-gallery.php:27 views/posts/media/loop-image.php:26
+msgid "Previous"
+msgstr ""
+
+#: views/posts/single/single-meta.php:38
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: views/posts/single/single-prev_next.php:8
+msgid "Prev Post"
+msgstr ""
+
+#: views/posts/single/single-prev_next.php:17
+msgid "Next Post"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:34
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:34
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:41
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:61
+msgid ""
+"Sorry, placing orders has been disabled for demo purposes. Feel free to "
+"reach out authors if you need more information."
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:25
+msgid "No products were found matching your selection"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:27
+msgid "First name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:32
+msgid "Last name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:40
+msgid "Display name"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:44
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:49
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:56
+msgid "Password change"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:59
+msgid "Current password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:64
+msgid "New password (leave blank to leave unchanged)"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:69
+msgid "Confirm new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:82
+msgid "Save changes"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:86
+#: woocommerce/myaccount/form-edit-account.php:87
+#: woocommerce/myaccount/form-edit-address.php:51
+#: woocommerce/myaccount/form-edit-address.php:56
+#: woocommerce/myaccount/form-edit-address.php:57
+msgid "Save address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:88
+#: woocommerce/myaccount/form-edit-address.php:58
+msgid "Disabled for demo purposes"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/pbs_woocommerce_functions.php:164
+msgid "Shop Sidebar"
+msgstr ""
+
+#: woocommerce/pbs_woocommerce_functions.php:170
+msgid "Sidebar that appears on shop page"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Lisner"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid ""
+"https://themeforest.net/item/lisner-modern-directory-listing-wordpress-"
+"theme/22656544"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Lisner - Directory Listing WordPress Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/pebas"
+msgstr ""

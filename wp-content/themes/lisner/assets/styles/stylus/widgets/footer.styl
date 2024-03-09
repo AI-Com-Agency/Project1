@@ -1,0 +1,209 @@
+/*
+ |--------------------------------------------------------------------------
+ | 31. Widgets / Footer widget styles
+ |--------------------------------------------------------------------------
+ |
+ | Set of base theme styles
+ |
+ */
+.footer {
+    .widget, aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget {
+        margin-bottom 0
+        padding-bottom 0
+    }
+    .row {
+        .col-xl-3 {
+            @media (min-width: 960px) {
+                &:first-child {
+                    flex 0 0 40%
+                    max-width 39.6%
+                    padding-right rem(50px)
+                }
+
+                &:not(:first-child) {
+                    flex 0 0 20%
+                    max-width 20%
+                    padding-left rem(50px)
+                }
+            }
+        }
+    }
+}
+
+.widget {
+    ul {
+        list-style-type none
+        li {
+            &:not(:last-child) {
+                margin-bottom rem(5px)
+            }
+        }
+    }
+    &-socials {
+        ul {
+            display flex
+            flex-wrap wrap
+            li {
+                &.list-inline-item:not(:last-child) {
+                    margin-right rem(10px)
+                }
+                &:nth-child(n+4) {
+                    margin-top rem(5px)
+                }
+                @media (max-width: 768px) and (min-width: 425px) {
+                    &:nth-child(n+7) {
+                        margin-top rem(5px)
+                    }
+                }
+                a {
+                    display flex
+                    align-items center
+                    justify-content center
+                    width 44px
+                    height 44px
+                    border 1px solid
+                    border-color $white
+                    border-radius 50%
+                    i {
+                        font-size 22px
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding rem(85px) 0
+    background-color $footer_bg_color
+    .widget {
+        & + .widget {
+            margin-top rem(45px)
+        }
+        &-title {
+            margin-bottom rem(40px)
+            padding 0
+            background-color transparent
+            font-size 22px
+            font-weight 700
+            text-transform capitalize
+            color $white
+        }
+        a {
+            color $white
+            &:hover {
+                color $primary
+                text-decoration none
+            }
+        }
+        ul {
+            padding 0
+            list-style-type none
+            li {
+                color $white
+                a {
+                    color $white
+                    &:hover {
+                        color $primary
+                    }
+                }
+                ul.children,
+                ul.sub-menu {
+                    padding-left rem(15px)
+                }
+            }
+        }
+        // tagcloud
+        .tagcloud {
+            a.tag-cloud-link {
+                margin-right rem(2px)
+                padding 0
+                background-color transparent
+                border none
+                font-size 16px
+                text-transform capitalize
+                text-decoration none
+                color $white
+                &:hover {
+                    background-color transparent
+                    color $primary
+                }
+            }
+            .tag-separator {
+                margin-right rem(3px)
+                margin-left rem(-1px)
+                color $white
+            }
+        }
+    }
+    .widget.widget_calendar #wp-calendar thead th {
+        color $white
+    }
+    caption {
+        color $white
+    }
+    .widget_rss .widget-title a:last-child {
+        color $white
+    }
+    .form-group label, .input-group label, fieldset label {
+        color $white
+    }
+    .widget p strong {
+        color $white
+    }
+}
+
+.footer-copyrights {
+    display flex
+    justify-content center
+    align-items center
+    padding rem(30px) 0
+    background-color $footer_copy_bg_color
+    color $white
+    span {
+        margin 0 rem(4px)
+        font-size 16px
+        color $primary
+    }
+    a {
+        margin 0 rem(2px)
+        color $white
+        &:hover {
+            text-decoration none
+        }
+    }
+}
+
+.pagination-wrapper {
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    .footer-copyrights {
+        margin rem(110px) rem(15px) 0
+        padding 0
+        background-color transparent
+        color #c2bdc3
+        a {
+            color #c2bdc3
+        }
+    }
+}
+
+.woocommerce-account {
+    .footer-copyrights {
+        margin rem(60px) 0 rem(100px)
+        padding 0
+        background-color transparent
+        color $font_header_color
+        @media (min-width 768px) {
+            position relative
+            left 15%
+            width 85%
+        }
+        a {
+            font-weight 600
+            color $font_header_color
+        }
+    }
+}

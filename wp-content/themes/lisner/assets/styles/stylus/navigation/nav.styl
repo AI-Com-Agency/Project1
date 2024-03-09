@@ -1,0 +1,332 @@
+/*
+ |--------------------------------------------------------------------------
+ | 10. Nav Styles
+ |--------------------------------------------------------------------------
+ */
+/* Navigation / default */
+.home.blog {
+    .header-hero {
+        background-color $theme_color
+        &-image {
+            opacity .6
+        }
+    }
+}
+
+.home:not(.blog),
+.page-template-tpl-home {
+    .header {
+        position absolute
+        width 100%
+        z-index 3
+    }
+    &.page-unit {
+        .header {
+            position relative
+        }
+    }
+}
+
+body:not(.page-template-page-search):not(.woocommerce-account),
+.page-template-tpl-home {
+    @media (min-width 1030px) {
+        .header-sticky {
+            position fixed
+            top 0
+            left 0
+            width 100%
+            z-index 99999
+        }
+
+        &.logged-in-admin {
+            .header-sticky {
+                top 32px
+            }
+        }
+    }
+}
+
+.header {
+    display block
+    align-items center
+    padding rem(30px) rem(50px)
+    background-color $theme_color
+    @media (min-width: 1190px) {
+        display flex
+        max-height 100px
+    }
+    .pbs-navbar.navbar {
+        padding 0
+        .navbar-brand {
+            display flex
+            flex-direction column
+            margin-right rem(30px)
+            padding 0
+            p {
+                margin 0
+            }
+        }
+        .navbar-collapse {
+            li {
+                display flex
+                align-items center
+                justify-content space-between
+                padding-right rem(5px)
+                padding-left rem(5px)
+                color $white
+                z-index 999
+                &:first-child {
+                    padding-left 0
+                }
+                &:last-child {
+                    padding-right 0
+                }
+                // lisner core additional items
+                &.menu-item-add-listing {
+                    margin-left rem(12px)
+                    .btn {
+                        padding rem(6.5px) rem(24px)
+                        color $white
+                    }
+                }
+                &.menu-item-add-listing,
+                &.menu-item-auth {
+                    a {
+                        display flex
+                        i {
+                            font-size 24px
+                        }
+                    }
+                    @media (min-width: 960px) {
+                        .sub-menu-alternative {
+                            left auto
+                            right -40px
+                            ul.sub-menu-wrapper {
+                                padding rem(20px) rem(10px)
+                                li {
+                                    margin-bottom rem(7px)
+                                    padding rem(3px) rem(20px)
+                                    border-radius $border-radius
+                                    i {
+                                        color $primary
+                                        transform rotate(0.03deg)
+                                    }
+                                    a {
+                                        padding 0
+                                        color $font_header_color
+                                    }
+                                    &:hover {
+                                        background-color $theme_input_color
+                                    }
+                                    &.menu-item-warning {
+                                        position relative
+                                        bottom rem(-10px)
+                                        a {
+                                            display flex
+                                            justify-content flex-end
+                                            align-items center
+                                            font-size 15px
+                                            color $primary
+                                            i {
+                                                margin-left 7px
+                                                font-size 18px
+                                                right 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                > .menu-label {
+                    display none
+                    position absolute
+                    top -200px
+                    left 50%
+                    padding rem(1px) rem(8px)
+                    background-color $secondary
+                    border-radius 0 0 $border-radius $border-radius
+                    font-size 11px
+                    font-weight 600
+                    color $theme_color
+                    transform translateX(-63%)
+                }
+                a {
+                    padding-top 0
+                    padding-bottom 0
+                    font-size 17px
+                    font-weight 600
+                    color $white
+                    &:focus {
+                        outline 0
+                    }
+                    &::after {
+                        display none
+                    }
+                }
+                i {
+                    position relative
+                    right 7px
+                    font-size 18px
+                    cursor pointer
+                    transition()
+                }
+                &:not(.menu-item-auth):not(.menu-item-add-listing) {
+                    &:hover {
+                        color $white
+                        z-index 9999
+                        i {
+                            color $primary
+                        }
+                        a {
+                            .count {
+                                i {
+                                    color $white
+                                }
+                            }
+                        }
+                    }
+                }
+                // sub menu
+                > .sub-menu {
+                    display none
+                    position absolute
+                    top 100%
+                    left -50%
+                    right auto
+                    padding-top rem(20px)
+                    padding-left 0
+                    z-index 999
+                    .sub-menu-wrapper {
+                        padding rem(19px) 0
+                        min-width 215px
+                        border-radius $border-radius
+                        background-color $white
+                        box-shadow $box-shadow
+                    }
+                    li {
+                        padding 0 rem(10px)
+                        font-size $base-font-size
+                        color $font_color
+                        white-space nowrap
+                        a {
+                            display block
+                            width 100%
+                            padding rem(7px) 1rem
+                            font-size $base-font-size
+                            font-weight 400
+                            color $font_color
+                        }
+                        i {
+                            transform rotate(-90deg)
+                        }
+                        &:hover {
+                            background-color transparentify($primary, $primary, .1)
+                            transition()
+                            i {
+                                color $primary
+                            }
+                        }
+                        // sub menu / sub menu level 2
+                        > .sub-menu {
+                            top 30%
+                            left auto
+                            right -70%
+                        }
+                    }
+                }
+                // open submenu on hover
+                @media (min-width: 1024px) {
+                    &:hover {
+                        > .sub-menu {
+                            display block
+                            animation: fadeInUp 150ms ease-in-out both;
+                        }
+                    }
+                }
+                &.active {
+                    > .sub-menu {
+                        display block
+                    }
+                }
+                .dropdown-menu {
+                    margin 0
+                    padding 0
+                    background-color transparent
+                    border none
+                }
+                .dropdown-menu.show {
+                    display block
+                }
+                &.woocommerce-cart {
+                    &:hover {
+                        a {
+                            color $white
+                        }
+                    }
+                    a {
+                        display flex
+                        justify-content center
+                        align-items center
+                        margin-left rem(15px)
+                        &:hover {
+                            color $white
+                            text-decoration none
+                        }
+                        .count {
+                            position relative
+                            margin-left rem(15px)
+                            i {
+                                font-size 24px
+                            }
+                            &-number {
+                                position absolute
+                                top -1px
+                                right -1px
+                                display flex
+                                align-items center
+                                justify-content center
+                                width 17px
+                                height 17px
+                                background-color $secondary
+                                border-radius 50%
+                                font-size 12px
+                                line-height 1
+                                color $font_color_dark
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Sticky header
+.header.fixed-top {
+    top -300px
+    transition()
+}
+
+.header.fixed-top.sticky {
+    top 0
+    transition()
+}
+
+.logged-in-admin .header.fixed-top.sticky {
+    top 32px
+}
+
+// search fields in nav
+.pbs-navbar {
+    .main-search-results,
+    .input-group-results {
+        ul {
+            li.no-results {
+                display block
+                font-size 14px
+            }
+        }
+    }
+}

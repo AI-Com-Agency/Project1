@@ -1,0 +1,157 @@
+/*
+ |--------------------------------------------------------------------------
+ | 34. WooCommerce / Shop Cart
+ |--------------------------------------------------------------------------
+ */
+
+.woocommerce {
+    table.shop_table {
+        border 0
+        thead {
+            tr {
+                th {
+                    color $font_header_color
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    margin-top 1px
+                    padding rem(12px)
+                    background-color $theme_input_color
+                    border 0
+                    border-bottom 1px solid
+                    border-color $white
+                    &:first-child {
+                        border-radius $border-radius 0 0 $border-radius
+                    }
+                    &:last-child {
+                        border-radius 0 $border-radius $border-radius 0
+                    }
+                    a {
+                        color $font_header_color
+                        &:hover {
+                        }
+                        &.remove {
+                            font-size 18px
+                        }
+                    }
+                    .quantity {
+                        .qty {
+                            border 1px solid
+                            border-color $border-color
+                            border-radius $border-radius
+                        }
+                    }
+                }
+                &:not(.cart_item):not(.order_item):last-child {
+                    &.order-total {
+                        td {
+                            padding-top rem(11px)
+                            .amount {
+                                font-weight 600
+                            }
+                        }
+                    }
+                    td {
+                        padding 0
+                        padding-top rem(20px)
+                        background-color transparent
+                        .coupon {
+                            display flex
+                            input[type=text] {
+                                padding-right rem(20px)
+                                padding-left rem(20px)
+                                background-color $theme_input_color
+                                border 1px solid
+                                border-color $border-color
+                                border-radius $border-radius
+                                min-width 120px
+                                font-size 14px
+                            }
+                            button.button {
+                                margin-top 0
+                                border none
+                                font-size 14px
+                            }
+                        }
+                        button.button[name=update_cart] {
+                            margin-top 0
+                            &:disabled,
+                            &.disabled {
+                                padding rem(10px) rem(20px)
+                                color $white
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    background-color $primary
+                                    box-shadow none
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.woocommerce {
+    .cart-collaterals {
+        margin-top rem(60px)
+        .cart_totals {
+            h2 {
+                margin-bottom rem(30px)
+                font-size 24px
+            }
+            table.shop_table {
+                tr {
+                    th {
+                        color $font_header_color
+                        line-height 1.8
+                        &::after {
+                            content: ':'
+                        }
+                    }
+                    td {
+                        padding-left 0
+                        background-color transparent
+                    }
+                    &.order-total {
+                        td {
+                            padding-top rem(10px)
+                            .amount {
+                                color $font_header_color
+                            }
+                        }
+                    }
+                }
+            }
+            div.wc-proceed-to-checkout {
+                padding 0
+                a {
+                    background-color $secondary
+                    border-color $secondary
+                    font-weight 600
+                    color $font_header_color
+                    &:hover {
+                        background-color $secondary
+                        border-color $secondary
+                        box-shadow $box-shadow
+                        color $font_header_color
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.woocommerce td.product-name .wc-item-meta p,
+.woocommerce td.product-name .wc-item-meta:last-child,
+.woocommerce td.product-name dl.variation p,
+.woocommerce td.product-name dl.variation:last-child {
+    font-size 16px
+    line-height 1.5
+}

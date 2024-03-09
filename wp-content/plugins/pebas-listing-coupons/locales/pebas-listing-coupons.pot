@@ -1,0 +1,489 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: pebas® Listing Coupons\n"
+"POT-Creation-Date: 2018-10-26 19:06+0200\n"
+"PO-Revision-Date: 2018-10-12 19:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: pebas-listing-coupons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/pebas_coupons_admin.php:101
+msgid "Coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:102
+#: includes/admin/pebas_coupons_meta.php:49
+msgid "Listing"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:103
+msgid "Type"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:104
+msgid "Expires"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:105
+msgid "Status"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:141 templates/listing-coupons.php:47
+msgid "Unlimited"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:172
+#: includes/admin/pebas_coupons_admin.php:175
+msgid "Bookmark updated."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:173
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:174
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:176
+#, php-format
+msgid "Bookmark restored to revision from %s"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:177
+msgid "Bookmark published."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:178
+msgid "Bookmark saved."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:179
+msgid "Bookmark submitted."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:181
+#, php-format
+msgid "Bookmark scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:182
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:184
+msgid "Bookmark draft updated."
+msgstr ""
+
+#: includes/admin/pebas_coupons_admin.php:187
+msgid "Return to reports"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:52
+msgid "Choose listing where coupon will be displayed."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:56 templates/coupon-form.php:39
+msgid "Coupon Title"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:58 templates/coupon-form.php:41
+#, php-format
+msgid "25% off discount with this awesome coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:59
+msgid "Enter title for the coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:63 templates/coupon-form.php:47
+msgid "Coupon Description"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:65 templates/coupon-form.php:50
+#, php-format
+msgid "Claim this deal and get 25% cash back rewards"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:66
+msgid "Enter description for the coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:70 templates/coupon-form.php:55
+msgid "Coupon Discount"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:72 templates/coupon-form.php:59
+msgid "25"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:73
+msgid "Enter coupon discount percentage without any \"%\" sign."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:77
+msgid "Coupon Start"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:84
+msgid "Choose start date for the coupon."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:88
+msgid "Coupon Ends"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:95
+msgid "Choose end date for the coupon."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:99 templates/coupon-form.php:89
+msgid "Coupon Type"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:102 templates/coupon-form.php:91
+msgid "Code"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:103 templates/coupon-form.php:92
+msgid "Link"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:104 templates/coupon-form.php:93
+msgid "Print"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:106
+msgid "Choose coupon type you wish to use."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:111 templates/coupon-form.php:100
+msgid "Coupon Code"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:113
+msgid "e.g. CODE25"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:114
+msgid "Enter code for the coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:120 templates/coupon-form.php:110
+msgid "Coupon Link"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:122
+msgid "https://pebas.rs"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:123
+msgid "Enter affiliate link for the coupon"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:129
+msgid "Coupon Printable Image"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:131
+msgid "Upload printable image for the coupon."
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:138 templates/coupon-form.php:65
+msgid "Coupon Button Text"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:140 templates/coupon-form.php:67
+msgid "Click Here!"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:141
+msgid "Enter text for the coupon button"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:146
+msgid "Coupon Information"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:155
+#: includes/admin/pebas_coupons_meta.php:167
+msgid "Coupon Status"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:158
+msgid "Active"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:159
+msgid "Inactive"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:160
+msgid "Expired"
+msgstr ""
+
+#: includes/admin/pebas_coupons_meta.php:162
+msgid "Set status of the coupon"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:48
+msgid "Listing Coupon"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:49
+msgid "Listing Coupons"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:64
+#: includes/pebas-listing-coupons-install.php:65
+#: includes/pebas-listing-coupons-install.php:66
+#: includes/pebas-listing-coupons-install.php:67
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:68
+#: includes/pebas-listing-coupons-install.php:69
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:70
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:71
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:72
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:73
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:74
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:75
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:76
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: includes/pebas-listing-coupons-install.php:77
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: includes/pebas_coupons.php:158
+msgid "Coupon post has not been created."
+msgstr ""
+
+#: includes/pebas_coupons.php:179
+msgid "Coupon has been successfully saved!"
+msgstr ""
+
+#: includes/pebas_coupons.php:181
+msgid "There has been an error with this request!"
+msgstr ""
+
+#: includes/pebas_coupons.php:191
+msgid "Coupon has been successfully deleted!"
+msgstr ""
+
+#: includes/pebas_coupons.php:193
+msgid "Coupon could not be deleted!"
+msgstr ""
+
+#: pebas-listing-coupons.php:54
+msgid ""
+"<strong>pebas® claim listings</strong> requires <strong>Lisner Core & "
+"WooCommerce</strong> plugins to be installed in order to be used."
+msgstr ""
+
+#: pebas-listing-coupons.php:170
+msgid "d"
+msgstr ""
+
+#: pebas-listing-coupons.php:171
+msgid "h"
+msgstr ""
+
+#: pebas-listing-coupons.php:172
+msgid "m"
+msgstr ""
+
+#: pebas-listing-coupons.php:173
+msgid "s"
+msgstr ""
+
+#: templates/coupon-form.php:28
+#, php-format
+msgid "Listing coupon: %s"
+msgstr ""
+
+#: templates/coupon-form.php:31
+msgid "All coupons"
+msgstr ""
+
+#: templates/coupon-form.php:43
+msgid "Enter coupon title"
+msgstr ""
+
+#: templates/coupon-form.php:51
+msgid "Enter coupon description."
+msgstr ""
+
+#: templates/coupon-form.php:61
+msgid "Enter coupon discount, only numbers are allowed."
+msgstr ""
+
+#: templates/coupon-form.php:69
+msgid "Enter coupon button text."
+msgstr ""
+
+#: templates/coupon-form.php:73
+msgid "Coupon Start Time"
+msgstr ""
+
+#: templates/coupon-form.php:77
+msgid "Choose coupon start time or leave empty to start immediately."
+msgstr ""
+
+#: templates/coupon-form.php:81
+msgid "Coupon End Time"
+msgstr ""
+
+#: templates/coupon-form.php:85
+msgid "Choose coupon end time or leave empty make it unlimited."
+msgstr ""
+
+#: templates/coupon-form.php:95
+msgid "Choose coupon type."
+msgstr ""
+
+#: templates/coupon-form.php:102
+msgid "CODE25"
+msgstr ""
+
+#: templates/coupon-form.php:104
+msgid "Enter coupon code."
+msgstr ""
+
+#: templates/coupon-form.php:112
+msgid "https://google.com"
+msgstr ""
+
+#: templates/coupon-form.php:114
+msgid "Enter coupon link."
+msgstr ""
+
+#: templates/coupon-form.php:122
+msgid "Coupon Print Image"
+msgstr ""
+
+#: templates/coupon-form.php:136 templates/coupon-form.php:139
+msgid "Upload Image"
+msgstr ""
+
+#: templates/coupon-form.php:144
+msgid "Upload coupon image."
+msgstr ""
+
+#: templates/coupon-form.php:150 templates/coupon-form.php:154
+msgid "Save Coupon"
+msgstr ""
+
+#: templates/coupon-form.php:157
+msgid "Are you sure you wish to delete coupon?"
+msgstr ""
+
+#: templates/coupon-form.php:158
+msgid "Remove Coupon"
+msgstr ""
+
+#: templates/coupon-item.php:17
+#, php-format
+msgid "<strong>%d%%</strong> Off"
+msgstr ""
+
+#: templates/coupon-item.php:26
+msgid "Show Coupon"
+msgstr ""
+
+#: templates/coupon_modal.php:38
+msgid "Code copied!"
+msgstr ""
+
+#: templates/coupon_modal.php:38
+msgid "Click the code to copy."
+msgstr ""
+
+#: templates/listing-coupons.php:14
+msgid "Coupons for this listing are displayed below"
+msgstr ""
+
+#: templates/listing-coupons.php:16 templates/no-listing-coupons.php:15
+msgid "Add Coupon"
+msgstr ""
+
+#: templates/listing-coupons.php:36
+#, php-format
+msgid "Type: %s"
+msgstr ""
+
+#: templates/no-listing-coupons.php:13
+#, php-format
+msgid "%s has no coupons."
+msgstr ""
+
+#: templates/no-listing.php:12
+msgid "Wrong listing, please make sure that you are on correct listing."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "pebas® Listing Coupons"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/pebas-bookmark-listings"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "pebas® Listing Coupons plugin used for pebas® listing themes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""

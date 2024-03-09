@@ -1,0 +1,136 @@
+/*
+ |--------------------------------------------------------------------------
+ | 8d. Listing Statistics Styles
+ |--------------------------------------------------------------------------
+ */
+
+.profile-statistics {
+    display flex
+    flex-wrap wrap
+    align-items center
+    margin 20px -.5% 0
+    .profile-statistic {
+        position relative
+        padding 20px 25px
+        flex 0 0 19%
+        max-width 19%
+        margin 0 .5%
+        border 1px solid
+        border-color $border-color
+        background-color $theme_input_color
+        border-radius $border-radius
+        overflow hidden
+        @media (max-width 1320px) {
+            flex 0 0 32%
+            max-width 32%
+            &:nth-child(n + 4) {
+                margin-top 10px
+            }
+        }
+        @media (max-width 780px) {
+            flex 0 0 49%
+            max-width 49%
+            &:nth-child(n + 3) {
+                margin-top 10px
+            }
+        }
+        @media (max-width 780px) {
+            flex 0 0 100%
+            max-width 100%
+            margin 10px 0 0
+        }
+        &:hover {
+            text-decoration none
+            color $primary
+        }
+        &--icon {
+            position absolute
+            bottom -10px
+            right 0
+            opacity .1
+            font-size 80px
+        }
+        &--title {
+            p {
+                margin-bottom 0
+                font-size 14px
+            }
+        }
+        &--count {
+            margin-top 5px
+            font-size 54px
+            font-weight 700
+            line-height 1
+            color $font_header_color
+        }
+    }
+}
+
+.profile-charts-heading {
+    display flex
+    justify-content space-between
+    align-items baseline
+    margin-top 25px
+    h5.stat-title {
+        margin-bottom 0;
+        font-size 18px
+        line-height 1
+    }
+    .stat-switch {
+        display flex
+        &-call {
+            display flex
+            align-items center
+            padding .1875rem .875rem
+            margin-left 3px
+            background-color $theme_input_color
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            font-size 14px
+            color $font_header_color
+            &:hover {
+                text-decoration none
+            }
+            &.active {
+                background-color $primary
+                border-color $primary
+                color $white
+            }
+        }
+    }
+}
+
+.profile-charts {
+    display flex
+    justify-content center
+    align-items center
+    margin-top 15px
+    padding 20px 20px 0
+    height 350px
+    background-color $theme_input_color
+    border 1px solid $border-color
+    border-radius $border-radius
+    &::after {
+        display block
+        content 'trending_up'
+        font-family 'Material Icons'
+        font-size 320px
+        color $primary
+        opacity .4
+        animation trep 1s infinite
+    }
+    &.loaded {
+        &::after {
+            display none
+        }
+    }
+}
+
+.lisner-profile-content h3.listing-stat-title {
+    font-weight 300
+    span {
+        font-weight 700
+    }
+}
+

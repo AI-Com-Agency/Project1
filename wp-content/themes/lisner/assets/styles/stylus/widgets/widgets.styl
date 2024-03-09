@@ -1,0 +1,241 @@
+/*
+ |--------------------------------------------------------------------------
+ | 30. Widgets
+ |--------------------------------------------------------------------------
+ */
+
+.single-job_listing:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget,
+.page:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget,
+.widget {
+    margin-bottom rem(30px)
+    padding-bottom rem(30px)
+    &:not(:last-child) {
+        border-bottom 1px solid
+        border-color $border-color
+    }
+    .widget-title {
+        margin-top 0
+        margin-bottom rem(30px)
+        padding 0
+        background-color transparent
+        font-size 22px
+        font-weight 700
+        text-transform none
+        color $font_header_color
+    }
+    ul {
+        margin-bottom 0
+        padding-left 0
+        li {
+            display flex
+            flex-wrap wrap
+            a {
+                margin-right auto
+            }
+            ul {
+                display flex
+                flex 0 0 100%
+                flex-wrap wrap
+                max-width 100%
+                padding-left rem(15px)
+                li {
+                    width 100%
+                }
+            }
+        }
+    }
+    a {
+        color $primary
+        &:hover {
+            color $primary
+        }
+    }
+    p {
+        strong {
+            color $font_header_color
+        }
+    }
+    select {
+        padding rem(8px) rem(15px)
+        width 100%
+        max-width 100%
+        background-color $theme_input_color
+        border-color $border-color
+        border-radius $border-radius
+        color $font_color
+    }
+    // calendar
+    #wp-calendar {
+        width 100%
+        .caption {
+            margin-top .7rem
+            margin-bottom 1rem
+            font-size 14px
+            text-align right
+            color $font_color_dark
+        }
+        thead {
+            font-size 12px
+            color $font_header_color
+            th {
+                padding-bottom: .7rem;
+            }
+        }
+        tbody {
+            td {
+                padding rem(9px)
+                background-color $theme_input_color
+                border 1px solid
+                border-color $white
+                text-align center
+                a {
+                    color $primary
+                }
+                &:hover {
+                    background-color $primary
+                    color $white
+                    a {
+                        color $white
+                    }
+                }
+                .pad {
+                    background-color transparent
+                }
+            }
+        }
+        tfoot {
+            #next {
+                font-size 14px
+                text-align right
+                color $font_color_dark
+                &:hover {
+                    color $primary
+                }
+            }
+            #prev {
+                padding-top .7rem
+                font-size 14px
+                color $font_color_dark
+                &:hover {
+                    color $primary
+                }
+            }
+        }
+    }
+    // recent comments && rss
+    &_rss,
+    &_recent_comments {
+        ul {
+            li {
+                display block
+            }
+        }
+    }
+    &_rss {
+        .widget-title {
+            a {
+                &:last-child {
+                    color $font_header_color
+                }
+            }
+        }
+    }
+    // search
+    &_search {
+        padding-bottom 0
+        .search-form {
+            .input-group-form {
+                width 100%
+                label {
+                    font-weight 600
+                }
+                i {
+                    display none
+                }
+                input {
+                    font-size 14px
+                }
+            }
+            .search-submit {
+                margin-top rem(10px)
+                width 100%
+            }
+        }
+    }
+    // tagcloud
+    &_tag_cloud {
+        .tagcloud {
+            a {
+                display inline-block
+                margin-right 1px
+                margin-bottom 3px
+                padding 2px 6px
+                background-color $theme_input_color
+                border 1px solid
+                border-color $border-color
+                border-radius $border-radius
+                color $font_header_color
+                &:hover {
+                    box-shadow $box-shadow-listing
+                    color $font_color_light
+                    text-decoration none
+                }
+            }
+        }
+    }
+    // menu
+    &_nav_menu {
+        ul {
+            li {
+                display block
+                &.menu-item-auth {
+                    a {
+                        padding 0
+                    }
+                }
+                &.menu-item-add-listing {
+                    a {
+                        display flex
+                        align-items center
+                        justify-content center
+                        color $white
+                        i {
+                            margin-right 10px
+                            font-size 18px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget {
+    margin-bottom 0
+    padding-bottom 0
+}
+
+.single:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.shop-sidebar):not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report),
+.sidebar-default {
+    padding rem(45px) rem(30px) 0
+    background-color $white
+    border-radius $border-radius
+    box-shadow $box-shadow-listing
+    .lisner_widget_promo-1,
+    .lisner_widget_promo-2 {
+        margin rem(-45px) rem(-30px)
+    }
+}
+
+.page-unit .lisner-shop .woocommerce-results-meta .woocommerce-ordering select {
+    display block
+}
+
+.page-unit {
+    .page:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget a, .single-job_listing:not(.woocommerce-page-lisner) aside.single-listing-sidebar:not(.single-listing-sidebar-lisner):not(.single-listing-claim):not(.single-listing-report) .listing-widget a, .widget a {
+        color $font_color
+        &:hover {
+            color $primary
+        }
+    }
+}

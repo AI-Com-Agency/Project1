@@ -1,0 +1,993 @@
+/*
+ |--------------------------------------------------------------------------
+ | 2. Hero Styles
+ |--------------------------------------------------------------------------
+ */
+
+.hero {
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    height 800px
+    overflow hidden
+    &-template-style-4 {
+        .hero-search {
+            top 70px
+        }
+    }
+    &-template-style-4,
+    &-template-style-5 {
+        .hero-search {
+            .col-cst-padding {
+                padding 0 3px
+                &.col-sm-4 {
+                    @media (min-width: 576px) {
+                        flex 0 0 32%
+                        max-width 32%
+                    }
+                }
+            }
+            .col-sm-2.col-cst-padding {
+                @media (min-width: 576px) {
+                    flex 0 0 17%
+                    max-width 17%
+                }
+            }
+        }
+    }
+    &-template-style-8 {
+        align-items flex-end
+        &.hero {
+            overflow visible
+        }
+        .hero-search {
+            top -120px
+            .input-group-results {
+                width calc(100% - 5px)
+            }
+        }
+    }
+    &-template-style-9 {
+        .hero-search {
+            .input-group-results,
+            .main-search-results {
+                width 99%
+            }
+        }
+    }
+    &-template-style-10 {
+        &.hero {
+            overflow visible
+        }
+        .col-9-cst {
+            padding 0 25px
+        }
+        .hero-search {
+            top 35px
+        }
+    }
+    &-image {
+        position absolute
+        width 100%
+        height 100%
+        overflow hidden
+        background-position center
+        background-size cover
+        background-repeat no-repeat
+    }
+    &-search {
+        position relative
+        width 30%
+        z-index 2
+        &-template-2 {
+            width 100%
+        }
+        form {
+            &.shadowed {
+                padding rem(25px) rem(20px)
+                background-color transparentify($white, $white, .15)
+                border-radius $border-radius
+            }
+        }
+        &-field {
+            button {
+                padding rem(12px)
+                width 100%
+                height rem(50px)
+                font-size 18px
+                font-weight 600
+            }
+        }
+    }
+}
+
+// hero search fields
+.hero-search {
+    .form-group {
+        margin-bottom rem(20px)
+    }
+}
+
+// geolocation
+.geolocate {
+    cursor pointer
+}
+
+.city-name-geo.geolocated {
+    text-transform capitalize
+}
+
+.form-group {
+    .input-group {
+        &-wrapper {
+            position relative
+            display flex
+            align-items center
+            padding 0 rem(17px)
+            background-color $white
+            border none
+            border-color $border-color
+            border-radius $border-radius
+            color $font_color
+            &:focus {
+                box-shadow 0 0 0 .05rem transparentify($theme_color, $theme_color, .25)
+            }
+            .form-control {
+                padding 0
+                height rem(50px)
+                background-color transparent
+                border 0
+                &:focus {
+                    box-shadow none
+                }
+            }
+        }
+        &-label {
+            margin-right rem(10px)
+            font-size 16px
+            font-weight 700
+            color $font_header_color
+        }
+        &-icon {
+            margin-left rem(10px)
+            font-size 18px
+            color #aea3af
+        }
+    }
+}
+
+// main search suggestions
+.main-search,
+.input-group {
+    &-results {
+        position absolute
+        top calc(100% - 10px)
+        left 0
+        padding 0 rem(20px)
+        width 100%
+        max-height 350px
+        background-color $white
+        border-radius 0 0 $border-radius $border-radius
+        overflow-y auto
+        z-index 9
+        ul {
+            margin-bottom 0
+            li {
+                position relative
+                display flex
+                align-items center
+                margin 0 rem(-20px)
+                padding rem(8px) rem(20px)
+                font-weight 700
+                text-transform capitalize
+                color $font_header_color
+                cursor pointer
+                &::after {
+                    content ''
+                    position absolute
+                    top -1px
+                    display block
+                    height 1px
+                    width 92%
+                    background-color $border-color
+                }
+                &.term-hidden {
+                    display none
+                }
+                &.search-default-listing {
+                    padding 0
+                    a {
+                        display flex
+                        padding rem(13px) rem(20px)
+                        width 100%
+                        color $font_color
+                        &:hover {
+                            text-decoration none
+                        }
+                        .search-default-listing {
+                            &-wrapper {
+                                display flex
+                                flex-direction column
+                                margin-left rem(8px)
+                                span {
+                                    line-height 1
+                                    color $font_header_color
+                                }
+                            }
+                            &-image {
+                                border-radius $border-radius
+                                overflow hidden
+                            }
+                            &-city {
+                                margin-bottom rem(3px)
+                                font-size 14px
+                                font-weight 400
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    background-color #f3f3f3
+                }
+                &.no-results {
+                    font-weight 400
+                    text-transform none
+                    strong {
+                        margin 0 rem(3px)
+                    }
+                }
+                i {
+                    margin-right rem(10px)
+                    font-size 18px
+                    color #797878
+                }
+                .searched-terms {
+                    &-keyword {
+                        margin-right rem(3px)
+                        font-weight 700
+                        color $font_dropdown_header
+                    }
+                    &-in {
+                        margin-right rem(3px)
+                        font-weight 400
+                        text-transform none
+                        color $font_dropdown_header
+                    }
+                    &-title {
+                        font-weight 400
+                        color $font_dropdown_header
+                    }
+                }
+            }
+        }
+    }
+    &-default {
+        display none
+        margin-top rem(10px)
+        border none
+        border-color $border-color
+        &.active {
+            display block
+        }
+        &.has-items {
+            .search-default-listing {
+                display none
+            }
+        }
+    }
+}
+
+.page .page-header-form .hero-search-field:not(.hero-search-field-button) .form-group .input-group-wrapper,
+.page .search-page-form .hero-search-field:not(.hero-search-field-button) .form-group .input-group-wrapper {
+    position static
+}
+
+.page-header-form,
+.search-page-form {
+    .taxonomy-search-wrapper {
+        position relative
+    }
+    .main-search,
+    .input-group {
+        &-results {
+            width calc(100% - 53px)
+        }
+    }
+}
+
+.input-group-results {
+    ul {
+        li {
+            font-weight 400
+            text-transform none
+            span {
+                span {
+                    font-weight 700
+                    text-transform capitalize
+                }
+            }
+            i {
+                position relative
+                top 6px
+                display flex
+                align-self flex-start
+                font-size 14px
+                color $font_color_light
+            }
+        }
+    }
+}
+
+.form-group .input-group-wrapper .form-control.custom-category-search:focus,
+.form-group .input-group-wrapper .form-control.custom-location-search:focus,
+.form-group .input-group-wrapper .form-control.location-search:focus,
+.form-group .input-group-wrapper .form-control.tax-search:focus {
+    background-color $white
+}
+
+// reset main search
+.tax-search-close {
+    line-height 1
+    cursor pointer
+}
+
+// main search new labels
+.taxonomy-search-wrapper {
+    display flex
+    align-items center
+    width 100%
+}
+
+.taxonomy-selected {
+    position absolute
+    top 50%
+    display flex
+    align-items center
+    transform translateY(-50%)
+    &.has-items {
+        background-color $white
+        & + .tax-search {
+            pointer-events none
+        }
+    }
+    &.multi-not-allowed {
+        display none
+        position relative
+        top auto
+        transform none
+    }
+    &-inner {
+        display flex
+        align-items center
+        margin-left rem(8px)
+        .taxonomy-item {
+            margin-right rem(3px)
+            padding 0
+            background-color transparent
+            font-size 16px
+            font-weight 700
+            color $font_color
+            cursor pointer
+            &-count {
+                margin-right rem(3px)
+            }
+            &:not(.taxonomy-item-multiple):not(.taxonomy-item-single):not(:nth-last-child(-n+2))::after {
+                content ','
+            }
+            &:not(.taxonomy-item-multiple):not(.taxonomy-item-single):nth-last-child(-n+2)::after {
+                font-size 16px
+                font-weight 400
+                font-family 'Material Icons'
+                content '\e313'
+            }
+            &.hide {
+                position absolute
+                z-index -1
+                opacity 0
+            }
+            &-multiple {
+                display flex
+                align-items center
+                i {
+                    font-size 14px
+                    color $font_color
+                }
+            }
+            .item-name {
+                margin-left rem(3px);
+            }
+        }
+        .taxonomy-add {
+            display flex
+            align-items center
+            margin-left rem(3px)
+            padding rem(1px) rem(8px)
+            background-color #ddd
+            border-radius $border-radius
+            white-space nowrap
+            text-transform capitalize
+            font-size 14px
+            font-weight 400
+            color $font_color
+            cursor pointer
+            i {
+                margin-left 0
+                margin-right rem(5px)
+                font-size 10px
+                font-weight 600
+            }
+            &.icon-only {
+                padding rem(6px) rem(8px)
+                i {
+                    margin 0
+                }
+            }
+        }
+    }
+    &-item {
+        display flex
+        align-items center
+        padding rem(1px) rem(8px)
+        background-color $primary
+        border-radius $border-radius
+        white-space nowrap
+        text-transform capitalize
+        font-size 14px
+        font-weight 400
+        color $white
+        &.keyword-item {
+            margin-right rem(7px)
+        }
+        i {
+            margin-left rem(5px)
+            font-size 10px
+            font-weight 600
+            color $white
+            cursor pointer
+            &.input-group-label-custom-icon {
+                margin-left 0
+                margin-right rem(5px)
+                font-size 15px
+            }
+        }
+    }
+}
+
+// scrollbars
+/* width */
+.scroll::-webkit-scrollbar {
+    width rem(5px)
+    &-track {
+        background-color transparent
+    }
+    &-thumb {
+        background-color $theme_color
+        border-radius $border-radius
+        &:hover {
+            background-color $theme_color
+        }
+    }
+}
+
+// hero featured taxonomies
+.hero-featured {
+    &-taxonomies {
+        display flex
+        justify-content center
+        align-items center
+        margin-top rem(35px)
+    }
+    &-taxonomy {
+        display flex
+        align-items center
+        margin 0 rem(22px)
+        color $white
+        i {
+            margin-right rem(7px)
+            font-size 18px
+        }
+        &:hover {
+            color $primary
+            text-decoration none
+        }
+    }
+}
+
+// taxonomies results
+.taxonomies-results {
+    display none
+    padding rem(10px) 0
+    &.active {
+        display block
+    }
+    ul {
+        margin-bottom 0
+        li {
+            display flex
+            justify-content space-between
+            margin 0
+            padding rem(10px)
+            border-bottom 1px solid
+            border-color $border-color
+            font-size 14px
+            cursor default
+            &::after {
+                display none
+            }
+            &:hover {
+                background-color transparent
+            }
+            i {
+                position relative
+                display block
+                font-size 16px
+                cursor pointer
+                &.term-item-remove {
+                    font-size 14px
+                    color $error
+                }
+            }
+        }
+    }
+    .term-item-remove-all {
+        display inline-flex
+        align-items center
+        float right
+        margin rem(15px) 0
+        padding 0 rem(20px)
+        font-size 14px
+        cursor pointer
+        span {
+            margin-left rem(7px)
+            padding rem(2px)
+            background-color $tertiary
+            border-radius $border-radius
+            font-size 16px
+            color $white
+        }
+    }
+}
+
+// hero heading title
+.hero-category-heading,
+.hero-title {
+    margin-bottom rem(30px)
+    color $white
+    h1, h2, h3, h4, h5, h6, p, a, li, strong, small {
+        color $white
+    }
+    h1 {
+        font-size 48px;
+    }
+    h2 {
+        font-size 42px
+    }
+    h3 {
+        font-size 36px
+        font-weight 400
+    }
+    h4 {
+        font-size 30px
+        font-weight 400
+    }
+    h5 {
+        font-size 26px
+        font-weight 300
+    }
+    h6 {
+        font-size 26px
+        font-weight 300
+    }
+    p,
+    a,
+    li {
+        font-size 18px
+    }
+    strong {
+        font-weight 900
+    }
+    p {
+        strong {
+            font-weight 700
+        }
+    }
+}
+
+// hero template 2
+.hero-search {
+    &-template-2 {
+        .hero-category-heading {
+            display flex
+            flex-direction column
+        }
+        .hero-featured-taxonomies {
+            margin-top rem(20px)
+            justify-content space-between
+            a {
+                position relative
+                flex 1
+                flex-direction column
+                justify-content center
+                margin 0
+                padding rem(27px) 0 rem(15px)
+                background-color transparentify($white, $white, .15)
+                border-radius $border-radius
+                font-size 16px
+                z-index 1
+                &.no-icon {
+                    padding rem(27px) 0
+                }
+                &:first-child {
+                    &::after {
+                        background-color transparentify($primary, $primary, .4)
+                    }
+                }
+                &:not(:first-child ) {
+                    margin-left rem(5px)
+                }
+                &::after {
+                    position absolute
+                    content ''
+                    top 5px
+                    left 5px
+                    width calc(100% - 10px)
+                    height calc(100% - 10px)
+                    background-color transparentify($theme_color, $theme_color, .5)
+                    z-index -1
+                }
+                i {
+                    margin-right 0
+                    margin-bottom 20px
+                    font-size 42px
+                }
+                &:hover {
+                    color $white
+                    transition()
+                    &::after {
+                        background-color transparentify($primary, $primary, .4)
+                        transition()
+                    }
+                }
+            }
+        }
+    }
+    .row-cst-margin {
+        margin 0
+    }
+    .col-cst-padding {
+        padding 0 rem(5px)
+    }
+}
+
+// featured category styles
+.hero-category-style-2 {
+    display flex
+    justify-content center
+    align-items center
+    p {
+        margin-bottom 0
+        font-size 16px
+        opacity .8
+    }
+    .hero-featured-taxonomies {
+        margin-top 0
+        justify-content flex-start
+        a {
+            margin 0
+            margin-left rem(3px)
+            font-size 16px
+            opacity .8
+            &:not(:last-child) {
+                &::after {
+                    content ','
+                }
+            }
+            i {
+                display none
+            }
+            &:hover {
+                opacity 1
+            }
+        }
+    }
+}
+
+.hero-featured-taxonomy-template-3 {
+    .hero-featured-taxonomy {
+        &:hover {
+            color $white;
+        }
+    }
+}
+
+.hero-featured-taxonomy-template-4 {
+    margin-top rem(30px)
+    .hero-title {
+        margin-bottom rem(40px)
+    }
+}
+
+.hero-category-style-3 {
+    .hero-featured-taxonomy {
+        display flex
+        flex 0 0 8%
+        max-width 8%
+        flex-direction column
+        margin 0 10px
+        white-space nowrap
+        font-size 16px
+        i {
+            display flex
+            justify-content center
+            align-items center
+            margin-bottom 3px
+            width 55px
+            height 55px
+            border 3px solid
+            border-radius 50%
+            font-size 24px
+        }
+        opacity .5
+        &:hover {
+            color $white
+            opacity 1
+        }
+    }
+}
+
+// template 5
+.hero-featured-taxonomy-template-5 {
+    .hero-title {
+        margin-bottom rem(40px)
+    }
+}
+
+.hero-category-style-4 {
+    position relative
+    top 110px
+    .hero-featured-taxonomy {
+        display flex
+        flex 0 0 11%
+        max-width 11%
+        flex-direction column
+        margin 0 2px
+        padding 30px 20px 10px
+        min-width 80px
+        background-color transparentify($theme_color, $theme_color, .4)
+        border-radius $border-radius
+        white-space nowrap
+        font-size 14px
+        i {
+            margin-bottom 20px
+            font-size 24px
+        }
+        &:hover {
+            opacity 1
+        }
+    }
+}
+
+.hero-category-style-5 {
+    .hero-category-heading {
+        margin-bottom 0
+        p {
+            margin-bottom 0
+            font-style italic
+        }
+    }
+    .hero-featured-taxonomies {
+        flex-wrap wrap
+        justify-content flex-start
+        .hero-featured-taxonomy {
+            flex 0 0 32%
+            max-width 32%
+            margin 0
+            margin-right 5px
+            padding 30px 20px
+            background-color transparent
+            border 3px solid
+            border-radius $border-radius
+            i {
+                margin-bottom 10px
+            }
+            &::after {
+                display none
+            }
+            &:first-child {
+                background-color transparent
+            }
+            &:not(:first-child) {
+                margin-left 0
+            }
+            &:nth-child(n+4) {
+                margin-top 10px
+            }
+        }
+    }
+}
+
+// template 6
+.hero-search-template-6 {
+    .hero-title {
+        h6 {
+            font-size 22px
+        }
+    }
+    .hero-search-field-button {
+        width 80%
+    }
+}
+
+// template 7
+.hero-search-template-7 {
+    width 100%
+    h6 {
+        font-size 22px
+        line-height 1.5
+    }
+}
+
+// templates big
+.hero-search-template-big {
+    .search-form-wrapper {
+        display flex
+    }
+    .search-form-field {
+        flex 0 0 38%
+        max-width 38%
+        &-spacing {
+            padding 0 10px
+            background-color $white
+            &::after {
+                content ''
+                display block
+                position relative
+                top 20%
+                height 60%
+                width 1px
+                background-color $border-color
+            }
+        }
+        &:first-child {
+            .input-group-wrapper {
+                border-radius $border-radius 0 0 $border-radius
+            }
+        }
+        .form-group {
+            margin-bottom 0
+            .input-group-wrapper {
+                padding-right 30px
+                padding-left 30px
+                .form-control {
+                    height 85px
+                }
+            }
+        }
+        &-button {
+            flex 0 0 20%
+            max-width 20%
+            button {
+                height 85px
+                border-radius 0 $border-radius $border-radius 0
+                box-shadow none
+                &:hover,
+                &:focus,
+                &:active {
+                    box-shadow none
+                    border none
+                    outline 0
+                }
+            }
+        }
+        &:not(:first-child) {
+            margin-left -5px
+        }
+    }
+}
+
+// template 9
+.hero-search-template-9 {
+    position absolute
+    bottom 5%
+    left -15%
+}
+
+// template 10
+.hero-search-template-10 {
+    .search-form-field {
+        flex 0 0 75%
+        max-width 75%
+        &:not(:first-child) {
+            margin-left 0
+        }
+        &-button {
+            flex 0 0 22%
+            max-width 25%
+        }
+    }
+}
+
+// featured taxonomies select
+.featured-taxonomies-select {
+    margin-top 15px
+    .btn-link {
+        display flex
+        align-items center
+        margin-left auto
+        border none
+        color $white
+        cursor pointer
+        &:hover,
+        &:focus,
+        &:active {
+            border none
+            text-decoration none
+            color $white
+        }
+        &::after {
+            position relative
+            top 1px
+            margin-left 8px
+            font-size 15px
+        }
+    }
+    .featured-taxonomies {
+        &.show {
+            display flex
+            &[x-placement=bottom-start] {
+                margin-top 5px
+            }
+            &[x-placement=top-start] {
+                margin-bottom 5px
+            }
+        }
+        flex-direction column
+        .featured-taxonomy {
+            display flex
+            align-items center
+            padding 5px 20px
+            font-size 14px
+            color $font_color
+            &:hover {
+                background-color #f3f3f3
+                text-decoration none
+            }
+            i {
+                margin-right 7px
+                font-size 16px
+            }
+        }
+    }
+}
+
+.hero,
+.single-job_listing {
+    #hero-video {
+        z-index 1
+        @media (min-width: 768px) {
+            height 0
+            padding-bottom 56.25%
+        }
+        @media (max-width: 768px) {
+            height 800px
+        }
+        &::before {
+            content ''
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            z-index 2
+        }
+        iframe {
+            opacity 0
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+        }
+    }
+}

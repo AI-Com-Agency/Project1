@@ -1,0 +1,353 @@
+/*
+ |--------------------------------------------------------------------------
+ | 33. WooCommerce / Shop Single
+ |--------------------------------------------------------------------------
+ */
+
+.woocommerce-single-lisner {
+    .lisner-shop {
+        .site-main {
+            padding rem(50px)
+        }
+        .single-listing-breadcrumbs {
+            margin-bottom rem(40px)
+            padding-bottom rem(30px)
+            border-bottom 1px solid
+            border-color $border-color
+        }
+        .lisner-product-entry-wrapper {
+            display flex
+            justify-content space-between
+            .images {
+                position relative
+                top rem(-15px)
+                width 50%
+            }
+            .summary {
+                width 46%
+            }
+        }
+        .woocommerce-product-gallery__image {
+            padding rem(40px) rem(20px)
+            border-radius $border-radius
+            box-shadow $box-shadow-wc-image
+            &:first-child {
+                background-color #fcfafb
+            }
+        }
+        .woocommerce-product-gallery__trigger {
+            top rem(14px)
+            right rem(6px)
+            border-radius $border-radius
+        }
+        div.product div.images .woocommerce-product-gallery__image {
+            margin rem(15px) 1.5% 0
+            padding rem(15px)
+            &:nth-child(n+2) {
+                width 22%
+            }
+        }
+        .product .product_title {
+            font-size 28px
+            font-weight 700
+        }
+        div.woocommerce-product-rating {
+            display flex
+            margin-bottom 0
+            .star-rating {
+                font-size 13px
+                &::before {
+                    color $stars
+                }
+                span {
+                    &::before {
+                        color $stars
+                    }
+                }
+            }
+            .woocommerce-review-link {
+                font-size 14px
+                color $font_color
+                &:hover {
+                    color $primary
+                }
+            }
+        }
+        div.product p.price {
+            margin-top rem(15px)
+            margin-bottom rem(25px)
+            font-size 26px
+            &:empty {
+                display none
+            }
+            del {
+                .amount {
+                    font-size 20px
+                }
+            }
+            ins {
+                text-decoration none
+                .amount {
+                    font-weight 400
+                }
+            }
+        }
+        div.product form.cart {
+            display flex
+            flex-wrap wrap
+            align-items center
+            .quantity {
+                .qty {
+                    height rem(40px)
+                    background-color $theme_input_color
+                    border 1px solid
+                    border-color $border-color
+                    border-radius $border-radius
+                    color $font_color
+                }
+            }
+            button {
+                margin-top 0
+                margin-left rem(5px)
+                padding rem(12px) rem(33px)
+                background-color $primary
+                border 0
+            }
+            p {
+                margin-bottom 0
+            }
+        }
+        div.product_meta {
+            display flex
+            flex-direction column
+            padding-top rem(25px)
+            border-top 1px solid
+            border-color $border-color
+            span {
+                font-size 14px
+                color $font_header_color
+                a {
+                    font-size 14px
+                    color $primary
+                }
+            }
+        }
+        .woocommerce-tabs {
+            margin-top rem(20px)
+            margin-bottom rem(40px)
+            .col-4 {
+                max-width 190px
+            }
+            .nav-pills {
+                .nav-link {
+                    position relative
+                    padding rem(10px) rem(5px)
+                    background-color transparent
+                    border-top 1px solid
+                    border-color $border-color
+                    border-radius 0
+                    font-size 18px
+                    color $font_header_color
+                    &.active {
+                        color $primary
+                    }
+                    &:first-child {
+                        &::after {
+                            position absolute
+                            top 13px
+                            right 10px
+                            content 'keyboard_arrow_right'
+                            font-family 'Material Icons'
+                            font-size 16px
+                            transform rotate(0.03deg)
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                padding-left rem(20px)
+                .tab-pane {
+                    h2 {
+                        margin-bottom rem(15px)
+                        font-size 24px
+                        span {
+                            font-weight 600
+                        }
+                    }
+                    p {
+                        line-height 1.7
+                    }
+                }
+            }
+        }
+        #reviews #comments {
+            ol.commentlist {
+                margin-top rem(20px)
+                padding-left 0
+                li {
+                    margin-bottom 10px
+                    padding-top 15px
+                    padding-bottom 10px
+                    border-bottom 1px solid
+                    border-color $border-color
+                    img.avatar {
+                        top 15px
+                        border-radius 50%
+                    }
+                    .comment-text {
+                        padding 0
+                        border 0
+                        .woocommerce-review__author {
+                            color $font_header_color
+                        }
+                        .star-rating {
+                            font-size 14px
+                            &::before {
+                                color $stars
+                            }
+                            span {
+                                &:before {
+                                    color $stars
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #review_form {
+            #respond p.stars {
+                margin-bottom 0
+            }
+        }
+        #review_form_wrapper {
+            margin-top rem(30px)
+            form {
+                .comment-form {
+                    &-author,
+                    &-email,
+                    &-rating,
+                    &-comment {
+                        order 1
+                        display flex
+                        align-items center
+                        margin-bottom rem(15px)
+                        padding rem(8px) rem(12px)
+                        width 60%;
+                        border 1px solid
+                        border-color $border-color
+                        border-radius $border-radius
+                        label {
+                            margin-right rem(7px)
+                            margin-bottom 0
+                            font-weight 600
+                            color $font_header_color
+                            .required {
+                                color $error
+                            }
+                            &::after {
+                                content ':'
+                            }
+                        }
+                        p {
+                            margin-bottom 0
+                            line-height 1
+                            &.stars {
+                                margin-bottom 0
+                                span {
+                                    a {
+                                        margin-right rem(1px)
+                                        font-size 14px
+                                        color $stars
+                                    }
+                                }
+                            }
+                        }
+                        input {
+                            max-width 77%
+                            background-color transparent
+                            border none
+                            &:focus {
+                                outline 0
+                                box-shadow 0
+                            }
+                        }
+                    }
+                    &-author,
+                    &-email {
+                        background-color $theme_input_color
+                    }
+                    &-author {
+                        order 2
+                    }
+                    &-email {
+                        order 3
+                    }
+                    &-comment {
+                        order 4
+                        align-items flex-start
+                        max-width 100%
+                        width 100%
+                        background-color $theme_input_color
+                        label {
+                            width 32%
+                        }
+                        textarea {
+                            border none
+                            background-color $theme_input_color
+                            &:focus {
+                                outline 0
+                                box-shadow 0
+                            }
+                        }
+                    }
+                }
+                .comment-notes {
+                    order 5
+                    font-size 12px
+                    .required {
+                        color $error
+                    }
+                }
+                .form-submit {
+                    input#submit {
+                        margin-top rem(10px)
+                    }
+                }
+            }
+        }
+        .related.products {
+            margin-top rem(80px)
+            h2:not(.woocommerce-loop-product__title) {
+                margin-bottom rem(40px)
+                font-size 24px
+            }
+        }
+    }
+}
+
+body.woocommerce .single-listing-sidebar.shop-sidebar {
+    padding 0
+    background-color transparent
+    box-shadow none
+}
+
+.woocommerce-single-lisner .lisner-shop div.product form.cart.grouped_form {
+    flex-wrap wrap
+    table {
+        del {
+            color $font_color_light
+        }
+        ins {
+            margin-left 2px
+        }
+    }
+    table,
+    button {
+        flex 0 0 100%
+        max-width 100%
+    }
+    button {
+        margin-top 20px
+    }
+}

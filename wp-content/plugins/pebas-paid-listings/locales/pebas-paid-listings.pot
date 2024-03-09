@@ -1,0 +1,503 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: pebas® Paid Listings\n"
+"POT-Creation-Date: 2018-10-26 19:06+0200\n"
+"PO-Revision-Date: 2018-09-29 16:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: pebas-paid-listings.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/pebas-paid-listings-install.php:52
+msgctxt "job_listing"
+msgid "Pending Payment"
+msgstr ""
+
+#: includes/pebas-paid-listings-install.php:57
+#, php-format
+msgid "Pending Payment <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Payment <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/pebas-paid-listings-install.php:81
+msgid "Pending Payment"
+msgstr ""
+
+#: includes/pebas-paid-listings-install.php:111
+msgid "Paid Listings Flow"
+msgstr ""
+
+#: includes/pebas-paid-listings-install.php:112
+msgid "Define when the user should choose a package for submission."
+msgstr ""
+
+#: includes/pebas-paid-listings-install.php:115
+msgid "Choose a package after entering listing details"
+msgstr ""
+
+#: includes/pebas-paid-listings-install.php:116
+msgid "Choose a package before entering listing details"
+msgstr ""
+
+#: includes/pebas_paid_listings_listing_product.php:58
+#: includes/pebas_wc_product_package.php:58
+msgid "Add to cart"
+msgstr ""
+
+#: includes/pebas_paid_listings_listing_product.php:58
+#: includes/pebas_wc_product_package.php:58
+msgid "Read More"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:75
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:86 includes/pebas_pl_admin.php:121
+msgid "Listing Packages"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:110
+msgid "Package successfully deleted"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:123 includes/pebas_pl_admin.php:142
+msgid "Add User Package"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:173 includes/pebas_pl_admin_add_package.php:65
+msgid "Listing Package"
+msgstr ""
+
+#: includes/pebas_pl_admin.php:175
+msgid "Listing Package Subscription"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:61
+msgid "Package Type"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:70
+msgid "Listing Limit"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:72
+msgid "How many listings should this package allow the user to post?"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:78
+#: includes/pebas_pl_admin_packages.php:60
+#: includes/views/html-job-package-data.php:20
+#: includes/views/html-resume-package-data.php:24 templates/my-packages.php:35
+msgid "Unlimited"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:84
+msgid "Listing Count"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:86
+msgid "How many listings has the user already posted with this package?"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:97 templates/my-packages.php:20
+msgid "Listing Duration"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:99
+msgid "How many days should listings posted with this package be active?"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:105
+msgid "Default"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:110
+#: includes/views/html-job-package-data.php:45
+#: includes/views/html-resume-package-data.php:49
+msgid "Feature Listings?"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:119
+#: includes/pebas_pl_admin_packages.php:88
+msgid "User"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:123
+msgid "Guest"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:131
+#: includes/pebas_pl_admin_packages.php:90
+msgid "Product"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:133
+msgid "Optionally link this package to a product."
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:138
+msgid "Choose a product&hellip;"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:170
+#: includes/pebas_pl_admin_packages.php:94
+msgid "Order ID"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:172
+msgid "Optionally link this package to an order."
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:178
+msgid "N/A"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:185
+msgid "Save Package"
+msgstr ""
+
+#: includes/pebas_pl_admin_add_package.php:246
+msgid "Package successfully saved"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:44
+#: includes/pebas_pl_admin_packages.php:51
+#: includes/pebas_pl_admin_packages.php:54
+msgid "n/a"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:58
+#, php-format
+msgid "%d Days"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:60
+#, php-format
+msgid "%s Posted"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:62
+msgid "Job Package"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:74
+msgid "Edit"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:75
+msgid "Delete"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:89
+msgid "Type"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:91
+msgid "Limit"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:92
+msgid "Duration"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:93 templates/my-packages.php:21
+msgid "Featured?"
+msgstr ""
+
+#: includes/pebas_pl_admin_packages.php:95
+msgid "Actions"
+msgstr ""
+
+#: includes/pebas_pl_cart.php:128 includes/pebas_pl_cart.php:147
+#: includes/pebas_pl_cart.php:166
+msgid "Job Listing"
+msgstr ""
+
+#: includes/pebas_pl_orders.php:58
+#, php-format
+msgid "%s has been submitted successfully and will be visible once approved."
+msgstr ""
+
+#: includes/pebas_pl_orders.php:62
+#, php-format
+msgid ""
+"%s has been submitted successfully and will be visible once payment has been "
+"confirmed."
+msgstr ""
+
+#: includes/pebas_pl_orders.php:65
+#, php-format
+msgid "%s has been submitted successfully."
+msgstr ""
+
+#: includes/pebas_pl_orders.php:72
+msgid "View Listing"
+msgstr ""
+
+#: includes/pebas_pl_orders.php:74
+msgid "View Dashboard"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:76
+msgid "Choose a package &rarr;"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:141
+msgid "Choose a package"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:195
+msgid "Submit &rarr;"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:195
+msgid "Listing Details &rarr;"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:235
+#: includes/pebas_pl_submit_listing_form.php:238
+#: includes/pebas_pl_submit_listing_form.php:244
+msgid "Invalid Package"
+msgstr ""
+
+#: includes/pebas_pl_submit_listing_form.php:255
+msgid "You already have this subscription."
+msgstr ""
+
+#: includes/pebas_pl_subscriptions.php:88
+msgid "Inherited from subscription"
+msgstr ""
+
+#: includes/pebas_pl_subscriptions.php:89
+#, php-format
+msgid ""
+"Job listing expires with its <a href=\"%s\">associated subscription</a>."
+msgstr ""
+
+#: includes/pebas_products_meta.php:42
+msgid "Listing Package Description"
+msgstr ""
+
+#: includes/pebas_products_meta.php:44
+#, php-format
+msgid "%1$s %2$s listing submission active for %3$s days!"
+msgstr ""
+
+#: includes/pebas_products_meta.php:45
+msgid ""
+"Please add listing package description, you can use following tags: "
+"[duration], [limit], [b]bold text[/b]"
+msgstr ""
+
+#: includes/pebas_products_meta.php:49
+msgid "Listing Package Features List"
+msgstr ""
+
+#: includes/pebas_products_meta.php:51
+#, php-format
+msgid "%s Listing"
+msgstr ""
+
+#: includes/pebas_products_meta.php:52
+msgid ""
+"Please add price package features list of items. To make a word bold place "
+"it inside brackets: [something]"
+msgstr ""
+
+#: includes/pebas_products_meta.php:58
+msgid "Listing Package Distinctive?"
+msgstr ""
+
+#: includes/pebas_products_meta.php:61 templates/my-packages.php:39
+msgid "Yes"
+msgstr ""
+
+#: includes/pebas_products_meta.php:62 templates/my-packages.php:39
+msgid "No"
+msgstr ""
+
+#: includes/pebas_products_meta.php:63
+msgid ""
+"Marking package as distinctive will make it look differently to the other "
+"ones."
+msgstr ""
+
+#: includes/pebas_products_meta.php:68
+msgid "Listing Package Information"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:5
+#: includes/views/html-resume-package-data.php:9
+msgid "Subscription Type"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:6
+#: includes/views/html-resume-package-data.php:10
+msgid "Choose how subscriptions affect this package"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:10
+#: includes/views/html-resume-package-data.php:14
+msgid ""
+"Link the subscription to the package (renew listing limit every subscription "
+"term)"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:11
+#: includes/views/html-resume-package-data.php:15
+msgid ""
+"Link the subscription to posted listings (renew posted listings every "
+"subscription term)"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:17
+msgid "Job listing limit"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:18
+msgid "The number of job listings a user can post with this package."
+msgstr ""
+
+#: includes/views/html-job-package-data.php:31
+msgid "Job listing duration"
+msgstr ""
+
+#: includes/views/html-job-package-data.php:32
+msgid "The number of days that the job listing will be active."
+msgstr ""
+
+#: includes/views/html-job-package-data.php:46
+msgid "Feature this job listing - it will be styled differently and sticky."
+msgstr ""
+
+#: includes/views/html-resume-package-data.php:21
+msgid "Resume posting limit"
+msgstr ""
+
+#: includes/views/html-resume-package-data.php:22
+msgid "The number of resumes a user can post with this package."
+msgstr ""
+
+#: includes/views/html-resume-package-data.php:35
+msgid "Resume listing duration"
+msgstr ""
+
+#: includes/views/html-resume-package-data.php:36
+msgid "The number of days that the resume will be active."
+msgstr ""
+
+#: includes/views/html-resume-package-data.php:50
+msgid "Feature this resume - it will be styled differently and sticky."
+msgstr ""
+
+#: pebas-paid-listings.php:54
+msgid ""
+"<strong>pebas® paid listings</strong> requires <strong>Lisner Core & "
+"WooCommerce</strong> plugins to be installed in order to be used."
+msgstr ""
+
+#: templates/my-packages.php:13
+msgid "Your packages are shown in the table below."
+msgstr ""
+
+#: templates/my-packages.php:18
+msgid "Package Name"
+msgstr ""
+
+#: templates/my-packages.php:19
+msgid "Remaining"
+msgstr ""
+
+#: templates/my-packages.php:27
+msgid "You do not have any active listing packages."
+msgstr ""
+
+#: templates/my-packages.php:37
+#, php-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/package-element-user-package-alt.php:18
+#, php-format
+msgid "%1$s out of %2$d"
+msgid_plural "%1$s out of %2$d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/package-element-user-package-alt.php:20
+#: templates/package-element-user-package.php:20
+#, php-format
+msgid "%s listing posted"
+msgid_plural "%s listings posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/package-element-user-package.php:18
+#, php-format
+msgid "%1$s listing posted out of %2$d"
+msgid_plural "%1$s listings posted out of %2$d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/package-element-user-package.php:31
+#: templates/package-element.php:28
+msgid "unlimited"
+msgstr ""
+
+#: templates/package-element-user-package.php:56
+msgid "Continue"
+msgstr ""
+
+#: templates/package-element.php:19
+msgid "Free"
+msgstr ""
+
+#: templates/package-element.php:53
+msgid "Start now"
+msgstr ""
+
+#: templates/package-selection.php:57
+msgid "Your packages"
+msgstr ""
+
+#: templates/package-selection.php:82
+msgid "No packages found"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "pebas® Paid Listings"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/pebas-paid-listings"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"pebas® Paid Listings plugin used for hour listing themes ( Lisner, Ager )"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""

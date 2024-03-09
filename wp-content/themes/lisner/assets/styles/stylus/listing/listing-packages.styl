@@ -1,0 +1,225 @@
+/*
+ |--------------------------------------------------------------------------
+ | 24. Listing / Listing packages styles
+ |--------------------------------------------------------------------------
+ */
+.container-packages {
+    .main-content {
+        padding-right 0
+        padding-left 0
+        background-color transparent
+        box-shadow none
+    }
+}
+
+.listing {
+    &-packages {
+        position relative
+        display flex
+        flex-wrap wrap
+        justify-content center
+        top rem(-30px)
+    }
+    &-package {
+        padding rem(55px) rem(45px)
+        height 100%
+        border-color $font_header_color
+        background-color $white
+        border-radius $border-radius
+        box-shadow $box-shadow-listing
+        overflow hidden
+        &:nth-child(2) {
+            position relative
+            z-index 1
+        }
+        &-wrapper {
+            flex 0 0 33%
+            margin-bottom rem(30px)
+            padding-top rem(10px)
+            background-color $theme_color
+            border-radius $border-radius
+            &-distinctive {
+                position relative
+                top rem(-45px)
+                margin-right rem(-5px)
+                margin-left rem(-5px)
+                background-color $primary
+                z-index 2
+            }
+        }
+        &-title {
+            p {
+                position relative
+                top rem(5px)
+                left rem(5px)
+                margin-bottom 0
+                font-size 17px
+                font-weight 600
+                text-transform uppercase
+                color $font_header_color
+                &.listing-package-title-user {
+                    text-transform none
+                    span {
+                        font-weight 700
+                        color $primary
+                    }
+                }
+            }
+            h2 {
+                font-size 54px
+                font-weight 600
+                color $font_header_color
+                &.distinctive {
+                    color $primary
+                }
+            }
+        }
+        &-description {
+            color $font_color
+            strong {
+                color $font_header_color
+            }
+        }
+        &-content {
+            margin-top rem(25px)
+            ul {
+                li {
+                    display flex
+                    align-items center
+                    &:not(:first-child) {
+                        margin-top rem(16px)
+                    }
+                    color $font_header_color
+                    strong {
+                        margin-right rem(5px)
+                    }
+                    i {
+                        margin-right rem(8px)
+                        font-size 18px
+                        color $success
+                    }
+                }
+            }
+        }
+        .btn-primary {
+            margin-top rem(30px)
+            margin-bottom rem(20px)
+            padding rem(2px) rem(52px)
+            height rem(38px)
+            font-size 18px
+            font-weight 600
+            &:not(:disabled):not(.disabled) {
+                border 3px solid
+                border-color $primary
+                box-shadow none
+                &:active,
+                &:focus,
+                &:hover {
+                    border 3px solid
+                    border-color $primary
+                    box-shadow $box-shadow
+                }
+            }
+            &-bordered {
+                &:not(:disabled):not(.disabled) {
+                    background-color transparent
+                    border 3px solid
+                    border-color $primary
+                    box-shadow none
+                    color $primary
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        border 3px solid
+                        border-color $primary
+                        background-color $primary
+                        color $white
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* user packages */
+.listing-user {
+    &-packages {
+        position fixed
+        right rem(40px)
+        bottom rem(40px)
+        min-width rem(250px)
+        background-color $white
+        border-radius $border-radius
+        box-shadow $box-shadow-listing
+        z-index 999
+        &-title {
+            display flex
+            justify-content space-between
+            align-items center
+            padding rem(6px) rem(20px)
+            background-color $theme_color
+            border-radius $border-radius $border-radius 0 0
+            box-shadow 0 1px 3px 0 rgba(0, 0, 0, .2)
+            h6 {
+                margin-bottom 0
+                font-size 16px
+                font-weight 600
+                text-transform uppercase
+                color $white
+            }
+            i {
+                font-size 18px
+                color $white
+                cursor pointer
+            }
+        }
+    }
+    &-package {
+        position relative
+        padding 0
+        a.submit-action-call,
+        a.package-call {
+            &:hover {
+                text-decoration none
+            }
+        }
+        input {
+            position absolute
+            opacity 0
+        }
+        &-title {
+            display flex
+            justify-content space-between
+            align-items center
+            padding rem(7px) rem(20px)
+            h6 {
+                margin-bottom 0
+                font-size 16px
+            }
+            p {
+                margin-bottom 0
+                font-size 14px
+                color $font_color
+                span {
+                    font-weight 600
+                    color $font_header_color
+                }
+            }
+            &:hover {
+                background-color $hover_light
+                h6,
+                p,
+                i {
+                    color $font_header_color
+                }
+            }
+            &-icon {
+                line-height 1
+                i {
+                    font-size 20px
+                    color $font_header_color
+                }
+            }
+        }
+    }
+}

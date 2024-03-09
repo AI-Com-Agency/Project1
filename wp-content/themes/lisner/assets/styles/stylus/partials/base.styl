@@ -1,0 +1,595 @@
+/*
+ |--------------------------------------------------------------------------
+ | 1. Base Theme Styles
+ |--------------------------------------------------------------------------
+ */
+
+.top-nav { //todo: remove this part once we start styling the theme
+    ul {
+        display flex
+    }
+}
+
+html {
+    font-size $base-font-size
+}
+
+body {
+    margin 0
+    padding 0
+    width 100%
+    height 100%
+    font-family $font_prim, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    font-size $base-font-size
+    font-weight 400
+    background-color $body
+    color $font_color
+    &.sub-menu-active {
+        overflow-y hidden
+    }
+    a {
+        color $primary
+        transition()
+    }
+    &.body-sticky-menu:not(.home):not(.woocommerce-account) {
+        @media (min-width 1030px) {
+            padding-top 100px
+        }
+    }
+}
+
+img {
+    max-width 100%
+    height auto
+    &.trusted {
+        position absolute
+        margin-top -40px
+        margin-left -40px
+    }
+}
+
+// bootstrap container override
+.container {
+    @media (max-width 768px) {
+        max-width 100%
+    }
+    @media (max-width 670px ) {
+        max-width 640px
+    }
+    @media (min-width 1200px ) {
+        max-width 1380px
+    }
+    @media (max-width: 900px) and (min-width: 800px) {
+        max-width 860px
+    }
+    @media (max-width: 1100px) and (min-width: 900px) {
+        max-width 960px
+    }
+    @media (max-width: 1460px) and (min-width: 1100px) {
+        max-width 1060px
+    }
+    @media (max-width: 1460px) and (min-width: 1300px) {
+        max-width 1260px
+    }
+    &-wrapped {
+        @media (min-width 1024px ) {
+            max-width 710px
+        }
+        &.container-packages {
+            @media (min-width 1024px ) {
+                max-width 1015px
+            }
+        }
+    }
+}
+
+.page-default-unit {
+    .container-wrapped {
+        @media (min-width 1024px ) {
+            max-width 910px
+        }
+    }
+}
+
+button,
+.btn {
+    &.btn-primary {
+        background-color $primary
+        color $white
+        &:focus,
+        &:active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color $primary
+            color $white
+        }
+    }
+    &.btn-secondary {
+        background-color $secondary
+        color $font_header_color
+        &:focus,
+        &:active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color $secondary
+            color $font_header_color
+        }
+    }
+    &:focus {
+        outline 0
+    }
+}
+
+.btn.btn-theme {
+    display inline-flex
+    align-items center
+    padding rem(8px) rem(25px)
+    height 40px
+    font-size 18px
+    font-weight 600
+    line-height 1
+    box-shadow $box-shadow
+    &-lg {
+        padding rem(13px) rem(30px)
+        height auto
+    }
+    i {
+        margin-right rem(5px)
+    }
+}
+
+.widget-title,
+.block-title {
+    padding .7rem 1rem
+    background-color $theme_light
+    font-size 15px
+    line-height 1
+    text-transform uppercase
+}
+
+.hidden {
+    display none
+}
+
+.alert {
+    &.alert-danger {
+        color $error
+    }
+}
+
+.swal2-shown {
+    main {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
+}
+
+.chosen-container-single-nosearch {
+    input {
+        display none
+    }
+}
+
+.navbar-brand {
+    p {
+        color $white
+    }
+}
+
+p.site-title {
+    font-size 24px
+    font-weight 700
+}
+
+/* map search */
+.leaflet-div-icon {
+    background-color transparent
+    border none
+}
+
+.marker-icon {
+    position: absolute
+    display flex
+    justify-content center
+    align-items center
+    height 40px
+    width 40px
+    background-color: $white
+    border-radius 50% 50% 50% 0
+    box-shadow -2px 2px 2px 1px rgba(0, 0, 0, .3)
+    color $primary
+    transform rotate(-45deg)
+    i {
+        padding rem(4px)
+        border 3px solid
+        border-color $primary
+        border-radius 50%
+        font-size 18px
+        transform rotate(45deg)
+        color $primary
+    }
+}
+
+.leaflet-container .marker-cluster {
+    display flex
+    justify-content center
+    align-items center
+    padding 3px
+    width 50px
+    height 50px
+    background-image linear-gradient($secondary, darken($secondary, 40%))
+    border-radius 50%
+    div {
+        display flex
+        justify-content center
+        align-items center
+        margin 0
+        background-color $white
+        border-radius 50%
+        span {
+            line-height 1
+            font-size 16px
+            font-weight 600
+            color $primary
+        }
+    }
+}
+
+.leaflet-popup-content-wrapper {
+    padding 0
+    background-color transparent
+    box-shadow none
+}
+
+.leaflet-popup-content {
+    margin 0
+    min-width 290px
+    .listing-card-popup {
+        margin 0
+        border 0
+        border-radius 4px
+        box-shadow 0 1px 4px 2px rgba(0, 0, 0, .2)
+        overflow hidden
+        &-image {
+            margin-bottom 0
+        }
+        &-inner {
+            padding rem(30px)
+            h6 {
+                position relative
+                display inline-block
+                margin-bottom 0
+                font-weight 600
+                line-height 1.3
+                .lisner-listing-claimed {
+                    position relative
+                    top -7px
+                }
+                a {
+                    font-size 18px
+                    line-height 1.3
+                    color $font_header_color
+                    &:hover {
+                        color $font_header_color
+                        text-decoration none
+                    }
+                }
+            }
+        }
+    }
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    display flex
+    justify-content center
+    align-items center
+    top -10px
+    right -10px
+    padding 3px 8px
+    width auto
+    height auto
+    background-color $primary
+    border-radius 50%
+    box-shadow 0 2px 4px 2px rgba(0, 0, 0, .2)
+    font-size 18px
+    font-weight 400
+    line-height 23px
+    color $white
+    &:hover {
+        color $white
+    }
+}
+
+.leaflet-popup-tip {
+    margin -18px auto 0
+    width 28px
+    height 28px
+}
+
+/* visual composer overrides */
+.main .vc_row {
+    margin 0 auto
+}
+
+.home .main .vc_row.vc_row-flex {
+    padding rem(40px) 0
+}
+
+.main {
+    .vc_col-has-fill > .vc_column-inner,
+    .vc_row-has-fill + .vc_row-full-width + .vc_row > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill + .vc_row > .vc_column_container > .vc_column-inner,
+    .vc_row-has-fill > .vc_column_container > .vc_column-inner {
+        padding-top 0
+    }
+}
+
+/* theme defaults */
+.home.page {
+    .theme {
+        &-spacing {
+            padding-top rem(100px)
+            padding-bottom rem(80px)
+        }
+        &-color {
+            color $theme_color
+        }
+    }
+}
+
+.page {
+    .theme-spacing {
+        padding-top rem(80px)
+        padding-bottom rem(80px)
+    }
+}
+
+// base typography of the theme
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color $font_header_color
+}
+
+h1 {
+    font-size 38px
+    line-height 1.2
+}
+
+h2 {
+    font-size 32px
+    line-height 1.2
+}
+
+h3 {
+    font-size 28px
+    line-height 1.3
+}
+
+h4 {
+    font-size 24px
+    line-height 1.4
+}
+
+h5 {
+    font-size 22px
+    line-height 1.4
+}
+
+h6 {
+    font-size 18px
+    line-height 1.5
+}
+
+p {
+    font-size 16px
+    line-height 1.5
+    color $font_color
+}
+
+a {
+    font-size 16px
+}
+
+small {
+    font-size 13px
+    line-height 1.2
+}
+
+// js composer typography && more
+body {
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+        margin-bottom 0
+    }
+}
+
+.wpb_wrapper .wpb_wrapper {
+    h1 {
+        font-size 38px
+        line-height 1.2
+    }
+
+    h2 {
+        font-size 36px
+        line-height 1.3
+    }
+
+    h3 {
+        font-size 32px
+        line-height 1.3
+    }
+
+    h4 {
+        font-size 28px
+        line-height 1.5
+    }
+
+    h5 {
+        font-size 24px
+        line-height 1.7
+    }
+
+    h6 {
+        font-size 20px
+        line-height 1.7
+    }
+}
+
+.color-success {
+    color $success
+}
+
+.color-warning {
+    color $warning
+}
+
+.color-error {
+    color $error
+}
+
+.color-disabled {
+    color $disabled
+}
+
+.margin-top-60 {
+    margin-top rem(60px)
+}
+
+.margin-bottom-30 {
+    margin-bottom rem(30px)
+}
+
+.ml--15 {
+    margin-left rem(-15px)
+}
+
+.mr--15 {
+    margin-right rem(-15px)
+
+}
+
+.pr-35 {
+    padding-right 3.5rem
+}
+
+// fix material icons cutting
+.mf {
+    transform rotate(0.03deg)
+}
+
+.rotate--90 {
+    transform rotate(-91deg)
+}
+
+// tooltip style
+.tooltip {
+    &-inner {
+        background-color $theme_input_color
+        box-shadow $box-shadow-listing
+        font-size 12px
+        color $font_header_color
+        cursor default
+    }
+    .arrow {
+        &::before {
+            border-top-color $theme_input_color
+        }
+    }
+}
+
+.hidden {
+    display none
+}
+
+.job-manager-form fieldset .hidden {
+    display none
+}
+
+// video iframe
+.video-preview {
+    width 100%
+    border-radius $border-radius
+    overflow hidden
+    &-loaded {
+        margin-top rem(35px)
+        height 285px
+    }
+    iframe {
+        width 100%
+        height 100%
+    }
+}
+
+/* alerts */
+.alert {
+    &-info {
+        background-color $info-bg
+        border-color $info-border
+        color $info-font
+    }
+    &-danger {
+        background-color $error-bg
+        border-color $error-font
+        color $error
+    }
+    &-success {
+        background-color $success-bg
+        border-color $success-font
+        color $success
+    }
+    a {
+        color $primary
+    }
+}
+
+.leaflet-bottom {
+    display none
+}
+
+// photoswipe admin correction
+.logged-in-admin {
+    .pswp__ui .pswp__top-bar {
+        top 32px
+    }
+}
+
+// demo stuff
+.demo-description {
+    margin-top -10px
+    span {
+        font-size 13px
+    }
+    .credentials {
+        display flex
+        flex-direction column
+        span {
+            font-size 14px
+        }
+    }
+}
+
+.envato-buy-now {
+    position fixed
+    bottom 30px
+    left 30px
+    z-index 99999
+    @media (max-width 670px) {
+        bottom 10px
+        left 10px
+    }
+}
+
+// table responsive
+@media (min-width: 1024px) {
+    .woocommerce-account {
+        .table-responsive {
+            display table
+        }
+    }
+}

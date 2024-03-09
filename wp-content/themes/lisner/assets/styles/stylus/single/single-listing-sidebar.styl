@@ -1,0 +1,488 @@
+/*
+ |--------------------------------------------------------------------------
+ | 27. Listing / Single Sidebar
+ |--------------------------------------------------------------------------
+ */
+
+.single-listing-sidebar {
+    position relative
+    border-radius $border-radius
+    box-shadow $box-shadow-listing
+    overflow hidden
+    .single-listing-section-title {
+        margin-bottom rem(30px)
+    }
+    &:not(:first-child) {
+        margin-top rem(20px)
+    }
+    &-template-1 {
+        section[class*=listing-widget-] {
+            padding rem(18px) rem(25px)
+        }
+    }
+}
+
+section[class*=listing-widget-] {
+    padding rem(30px) rem(30px)
+    &:not(:last-child) {
+        border-bottom 1px solid
+        border-color $border-color
+    }
+    background-color $white
+}
+
+/* widget / working time */
+.working-time {
+    &-wrapper {
+        display flex
+        flex-wrap wrap
+    }
+    &-hours {
+        margin-left auto
+        line-height 1.18
+    }
+    &-group {
+        display flex
+        flex-wrap wrap
+        &:not(:first-child) {
+            margin-top rem(7px)
+        }
+    }
+    &-open {
+        display flex
+        align-items flex-start
+        i {
+            margin-right rem(7px)
+            font-size 18px
+            color $font_header_color
+        }
+        span {
+            line-height 1.18
+            color $quinary
+            &.theme-color {
+                color $font_header_color
+            }
+            &.closed {
+                color $error
+            }
+        }
+        & + .working-time-open {
+            margin-left auto
+            & + .working-time-hours {
+                margin-left rem(10px)
+            }
+        }
+    }
+    &-divider {
+        margin 0 rem(5px)
+    }
+    &-all {
+        margin-top rem(15px)
+        &-wrapper {
+            display flex
+            flex-wrap wrap
+            @media (min-width: 768px) {
+                padding-left rem(25px)
+            }
+        }
+        &-group {
+            display flex
+            flex 0 0 93%
+            max-width 93%
+            &:not(:first-child) {
+                margin-top rem(10px)
+            }
+        }
+        .working-time-group-wrapper {
+            display flex
+            flex-direction column
+            margin-left auto
+        }
+        .working-time-group {
+            margin-top 0
+        }
+        &-day {
+            font-weight 600
+            color $font_header_color
+        }
+    }
+}
+
+/* widget / files */
+.listing-widget {
+    .files {
+        align-items flex-start
+    }
+}
+
+.listing-files {
+    flex 0 0 60%
+    max-width 60%
+    margin-left auto
+    a {
+        display flex
+        align-items center
+        padding 3px 16px
+        background-color $theme_input_color
+        border 1px solid
+        border-color $border-color
+        border-radius $border-radius
+        font-size 14px
+        color $font_header_color
+        &:not(:first-child) {
+            margin-top 10px
+        }
+        i {
+            margin-left auto
+            font-size 16px
+            color $font_header_color
+        }
+        &:hover {
+            text-decoration none
+        }
+    }
+}
+
+@media (max-width 430px) {
+    .listing-widget .files {
+        flex-wrap wrap
+        .listing-files {
+            flex 0 0 100%
+            max-width 100%
+            margin-top 10px
+            margin-left 0
+        }
+    }
+}
+
+.working-hours-call {
+    margin-left rem(10px)
+    font-size 18px
+    color $primary
+    &:hover {
+        text-decoration none
+        color $primary
+    }
+}
+
+.listing-widget {
+    .btn {
+        display flex
+        align-items center
+        padding rem(4px) rem(14px)
+        font-size 14px
+        font-weight 600
+        box-shadow none
+        i {
+            margin-left rem(7px)
+            font-size 16px
+            transform rotate(.03deg)
+        }
+        &:not(:disabled):not(.disabled) {
+            &:hover,
+            &:focus,
+            &.active,
+            &:active {
+                box-shadow none
+                outline 0
+            }
+        }
+    }
+}
+
+/* widget / location */
+.listing-widget-location {
+    position relative
+    .location-information {
+        position absolute
+        top rem(20px)
+        right rem(20px)
+        z-index 999
+        a.btn {
+            background-color $white
+            color $font_color_dark
+        }
+    }
+    .map-preview {
+        margin 0 rem(-30px)
+        height 245px
+    }
+    .address {
+        margin-top rem(35px)
+        margin-bottom 0
+        &-label {
+            color $font_header_color
+            i {
+                margin-right rem(7px)
+                font-size 18px
+            }
+        }
+    }
+}
+
+.google_map_link {
+    max-width 230px
+    max-height 23px
+    white-space nowrap
+    text-overflow ellipsis
+    overflow hidden
+}
+
+.address-map {
+    max-width 230px
+    max-height 23px
+    white-space nowrap
+    text-overflow ellipsis
+    overflow hidden
+    a {
+        color $quinary
+        &:hover {
+            text-decoration none
+        }
+    }
+}
+
+a.address-map {
+    color $quinary
+    &:hover {
+        text-decoration none
+    }
+}
+
+.phone-number {
+    display flex
+    align-items center
+}
+
+.phone-or {
+    margin 0 7px
+    font-size 14px
+    color $font_color_light
+}
+
+.viber,
+.whatsapp {
+    padding 4px
+    font-size 18px
+    background-color $theme_input_color
+    border 1px solid
+    border-radius $border-radius
+    border-color $border-color
+    color #25d366
+    line-height 1
+    &:hover {
+        text-decoration none
+        color #25d366
+    }
+}
+
+.viber {
+    margin-left 3px
+    color #8f5db7
+    &:hover {
+        color #8f5db7
+    }
+}
+
+.phone-nolink,
+.phone-link {
+    color $primary
+    &:hover {
+        color $primary
+        text-decoration none
+    }
+}
+
+/* widget / reviews */
+.listing-widget-reviews {
+    .reviews-meta {
+        margin-bottom 0
+    }
+}
+
+/* widget / price range */
+.listing-widget-price-range {
+    .lisner-listing-price-range {
+        top auto
+        left -4px
+        padding 0
+        border none
+    }
+    .price-value {
+        line-height 1.18
+        color $sextary
+    }
+    .price-divider {
+        margin 0 rem(5px)
+    }
+}
+
+/* widget / contact listing form*/
+.listing-widget-contact-listing {
+    .single-listing-section-title {
+        & + form {
+            margin-top 0
+        }
+    }
+    form {
+        margin-top rem(20px)
+        .form-group {
+            position relative
+            display flex
+            align-items center
+            margin-bottom rem(18px)
+            padding rem(2px) rem(5px)
+            background-color $theme_input_color
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            &-submit {
+                margin-top rem(30px)
+                padding 0
+                background-color transparent
+                border none
+                button {
+                    padding rem(9px) rem(40px)
+                    height 42px
+                    width 175px
+                    font-size 16px
+                    &.btn-primary.btn-grey {
+                        background-color $font_color_light
+                    }
+                }
+            }
+            label {
+                font-weight 600
+                &::after {
+                    content ':'
+                }
+                i {
+                    padding-right rem(10px)
+                    font-size 18px
+                    color $font_color_light
+                }
+            }
+            .form-control {
+                padding 0
+                margin-left rem(20px)
+                height auto
+                border none
+                font-size 14px
+            }
+            textarea.form-control {
+                margin-top 9px
+                margin-left 40px
+                max-width 87%
+            }
+        }
+    }
+    .success,
+    .error {
+        font-size 14px
+        color $error
+    }
+    .success {
+        color $success
+    }
+}
+
+// social icons
+.listing-social {
+    &-icons {
+        display flex
+        align-items center
+        margin-left auto
+        @media (max-width: 1300px) and (min-width: 960px) {
+            flex-wrap wrap
+            justify-content flex-end
+        }
+        a {
+            margin-left 3px
+            padding 4px
+            font-size 18px
+            background-color $theme_input_color
+            border 1px solid
+            border-radius $border-radius
+            border-color $border-color
+            color $font_header_color
+            line-height 1
+        }
+    }
+    a[class*=facebook] {
+        color $facebook
+    }
+    a[class*=twitter] {
+        color $twitter
+    }
+    a[class*=google] {
+        color $google
+    }
+    a[class*=instagram] {
+        color $instagram
+    }
+    a[class*=youtube] {
+        color $youtube
+    }
+    a[class*=pinterest] {
+        color $pinterest
+    }
+    a[class*=linkedin] {
+        color $linkedin
+    }
+}
+
+/* widget / claim listing */
+.listing-widget-claim-listing {
+    .claim-label {
+        margin-right rem(15px)
+        color $font_header_color
+    }
+    .claim-link {
+        color $primary
+        &:hover {
+            text-decoration none
+        }
+    }
+}
+
+div[class*=single-listing-sidebar-template] aside section.listing-widget-claim-listing {
+    padding-top rem(30px)
+    padding-bottom rem(30px)
+}
+
+// widget general
+.widget-label {
+    color $font_header_color
+    i {
+        margin-right rem(5px)
+        font-size 20px
+        color $font_header_color
+        &.mi-smaller {
+            font-size 18px
+        }
+    }
+    span {
+        color $font_header_color
+    }
+}
+
+.listing-widget-brand {
+    position relative
+    border-top 0
+    .listing-brand {
+        position absolute
+        bottom 28px
+        left 0
+        padding 0
+        background-image url('assets/images/logo_horiz_small_bg.png')
+        background-repeat no-repeat
+        z-index 999
+        &__logo {
+            position relative
+            top 9px
+            left 14px
+            width 70px
+            height 65px
+        }
+    }
+}

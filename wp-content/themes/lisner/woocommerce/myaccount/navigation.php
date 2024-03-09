@@ -1,0 +1,47 @@
+<?php
+/**
+ * My Account navigation
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/navigation.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.6.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+do_action( 'woocommerce_before_account_navigation' );
+?>
+
+<div class="col-lg-2 p-0">
+	<aside>
+		<nav class="lisner-profile-nav">
+			<ul class="list-unstyled">
+				<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
+					<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?> nav-item dropdown">
+						<a class=""
+						   href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
+						<?php if ( class_exists( 'Pebas_Bookings' ) && 'booking-orders' == $endpoint ) : ?>
+							<?php $pending_count = pebas_booking()->count_bookings_with_status(); ?>
+							<?php if ( 0 != $pending_count ): ?>
+								<span class="bookings-confirmation-count"><?php echo esc_html( $pending_count ); ?></span>
+							<?php endif; ?>
+						<?php endif; ?>
+					</li>
+				<?php endforeach; ?>
+			</ul>
+		</nav>
+	</aside>
+</div>
+
+<?php do_action( 'woocommerce_after_account_navigation' ); ?>

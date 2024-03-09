@@ -1,0 +1,749 @@
+/*
+ |--------------------------------------------------------------------------
+ | 22. Pages / Profile Page Styles
+ |--------------------------------------------------------------------------
+ */
+
+@media (min-width: 1000px) {
+  .woocommerce-account {
+    .header {
+      position fixed
+      top 0
+      width 100%
+      z-index 9999
+    }
+
+    .lisner-profile-header {
+      position fixed
+      top 99px
+      width 100%
+      z-index 9998
+    }
+
+    .lisner-profile-nav {
+      position fixed
+      top 167px
+      height 100%
+      width 16%
+    }
+
+    .lisner-profile-content {
+      margin-top 127px
+    }
+  }
+
+  .woocommerce-account.logged-in-admin {
+    .header {
+      top 32px
+    }
+
+    .lisner-profile-header {
+      top 131px
+    }
+
+    .lisner-profile-nav {
+      top 199px
+    }
+
+    .lisner-profile-content {
+      margin-top 135px
+    }
+  }
+}
+
+.page.woocommerce-account,
+.page-template-page-my-account {
+  background-color $theme_light
+}
+
+.container.container-profile {
+  @media (min-width 1200px ) {
+    max-width 1150px
+  }
+}
+
+main.main-profile {
+  padding-top rem(70px)
+  padding-bottom rem(140px)
+
+  .woocommerce {
+    display flex
+    flex-wrap wrap
+    margin-right -15px
+    margin-left -15px
+  }
+
+  &.not-logged {
+    padding-bottom rem(70px)
+
+    .lisner-profile-header {
+      margin-bottom 0
+      padding rem(40px)
+    }
+  }
+}
+
+.main-profile .woocommerce {
+  .col-lg-4 {
+    padding-right rem(10px)
+    @media (min-width 992px) {
+      flex 0 0 29%
+      max-width 29%
+    }
+  }
+
+  .col-lg-8 {
+    padding-left rem(10px)
+    @media (min-width 992px) {
+      flex 0 0 71%
+      max-width 71%
+    }
+  }
+}
+
+.lisner-profile {
+  &-header {
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 30px
+    padding rem(12px) rem(30px)
+    background-color $white
+    border-radius $border-radius
+    box-shadow $box-shadow-listing
+
+    &__title {
+      h4 {
+        margin-bottom 0
+        font-size 23px
+        line-height 1
+      }
+    }
+
+    &__user {
+      &-info {
+        display flex
+
+        span {
+          margin-left rem(5px)
+          font-weight 600
+          color $font_header_color
+        }
+
+        a {
+          display flex
+          align-items center
+          margin-left rem(5px)
+          font-weight 600
+          color $primary
+
+          &:hover {
+            color $primary
+            text-decoration none
+          }
+
+          i {
+            margin-left rem(5px)
+            font-size 18px
+          }
+        }
+      }
+
+      &-image {
+        margin-left rem(20px)
+      }
+    }
+  }
+
+  &-nav {
+    background-color $white
+    border-radius $border-radius
+    box-shadow $box-shadow-listing
+
+    li {
+      position relative
+      display flex
+      align-items center
+      border-bottom 1px solid
+      border-color $border-color
+
+      a {
+        display flex
+        align-items center
+        padding rem(11px) rem(20px)
+        width 100%
+        font-weight 400
+        color $font_header_color
+
+        &::before {
+          margin-right rem(20px)
+          content '\e7ff'
+          font-family 'Material Icons'
+          font-weight 400
+          font-size 18px
+          color #947d99
+          transform rotate(0.03deg)
+        }
+
+        &:hover {
+          background-color transparentify($tertiary, $tertiary, .1)
+          color $font_header_color
+          text-decoration none
+        }
+      }
+
+      .bookings-confirmation-count {
+        position absolute
+        top 14px
+        right 20px
+        display flex
+        justify-content center
+        align-items center
+        width 22px
+        height 22px
+        background-color #ffba00
+        border-radius 50%
+        font-size 14px
+        color $white
+      }
+
+      &.is-active {
+        a {
+          background-color transparentify($tertiary, $tertiary, .1)
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--all-listings {
+        a {
+          &::before {
+            content '\e53b'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--packages {
+        a {
+          &::before {
+            content '\e8f6'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--bookmarks {
+        a {
+          &::before {
+            content '\e867'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--orders {
+        a {
+          &::before {
+            content '\e227'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--downloads {
+        a {
+          &::before {
+            content '\e169'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--edit-address {
+        a {
+          &::before {
+            content '\e56b'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--edit-account {
+        a {
+          &::before {
+            content '\e851'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--booking-orders {
+        a {
+          &::before {
+            content '\e916'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--bookings {
+        a {
+          &::before {
+            content 'calendar_today'
+          }
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--customer-logout {
+        a {
+          &::before {
+            content '\e879'
+          }
+        }
+      }
+
+      &:last-child() {
+        border-bottom 0
+      }
+    }
+  }
+
+  &-content {
+    padding rem(40px)
+    background-color $white
+    border-radius $border-radius
+    box-shadow $box-shadow-listing
+
+    p {
+      font-size 18px
+      color $font_color_dark
+
+      a {
+        font-size 18px
+
+        &:hover {
+          color $primary
+        }
+      }
+    }
+  }
+}
+
+/* Dashboard */
+.lisner-listing-table {
+  &-image {
+    margin-bottom 0
+    max-width 55px
+
+    img {
+      border-radius $border-radius
+    }
+  }
+
+  &-header {
+    display flex
+    justify-content space-between
+    align-items flex-start
+    margin-bottom rem(10px)
+
+    a {
+      display flex
+      align-items center
+      padding rem(3px) rem(14px)
+      background-color $theme_input_color
+      border 1px solid
+      border-color $border-color
+      border-radius $border-radius
+      font-size 14px
+      color $font_header_color
+
+      &:hover {
+        text-decoration none
+      }
+
+      i {
+        margin-left rem(5px)
+        font-size 18px
+      }
+    }
+  }
+}
+
+.lisner-table {
+  thead {
+    tr {
+      background-color $theme_input_color
+
+      th {
+        margin-bottom 2px
+        border-collapse separate
+        color $font_header_color
+
+        &:first-child {
+          border-top-left-radius $border-radius
+        }
+
+        &:last-child {
+          border-top-right-radius $border-radius
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color transparentify($tertiary, $tertiary, .1)
+      }
+
+      &.is-published {
+        border-left 0 solid $success
+      }
+
+      &.is-expired {
+        td:first-child {
+          border-left 2px solid $primary
+        }
+      }
+
+      &.is-pending {
+        td:first-child {
+          border-left 2px solid $info
+        }
+      }
+
+      td {
+        vertical-align baseline
+        color $font_header_color
+
+        &.listing_title {
+          a {
+            color $font_header_color
+
+            &:hover {
+              color $font_header_color
+            }
+          }
+        }
+
+        &.date,
+        &.expires {
+          min-width 130px
+          color $font_header_color
+        }
+
+        &.featured {
+          .featured-listing-icon {
+            padding rem(2px)
+            background-color $success
+            border-radius $border-radius
+            font-size 12px
+            color $white
+          }
+        }
+      }
+    }
+  }
+}
+
+.listing-actions-content {
+  ul {
+    display flex
+    justify-content flex-end
+    margin 0
+    list-style-type none
+
+    li {
+      &:not(:last-child) {
+        margin-right rem(4px)
+      }
+
+      a {
+        display flex
+        justify-content center
+        align-items center
+        padding rem(5px)
+        background-color $theme_input_color
+        border 1px solid
+        border-color $border-color
+        border-radius $border-radius
+        color $font_color_dark
+
+        i {
+          width 20px
+          font-size 18px
+          text-align center
+
+          &.fas {
+            display flex
+            justify-content center
+            align-items center
+            height 18px
+            font-size 16px
+            color #947d99
+          }
+        }
+
+        &:hover {
+          text-decoration none
+        }
+
+        &.job-dashboard-action-view {
+          color $quinary
+        }
+
+        &.job-dashboard-action-edit,
+        &.job-dashboard-action-edit_disabled {
+          color $success
+        }
+
+        &.job-dashboard-action-example {
+          pointer-events none
+          cursor default
+          color #afafaf
+        }
+
+        &.job-dashboard-action-delete {
+          color $primary
+        }
+
+        &.job-dashboard-action-edit_disabled {
+          opacity .4
+          cursor default
+        }
+
+        &.job-dashboard-action-edit_booking_product {
+          color #ffba00
+        }
+      }
+    }
+  }
+}
+
+a.listing-table-action {
+  display flex
+  justify-content center
+  align-items center
+  padding rem(5px)
+  background-color $theme_input_color
+  border 1px solid
+  border-color $border-color
+  border-radius $border-radius
+  color $quinary
+
+  i {
+    width 20px
+    font-size 18px
+    text-align center
+  }
+
+  &:hover {
+    text-decoration none
+  }
+}
+
+.lisner-listing-pagination {
+  margin-top rem(40px)
+
+  .job-manager-pagination {
+    ul {
+      border none
+
+      li {
+        border none
+
+        .page-numbers {
+          padding rem(5px) rem(10px)
+          background-color $theme_input_color
+          border 1px solid
+          border-right 0
+          border-color $border-color
+          color $font_header_color
+
+          &.current {
+            background-color $white
+          }
+        }
+
+        &:first-child {
+          .page-numbers {
+            border-radius $border-radius 0 0 $border-radius
+          }
+        }
+
+        &:last-child {
+          .page-numbers {
+            border-radius 0 $border-radius $border-radius 0
+            border-right 1px solid
+            border-color $border-color
+          }
+        }
+      }
+    }
+  }
+}
+
+.lisner-profile-content {
+  .addresses {
+    display flex
+    justify-content space-between
+
+    div[class*=col-] {
+      flex 0 0 48%
+      max-width 48%
+      padding 0
+    }
+  }
+}
+
+.woocommerce-account .addresses .title {
+  .edit {
+    float none
+    margin-left rem(10px)
+
+    &:hover {
+      color $primary
+    }
+  }
+
+  h3 {
+    font-size 22px
+    font-weight 600
+  }
+}
+
+.lisner-profile-content {
+  h3 {
+    margin-bottom rem(20px)
+    font-size 22px
+    font-weight 600
+  }
+
+  .woocommerce-address-fields {
+    &__field-wrapper {
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+
+      p {
+        display flex
+        flex-direction column
+        flex 0 0 48%
+        max-width 48%
+
+        &#shipping_address_2_field,
+        &#billing_address_2_field {
+          margin-top rem(40px)
+        }
+      }
+
+      .chosen-container-single .chosen-single {
+        justify-content flex-start
+        height rem(44px)
+
+        &::after {
+          position absolute
+          top 11px
+          right 16px
+        }
+      }
+    }
+  }
+
+  em {
+    font-size 14px
+  }
+
+  label {
+    font-size 16px
+    font-weight 600
+  }
+
+  input {
+    padding 0 rem(12px)
+    height rem(44px)
+    background-color $theme_input_color
+    border 1px solid
+    border-color $border-color
+    border-radius $border-radius
+    font-size 16px
+    color $font_color
+
+    &:focus {
+      color $font_color
+    }
+  }
+
+  .edit-account {
+    fieldset {
+      margin-top rem(40px)
+
+      legend {
+        font-size 22px
+        font-weight 600
+        color $font_header_color
+      }
+    }
+  }
+}
+
+.main-profile {
+  .woocommerce {
+    &-success,
+    &-error,
+    &-message {
+      flex: 0 0 100%;
+      max-width: calc(100% - 30px);
+      left: 15px;
+      background-color: #fff;
+    }
+  }
+}
+
+.woocommerce-password-strength {
+  margin-top 3px
+  border-radius $border-radius
+  font-size 14px
+}
+
+.woocommerce {
+  .page-dashboard {
+    &.main-submit-listing {
+      .main-content {
+        @media (min-width 768px) {
+          width 50%
+        }
+      }
+    }
+
+    .listing-submit-group:first-child {
+      margin-top 0
+    }
+
+    .submit-listing {
+      input[name=submit_job] {
+        bottom 0
+      }
+    }
+
+    .chosen-container-single .chosen-single {
+      padding 10px rem(20px)
+      height rem(44px)
+
+      &::after {
+        display none
+      }
+    }
+
+    .file-upload-wrapper-single + .job-manager-uploaded-files .job-manager-uploaded-file {
+      margin-bottom 0
+    }
+
+    .file-upload-wrapper-single + .job-manager-uploaded-files {
+      top -16px
+    }
+
+    input#listing_gallery, input#listing_logo, input#listing_cover {
+      position absolute
+      height 58%
+      width: 92%
+      z-index 2
+    }
+
+    input#listing_logo, input#listing_cover {
+      height 79%
+    }
+  }
+}
+

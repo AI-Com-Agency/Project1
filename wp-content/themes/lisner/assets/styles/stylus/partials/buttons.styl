@@ -1,0 +1,81 @@
+/*
+ |--------------------------------------------------------------------------
+ | 3. Button Styles
+ |--------------------------------------------------------------------------
+ */
+/* Buttons / general */
+.btn {
+    padding rem(6px) rem(30px)
+    border none
+    border-radius $border-radius
+    box-shadow $box-shadow
+    font-weight 400
+    color $white
+    &-primary,
+    &-primary:not(:disabled):not(.disabled) {
+        background-color $primary
+        &:hover,
+        &:active,
+        &:active:focus,
+        &:focus {
+            background-color darken($primary, 3%)
+            box-shadow $box-shadow-hover
+            border 0
+            outline 0
+            color $white
+        }
+    }
+    &-search {
+        &:active:focus {
+            box-shadow none
+        }
+    }
+    &-lg {
+        padding rem(12px) rem(22px)
+        font-size 18px
+        font-weight 600
+    }
+    &-label {
+        display inline-flex
+        align-items end
+        padding rem(5px) rem(20px)
+        background-color $theme_input_color
+        border 1px solid
+        border-color $border-color
+        box-shadow none
+        font-size 14px
+        font-weight 600
+        line-height 1
+        color $font_header_color
+        i {
+            margin-left rem(7px)
+            font-size 16px
+            transform rotate(.03deg)
+            &.btn-icon-before {
+                position relative
+                left rem(-3px)
+                margin-right rem(5px)
+                margin-left 0
+            }
+        }
+    }
+    &[type=submit] {
+        > .loader {
+            &::before {
+                display none
+            }
+        }
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow none
+}
+
+body .btn.btn-theme-full {
+    width 100%
+    justify-content center
+    padding 20px
+    height auto
+    font-size 20px
+}

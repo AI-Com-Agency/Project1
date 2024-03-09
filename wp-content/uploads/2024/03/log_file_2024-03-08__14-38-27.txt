@@ -1,0 +1,59 @@
+
+---Downloaded files---
+The import files for: Basic Demo Install were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/aiagency
+Data file = C:\wamp64\www\aiagency/wp-content/themes/lisner/includes/demo/demo-files/small/content.xml
+Widget file = C:\wamp64\www\aiagency/wp-content/themes/lisner/includes/demo/demo-files/small/widgets.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Shop Sidebar : 
+
+Cart - Cart - Imported
+Filter Products by Price - Filter by price - Imported
+Filter Products by Attribute - Filter by - Imported
+Product Categories - Product categories - Imported
+
+Listing Single Sidebar : 
+
+Lisner Promo - No Title - Imported
+
+Footer Sidebar / Column 1 : 
+
+Tag Cloud - Popular Tags - Imported
+
+Footer Sidebar / Column 2 : 
+
+Lisner Listing Categories - Categories - Imported
+
+Footer Sidebar / Column 3 : 
+
+Lisner Pages - Pages - Imported
+
+Footer Sidebar / Column 4 : 
+
+Lisner Social - Share - Imported
+
+
+
+---ocdi/after_import---
+

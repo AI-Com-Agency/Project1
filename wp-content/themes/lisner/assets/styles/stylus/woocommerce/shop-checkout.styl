@@ -1,0 +1,182 @@
+/*
+ |--------------------------------------------------------------------------
+ | 35. WooCommerce / Shop Checkout
+ |--------------------------------------------------------------------------
+ */
+
+.woocommerce {
+    form.checkout_coupon {
+        margin-top 0
+        background-color $theme_input_color
+        border 1px solid
+        border-color $border-color
+    }
+    form.woocommerce-form-coupon {
+        input {
+            padding rem(8px) rem(15px)
+            border 1px solid
+            border-color $border-color
+            border-radius $border-radius
+            color $font_color
+        }
+        button.button {
+            margin-top 0
+            padding rem(7px) rem(22px)
+        }
+    }
+    form.checkout {
+        #customer_details {
+            display flex
+            justify-content space-between
+            flex-wrap wrap
+            div[class*=col-] {
+                padding 0
+                flex 0 0 50%
+                max-width 50%
+            }
+            div[class=col-1] {
+                padding-right rem(7px)
+            }
+            div[class=col-2] {
+                padding-left rem(7px)
+            }
+            .woocommerce-billing-fields,
+            .woocommerce-shipping-fields,
+            .woocommerce-additional-fields {
+                h3 {
+                    margin-top rem(10px)
+                    margin-bottom rem(20px)
+                    font-size 24px
+                }
+                &__field-wrapper {
+                    display flex
+                    flex-wrap wrap
+                    p {
+                        display flex
+                        flex-direction column
+                        flex 0 0 100%
+                        max-width 100%
+                        label {
+                            font-size 16px
+                            line-height 1.7
+                            color $font_header_color
+                        }
+                        input,
+                        textarea {
+                            padding rem(8px)
+                            background-color $theme_input_color
+                            border 1px solid
+                            border-color $border-color
+                            border-radius $border-radius
+                            font-size 16px
+                            color $font_color
+                            &::-webkit-input-placeholder {
+                                color $font_color_light
+                            }
+                            &::-moz-placeholder {
+                                color $font_color_light
+                            }
+                            &:-ms-input-placeholder {
+                                color $font_color_light
+                            }
+                            &:-moz-placeholder {
+                                color $font_color_light
+                            }
+                        }
+                    }
+                }
+            }
+            .chosen-container-single {
+                .chosen-single {
+                    padding rem(8px)
+                    height 40px
+                    font-weight 400
+                    color $font_color
+                    &::after {
+                        position absolute
+                        top 13px
+                        right 10px
+                    }
+                }
+                .chosen-drop {
+                    .chosen-search {
+                        display block
+                        input {
+                            background-color $white
+                            background-image none
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #order_review_heading {
+        margin-top rem(60px)
+        margin-bottom rem(20px)
+        font-size 24px
+    }
+    #order_review {
+        .shop_table {
+            tfoot {
+                tr {
+                    color $font_header_color
+                    &.cart-subtotal {
+                        .amount {
+                            font-weight 400
+                        }
+                    }
+                    &.order-total {
+                        .amount {
+                            font-weight 600
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .woocommerce-checkout-review-order {
+        #payment {
+            background-color $theme_input_color
+            border-radius $border-radius
+            box-shadow $box-shadow-listing
+            ul.payment_methods {
+                border-color $border-color
+                li {
+                    line-height 1.5
+                }
+            }
+            .place-order {
+                p {
+                    line-height 1.5
+                    color $font_color
+                }
+                a {
+                    color $primary
+                }
+            }
+            #place_order {
+                margin-top 0
+                background-color $primary
+                &:hover {
+                    background-color $primary
+                }
+            }
+        }
+    }
+}
+
+tbody {
+    dt.variation-Listing {
+        color $font_header_color
+    }
+    dl.variation {
+        .variation-ClaimBy {
+            display flex
+            color $font_header_color
+            p {
+                line-height 2.1
+                color $font_color
+            }
+        }
+    }
+}

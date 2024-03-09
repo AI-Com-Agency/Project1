@@ -1,0 +1,434 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: pebas® Listing Events\n"
+"POT-Creation-Date: 2018-10-26 19:06+0200\n"
+"PO-Revision-Date: 2018-10-26 19:04+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: pebas-listing-events.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/class-pebas-events-admin.php:101
+msgid "Event"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:102
+#: includes/admin/class-pebas-events-meta.php:49
+msgid "Listing"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:103
+msgid "Expires"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:104
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:160
+#: includes/admin/class-pebas-events-admin.php:163
+msgid "Event updated."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:161
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:162
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:164
+#, php-format
+msgid "Event restored to revision from %s"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:165
+msgid "Event published."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:166
+msgid "Event saved."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:167
+msgid "Event submitted."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:169
+#, php-format
+msgid "Event scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:170
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:172
+msgid "Event draft updated."
+msgstr ""
+
+#: includes/admin/class-pebas-events-admin.php:175
+msgid "Return to reports"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:52
+msgid "Choose listing where event will be displayed."
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:56 templates/event-form.php:36
+msgid "Event Title"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:58 templates/event-form.php:38
+msgid "Friday Night Party!"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:59
+msgid "Enter title for the event"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:63 templates/event-form.php:44
+#: templates/event_modal.php:23
+msgid "Event Description"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:65 templates/event-form.php:47
+msgid "The very best party is coming this Friday!"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:66
+msgid "Enter description for the coupon"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:70
+msgid "Event Image"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:73
+msgid "Upload image for the event."
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:77
+msgid "Event Start"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:84
+msgid "Choose start date of the event."
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:88
+#: templates/event-map-field.php:34
+msgid "Event Address"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:90
+msgid "Please type the address of the event"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:94
+msgid "Event Location"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:96
+msgid "Please type the address of the location"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:106
+msgid "Event Ticket URL"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:108
+msgid "Enter URL to the event tickets sale"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:113
+msgid "Event Information"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:122
+#: includes/admin/class-pebas-events-meta.php:136
+msgid "Event Attendees"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:125
+msgid "Number of event attendees"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:129
+msgid "Event Attendees IP's"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:131
+msgid "IP addresses of the users that click on event attending"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:145
+#: includes/admin/class-pebas-events-meta.php:156
+msgid "Event Status"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:148
+msgid "Upcoming"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:149
+msgid "Started"
+msgstr ""
+
+#: includes/admin/class-pebas-events-meta.php:151
+msgid "Set status of the coupon"
+msgstr ""
+
+#: includes/class-pebas-events.php:153
+msgid "Event title is required."
+msgstr ""
+
+#: includes/class-pebas-events.php:157
+msgid "Event start date is required."
+msgstr ""
+
+#: includes/class-pebas-events.php:172
+msgid "Event post has not been created."
+msgstr ""
+
+#: includes/class-pebas-events.php:192
+msgid "Event has been successfully saved!"
+msgstr ""
+
+#: includes/class-pebas-events.php:198
+msgid "There has been an error with this request!"
+msgstr ""
+
+#: includes/class-pebas-events.php:213
+msgid "Event has been successfully deleted!"
+msgstr ""
+
+#: includes/class-pebas-events.php:215
+msgid "Event could not be deleted!"
+msgstr ""
+
+#: includes/class-pebas-events.php:487
+msgid "Thanks for response!"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:48
+msgid "Listing Event"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:49
+msgid "Listing Events"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:64
+#: includes/class-pebas-listing-events-install.php:65
+#: includes/class-pebas-listing-events-install.php:66
+#: includes/class-pebas-listing-events-install.php:67
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:68
+#: includes/class-pebas-listing-events-install.php:69
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:70
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:71
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:72
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:73
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:74
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:75
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:76
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: includes/class-pebas-listing-events-install.php:77
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: pebas-listing-events.php:54
+msgid ""
+"<strong>pebas® listing events</strong> requires <strong>Lisner Core & "
+"WooCommerce</strong> plugins to be installed in order to be used."
+msgstr ""
+
+#: pebas-listing-events.php:170
+msgid "d"
+msgstr ""
+
+#: pebas-listing-events.php:171
+msgid "h"
+msgstr ""
+
+#: pebas-listing-events.php:172
+msgid "m"
+msgstr ""
+
+#: pebas-listing-events.php:173
+msgid "s"
+msgstr ""
+
+#: pebas-listing-events.php:175 templates/event-item.php:86
+msgid "I'm going!"
+msgstr ""
+
+#: pebas-listing-events.php:176 templates/event-item.php:77
+msgid "You're going!"
+msgstr ""
+
+#: templates/event-form.php:25
+#, php-format
+msgid "Listing event: %s"
+msgstr ""
+
+#: templates/event-form.php:28
+msgid "All Events"
+msgstr ""
+
+#: templates/event-form.php:40
+msgid "Enter event title"
+msgstr ""
+
+#: templates/event-form.php:48
+msgid "Enter event description."
+msgstr ""
+
+#: templates/event-form.php:52
+msgid "Event Start Date/Time"
+msgstr ""
+
+#: templates/event-form.php:56
+msgid "Choose start time of the event."
+msgstr ""
+
+#: templates/event-form.php:61
+msgid "Event Tickets URL"
+msgstr ""
+
+#: templates/event-form.php:65
+msgid "Enter event ticket site url."
+msgstr ""
+
+#: templates/event-form.php:76
+msgid "Event Print Image"
+msgstr ""
+
+#: templates/event-form.php:90 templates/event-form.php:93
+msgid "Upload Image"
+msgstr ""
+
+#: templates/event-form.php:98
+msgid "Upload event image."
+msgstr ""
+
+#: templates/event-form.php:103 templates/event-form.php:107
+msgid "Save Event"
+msgstr ""
+
+#: templates/event-form.php:110
+msgid "Are you sure you wish to delete event?"
+msgstr ""
+
+#: templates/event-form.php:111
+msgid "Remove Event"
+msgstr ""
+
+#: templates/event-item.php:60
+#, php-format
+msgid ""
+"%s <a href=\"javascript:\" data-toggle=\"modal\" data-target=\"#modal-event-"
+msgstr ""
+
+#: templates/event-item.php:97
+msgid "Get tickets now"
+msgstr ""
+
+#: templates/event-map-field.php:38
+msgid "e.g. \"London\""
+msgstr ""
+
+#: templates/event_modal.php:29
+msgid "Got it!"
+msgstr ""
+
+#: templates/listing-events.php:14
+msgid "Coupons for this listing are displayed below"
+msgstr ""
+
+#: templates/listing-events.php:16 templates/no-listing-events.php:15
+msgid "Add Event"
+msgstr ""
+
+#: templates/listing-events.php:36
+msgid "Address"
+msgstr ""
+
+#: templates/no-listing-events.php:13
+#, php-format
+msgid "%s has no events."
+msgstr ""
+
+#: templates/no-listing.php:12
+msgid "Wrong listing, please make sure that you are on correct listing."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "pebas® Listing Events"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas/pebas-listing-events"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "pebas® Listing Events plugin used for pebas® directory listing themes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "pebas"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.themeforest.net/user/pebas"
+msgstr ""
