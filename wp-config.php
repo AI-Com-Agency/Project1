@@ -29,7 +29,7 @@ define( 'DB_USER', 'id21973065_root' );
 define( 'DB_PASSWORD', 'cactelrtTAKA69++' );
 
 /** Database hostname */
-define( 'DB_HOST', 'https://ia-com-agency.netlify.app' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
