@@ -29,7 +29,7 @@ define( 'DB_USER', 'id21973065_root' );
 define( 'DB_PASSWORD', 'cactelrtTAKA69++' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'files.000webhost.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
